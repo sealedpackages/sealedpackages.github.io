@@ -217,7 +217,7 @@ button:focus {
 /*--------------------*/
 
 #mu-header {
-	background-image: url("assets/images/header-bg.jpg");
+	/* background-image: url("assets/images/header-bg.jpg"); */
 	display: inline;
 	float: left;
 	width: 100%;
@@ -253,7 +253,7 @@ button:focus {
 
 .mu-menu-btn {
 	position: fixed;
-	right: 15%;
+	right: 5%;
 	top: 50px;
 	color: #fff;
 	font-size: 25px;
@@ -290,17 +290,36 @@ button:focus {
 .mu-header-featured-content {
 	display: inline;
 	float: right;
-	margin-top: 200px;
+	margin-top: 40px;
 	text-align: center;
 	width: 60%;
 }
 
 .mu-header-featured-content h1 {
-	font-size: 45px;
+	font-size: 80px;
 	color: #fff;
-	font-weight: 300;
-	margin-bottom: 15px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-shadow: 0 0 8px #00000045;
 }
+
+.mu-header-featured-content h2 {
+	font-size: 55px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+	margin-bottom: 10px;
+	text-shadow: 0 0 8px #00000045;
+}
+
+.mu-header-featured-content h3 {
+	font-size: 35px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-shadow: 0 0 8px #00000045;
+}
+
 
 .mu-header-featured-content h1 span {
 	font-weight: 700;
@@ -369,6 +388,7 @@ button:focus {
 	display: block;
 	float: left;
 	line-height: 24px;
+	width: 100%;
 }
 
 
@@ -485,6 +505,182 @@ button:focus {
 	transition: all 0.5s;
 }
 
+
+/* styles for social media btns */
+
+
+#st-1 {
+	font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+	direction: ltr;
+	display: block;
+	opacity: 1;
+	text-align: center;
+	z-index: 94034;
+  }
+  #st-1.st-animated {
+	-moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+  }
+  #st-1.st-hidden {
+	opacity: 0;
+  }
+  #st-1.st-hide {
+	display: none;
+  }
+  #st-1 .st-btn {
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+	-moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+	-moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 8px;
+	padding: 0 8px;
+	position: relative;
+	text-align: center;
+	top: 0;
+	vertical-align: top;
+	white-space: nowrap;
+  }
+  #st-1 .st-btn:last-child {
+	margin-right: 0;
+  }
+  #st-1 .st-btn > svg {
+	height: 16px;
+	width: 16px;
+	position: relative;
+	top: 8px;
+	vertical-align: top;
+  }
+  #st-1 .st-btn > img {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	position: relative;
+	top: 8px;
+	vertical-align: top;
+  }
+  #st-1 .st-btn > span {
+	-moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+	color: #fff;
+	display: inline-block;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	min-width: 60px;
+	opacity: 1;
+	padding: 0 6px;
+	position: relative;
+	vertical-align: top;
+  }
+  #st-1.st-has-labels .st-btn {
+	min-width: 120px;
+  }
+  #st-1.st-has-labels .st-btn.st-remove-label {
+	min-width: 50px;
+  }
+  #st-1.st-has-labels .st-btn.st-remove-label > span {
+	display: none;
+  }
+  #st-1.st-has-labels .st-btn.st-hide-label > span {
+	display: none;
+  }
+  #st-1 .st-total {
+	color: #555;
+	display: inline-block;
+	font-weight: 500;
+	line-height: 12px;
+	margin-right: 0;
+	max-width: 80px;
+	padding: 4px 8px;
+	text-align: center;
+  }
+  #st-1 .st-total.st-hidden {
+	display: none;
+  }
+  #st-1 .st-total > span {
+	font-size: 16px;
+	line-height: 17px;
+	display: block;
+	padding: 0;
+  }
+  #st-1 .st-total > span.st-shares {
+	font-size: 9px;
+	line-height: 9px;
+  }
+  #st-1.st-justified {
+	display: flex;
+	text-align: center;
+  }
+  #st-1.st-justified .st-btn {
+	-moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  }#st-1 .st-btn:hover {
+	opacity: .8;
+	top: -4px;
+  }#st-1 .st-btn[data-network='facebook'] {
+	background-color: #4267B2;
+  }
+  #st-1 .st-btn[data-network='facebook'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='facebook'] > span {
+	color: #fff;
+  }
+  #st-1 .st-btn[data-network='twitter'] {
+	background-color: #55acee;
+  }
+  #st-1 .st-btn[data-network='twitter'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='twitter'] > span {
+	color: #fff;
+  }
+  #st-1 .st-btn[data-network='pinterest'] {
+	background-color: #CB2027;
+  }
+  #st-1 .st-btn[data-network='pinterest'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='pinterest'] > span {
+	color: #fff;
+  }
+  #st-1 .st-btn[data-network='email'] {
+	background-color: #7d7d7d;
+  }
+  #st-1 .st-btn[data-network='email'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='email'] > span {
+	color: #fff;
+  }
+  #st-1 .st-btn[data-network='sms'] {
+	background-color: #ffbd00;
+  }
+  #st-1 .st-btn[data-network='sms'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='sms'] > span {
+	color: #fff;
+  }
+  #st-1 .st-btn[data-network='sharethis'] {
+	background-color: #95D03A;
+  }
+  #st-1 .st-btn[data-network='sharethis'] svg {
+	fill: #fff;
+  }
+  #st-1 .st-btn[data-network='sharethis'] > span {
+	color: #fff;
+  }
+
+
 /*--------------------*/
 /* FEATURE SECTION */
 /*--------------------*/
@@ -597,6 +793,7 @@ button:focus {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+	height: 110px;
 }
 
 .mu-feature-content-right .media p {
@@ -780,7 +977,8 @@ button:focus {
 /*--------------------*/
 
 #mu-download {
-	background-image: url("assets/images/download-bg.jpeg");
+	/* background-image: url("assets/images/download-bg.jpeg"); */
+	background-color: #ea545e;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -791,7 +989,7 @@ button:focus {
 }
 
 #mu-download::before {
-	background: rgba(0,0,0,0.9);
+	/* background: rgba(0,0,0,0.9); */
 	bottom: 0;
 	content: '';
 	left: 0;
@@ -804,8 +1002,13 @@ button:focus {
 .mu-download-area {
 	display: inline;
 	float: left;
-	padding: 150px 0;
+	padding: 80px 0;
 	width: 100%;
+}
+
+.mu-download-area h4 {
+    color: white;
+    line-height: 30px;
 }
 
 .mu-download-area .mu-title,
@@ -820,6 +1023,73 @@ button:focus {
 	text-align: center;
 	margin-top: 50px;
 }
+
+
+
+/*--------------------*/
+/* how it works */
+/*--------------------*/
+
+#how-section {
+	/* background-image: url("assets/images/download-bg.jpeg"); */
+	background-color: #0000008c;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#how-section::before {
+	/* background: rgba(0,0,0,0.9); */
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+
+.mu-download-area {
+	display: inline;
+	float: left;
+	padding: 80px 0;
+	width: 100%;
+}
+
+.how-feature-content h3{
+	color: white
+}
+
+.how-feature-content .row{
+	margin: 0px 80px;
+}
+
+.how-feature-content .media p{
+	font-size: 18px;
+}
+
+.mu-download-area h4 {
+    color: white;
+    line-height: 30px;
+}
+
+.mu-download-area .mu-title,
+.mu-download-area p {
+	color: #fff;
+}
+
+.mu-download-content {
+	display: inline;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
 
 
 /*--------------------*/
@@ -837,7 +1107,7 @@ button:focus {
 .mu-faq-area {
 	display: inline;
 	float: left;
-	padding: 150px 0;
+	padding: 80px 0 40px;
 	width: 100%;
 }
 
@@ -846,7 +1116,7 @@ button:focus {
 	float: left;
 	width: 100%;
 	text-align: center;
-	padding: 0 150px;
+	padding: 0 120px;
 	margin-top: 50px;
 }
 
@@ -867,6 +1137,14 @@ button:focus {
 	text-align: left;
 }
 
+.panel-body a{
+	color:#337ab7;
+	font-weight: 600;
+}
+
+.panel-body a:hover{
+	text-decoration: underline;
+}
 
 .mu-faq-content .panel-title {
 	text-align: left;
@@ -884,6 +1162,156 @@ button:focus {
 	margin-right: 5px;
 }
 
+
+
+/*--------------------*/
+/* how it works */
+/*--------------------*/
+
+#delivery-services {
+	/* background-image: url("assets/images/download-bg.jpeg"); */
+	background-color: white;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	color: black;
+}
+
+#delivery-services::before {
+	/* background: rgba(0,0,0,0.9); */
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+
+.mu-download-area {
+	display: inline;
+	float: left;
+	padding: 80px 0;
+	width: 100%;
+}
+
+.delivery-services h4 {
+    color: black;
+    line-height: 30px;
+}
+
+/* .mu-download-area .mu-title, */
+/* .mu-download-area p { */
+	/* color: black; */
+/* } */
+
+.mu-download-content {
+	display: inline;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+/*--------------------*/
+/* Pricing Section */
+/*--------------------*/
+
+
+section#pricing-section {
+	background-color: #f8f8f8;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline;
+    float: left;
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+.pricing-content {
+	display: inline-flex;
+	margin-top: 20px;
+}
+
+.option-content {
+    width: 33%;
+	text-align: center;
+	height: 640px;
+}
+
+.option-background {
+	border-radius: 5px;
+    background: white;
+    margin: 0 10px;
+    box-shadow: 0 0 6px 0px #00000040;
+    height: calc(100% - 80px);
+    margin-top: 40px;
+}
+
+.option-background.option-main {
+    height: 100%;
+    margin-top: 0px;
+}
+
+img.option-img {
+    max-width: 160px;
+}
+
+.option-content h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.option-content h3 {
+    font-size: 18px;
+    font-weight: 400;
+	margin: 10px 25px 20px;
+}
+
+.option-content p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin: 10px 30px;
+    font-weight: 300;
+}
+
+.option-price-outline{
+	width: 200px;
+    margin: 50px auto 0px;
+    height: 60px;
+    border-radius: 5px;
+	box-shadow: 1px 1px 3px 0px #00000061;
+}
+
+.option-price-outline span{
+	width: 100%;
+    height: 100%;
+    line-height: 55px;
+    font-size: 20px;
+}
+
+.option-extra-outline{
+    width: 240px;
+    margin: 20px auto 0px;
+    height: 40px;
+    border-radius: 5px;
+	box-shadow: 1px 1px 3px 0px #00000061;
+}
+
+.option-extra-outline span{
+	width: 100%;
+    height: 100%;
+    line-height: 35px;
+    font-size: 18px;
+}
 
 /*--------------------*/
 /* CONTACT US */
@@ -1102,7 +1530,7 @@ button:focus {
 @media (max-width: 1199px) {
 
 	.mu-header-featured-content {
-		margin-top: 120px;
+		margin-top: 20px;
 	}
 
 	.mu-video-iframe-area {
