@@ -33,12 +33,15 @@
 
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148913805-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-148913805-1');
+	</script>
+
   </head>
   <body>
 
@@ -887,12 +890,21 @@
 												<button type="submit" class="mu-send-msg-btn"><span>Check Availability</span></button>
 												<!-- <input type="hidden" name="_confirmation" value="Thanks for signing up!"> -->
 											</form> -->
-											
-											<form action="https://formspree.io/signup@sealedpackages.com" method="POST">
+											<form action=" https://formsubmit.co/signup@sealedpackages.com " method="POST">
+												<input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
+												<input class="form-control" type='number' placeholder="Zip Code" id="zipcode" name="zipcode" required>
+												<button type="submit">Check Availability</button>
+												<input type="hidden" name="_next" value="https://sealedpackages.com/signup_thanks.html">
+											</form>
+
+											<!-- <form action="https://formspree.io/signup@sealedpackages.com" method="POST">
 												<input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
 												<input class="form-control" type='number' placeholder="Zip Code" id="zipcode" name="zipcode" required>
 												<input type="submit" value="Check Availability">
-											  </form>
+
+
+
+											  </form> -->
 
 										</div>
 									</div>
