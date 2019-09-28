@@ -16,8 +16,6 @@
 	
 **/
 
-
-
 (function( $ ){
 
 
@@ -45,13 +43,13 @@
 
     // when click menu item overlay disappear
 
-    $('.mu-menu a').on('click', function(event) {
+    // $('.mu-menu a').on('click', function(event) {
 	   
-        event.preventDefault();
+    //     event.preventDefault();
         
-        $('.mu-menu-full-overlay').removeClass('mu-menu-full-overlay-show');
+    //     $('.mu-menu-full-overlay').removeClass('mu-menu-full-overlay-show');
        
-    });
+    // });
 
     /* ----------------------------------------------------------- */
 	/*  2. MENU SMOOTH SCROLLING
@@ -60,7 +58,10 @@
 	//MENU SCROLLING WITH ACTIVE ITEM SELECTED
 
 	 $(".mu-menu a").click(function(event){
-         event.preventDefault();
+		 event.preventDefault();
+		 
+		 $('.mu-menu-full-overlay').removeClass('mu-menu-full-overlay-show');
+
          //calculate destination place
          var dest=0;
          if($(this.hash).offset().top > $(document).height()-$(window).height()){
@@ -69,7 +70,7 @@
               dest=$(this.hash).offset().top;
          }
          //go to destination
-         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+         $('html,body').animate({scrollTop:dest}, 500);
      });
 	    
 
@@ -78,47 +79,47 @@
 	/*  3. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
-   $('.mu-video-play-btn').on('click', function(event) {
+//    $('.mu-video-play-btn').on('click', function(event) {
 	   
-        event.preventDefault();
+//         event.preventDefault();
         
-        $('.mu-video-iframe-area').addClass('mu-video-iframe-display');
+//         $('.mu-video-iframe-area').addClass('mu-video-iframe-display');
        
-    });
+//     });
    
     // when click the close btn
 
     // disappear iframe window
     
-    $('.mu-video-close-btn').on('click', function(event) {
+    // $('.mu-video-close-btn').on('click', function(event) {
 	    
-	    event.preventDefault();
+	//     event.preventDefault();
 	    
-		$('.mu-video-iframe-area').removeClass('mu-video-iframe-display');
+	// 	$('.mu-video-iframe-area').removeClass('mu-video-iframe-display');
 		
-    });
+    // });
 
     // stop iframe if it is play while close the iframe window
 
-    $('.mu-video-close-btn').click(function(){
+    // $('.mu-video-close-btn').click(function(){
 
-        $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
+    //     $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
 
-    });
+    // });
 
     // when click overlay area
 
-     $('.mu-video-iframe-area').on('click', function(event) {
+    //  $('.mu-video-iframe-area').on('click', function(event) {
 	    
-	    event.preventDefault();
+	//     event.preventDefault();
 	    
-		$('.mu-video-iframe-area').removeClass('mu-video-iframe-display');
+	// 	$('.mu-video-iframe-area').removeClass('mu-video-iframe-display');
 		
-    });
+    // });
 
-	$('.mu-video-iframe-area, .mu-video-iframe').on('click', function(e){
-	    e.stopPropagation();
-	});
+	// $('.mu-video-iframe-area, .mu-video-iframe').on('click', function(e){
+	//     e.stopPropagation();
+	// });
 
 		
 	/* ----------------------------------------------------------- */
