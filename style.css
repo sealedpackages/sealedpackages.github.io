@@ -1480,7 +1480,7 @@ form .mu-all-btn{
 form .mu-all-btn:hover{
 	color: var(--dark-background-1);
 	background-color: white;
-	border: 1px solid var(--dark-background-1);
+	border: 2px solid var(--dark-background-1);
 }
 
 #mu-contact a{
@@ -1743,6 +1743,14 @@ form .mu-all-btn:hover{
 
 @media (max-width: 991px) {
 
+	.mu-header-featured-content h1 {
+		font-size: 80px;
+	}
+
+	.mu-header-featured-content h2 {
+		font-size: 50px;
+	}
+
 	.pricing-content {
 		display: block;
 		margin-top: 160px;
@@ -1818,9 +1826,9 @@ form .mu-all-btn:hover{
 
 @media (max-width: 767px) {
 
-	.mu-header-featured-content h1 {
-		font-size: 35px;
-	}
+	/* .mu-header-featured-content h1 { */
+		/* font-size: 35px; */
+	/* } */
 
 	.mu-app-download-area {
 		margin-top: 20px;
@@ -1906,6 +1914,19 @@ form .mu-all-btn:hover{
 
 
 @media (max-width: 360px){
+
+
+	.mu-header-featured-content h1 {
+		font-size: 60px;
+	}
+
+	.mu-header-featured-content h2 {
+		font-size: 35px;
+	}
+
+	.mu-header-featured-content h3 {
+		font-size: 25px;
+	}
 
 	.mu-video-iframe-area {
 		padding: 15% 5%;

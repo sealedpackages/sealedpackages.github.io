@@ -70,7 +70,7 @@
               dest=$(this.hash).offset().top;
          }
          //go to destination
-         $('html,body').animate({scrollTop:dest}, 500);
+         $('html,body').animate({scrollTop:dest}, 500,'linear');
      });
 	    
 
