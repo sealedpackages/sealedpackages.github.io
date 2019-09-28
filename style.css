@@ -269,6 +269,7 @@ button:focus {
 }
 
 .mu-menu-btn {
+	border-radius: 5px;
 	position: fixed;
     right: 36px;
     top: 36px;
@@ -377,7 +378,7 @@ button:focus {
     transition: all 0.5s;
 }
 
-.mu-all-btn:hover,
+/* .mu-all-btn:hover,
 .mu-apple-btn:hover,
 .mu-google-btn:hover,
 .mu-windows-btn:hover,
@@ -386,7 +387,7 @@ button:focus {
 .mu-google-btn:focus,
 .mu-windows-btn:focus {
 	background-color: #ffffff;
-}
+} */
 
 .mu-all-btn i,
 .mu-apple-btn i,
@@ -600,7 +601,7 @@ button:focus {
   }
   #st-1.st-has-labels .st-btn {
 	min-width: 120px;
-	box-shadow: 0 0 3px #ffffff4f;
+	/* box-shadow: 0 0 3px #ffffff4f; */
   }
   #st-1.st-has-labels .st-btn.st-remove-label {
 	min-width: 50px;
@@ -674,7 +675,7 @@ button:focus {
 	color: #fff;
   }
   #st-1 .st-btn[data-network='email'] {
-	background-color: #7d7d7d;
+	background-color: #354053;
   }
   #st-1 .st-btn[data-network='email'] svg {
 	fill: #fff;
@@ -807,6 +808,7 @@ button:focus {
 	background-color: var(--btn-color-1);
 	cursor: default;
 	font-weight: 700;
+	width: 48px;
 }
 
 .mu-feature-btn:hover {
@@ -829,7 +831,7 @@ button:focus {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	height: 110px;
+	min-height: 110px;
 }
 
 .mu-feature-content-right .media p {
@@ -1471,6 +1473,26 @@ img.option-img {
 /* CONTACT US */
 /*--------------------*/
 
+form .mu-all-btn{
+	background-color: var(--dark-background-1);
+}
+
+form .mu-all-btn:hover{
+	color: var(--dark-background-1);
+	background-color: white;
+	border: 1px solid var(--dark-background-1);
+}
+
+#mu-contact a{
+	color:var(--main-color-1);
+	font-weight: 600;
+}
+
+#mu-contact a:hover{
+	text-decoration: underline;
+	color:var(--main-color-1);
+}
+
 #mu-contact {
 	background-color: #fff;
 	display: inline;
@@ -1720,6 +1742,23 @@ img.option-img {
 }
 
 @media (max-width: 991px) {
+
+	.pricing-content {
+		display: block;
+		margin-top: 160px;
+	}
+
+	.option-content {
+		width: 100%;
+	}
+
+	.pricing-small-print {
+		margin: 0px;
+	}
+
+	.how-feature-content .row {
+		margin: 0px 20px;
+	}
 
 	.mu-primary-btn {
 		font-size: 14px;
