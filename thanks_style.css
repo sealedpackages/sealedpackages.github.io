@@ -1,0 +1,32 @@
+html, body{
+    min-height: 100%;
+    height: 100%;
+}
+
+#mu-header {
+    height: calc(100% - 82px);
+}
+
+#mu-header-overlay{
+    height: 100%;
+}
+
+.mu-header-featured-content {
+    margin-top: 30px;
+}
+
+.mu-header-featured-content h3{
+    margin-top: 80px;
+}
+
+.mu-header-featured-content h2{
+    font-style: normal;
+}
+
+.mu-header-featured-content p{
+    font-size: 20px;
+}
+
+.sharethis-inline-share-buttons{
+    margin-top: 20px;
+}

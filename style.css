@@ -555,7 +555,7 @@ button:focus {
 	border: none;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 16px;
 	height: 32px;
 	line-height: 32px;
 	margin-right: 8px;
@@ -598,6 +598,7 @@ button:focus {
   }
   #st-1.st-has-labels .st-btn {
 	min-width: 120px;
+	box-shadow: 0 0 3px #ffffff4f;
   }
   #st-1.st-has-labels .st-btn.st-remove-label {
 	min-width: 50px;
