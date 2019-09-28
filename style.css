@@ -23,21 +23,29 @@ Version: 1.0
 */
 
 
+:root {
+	--btn-color-1:#DA9C1B;
+	--main-color-1:#8378B8;
+	--dark-background-1:#354053;
+}
+
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
 body,
 html {
+	scroll-behavior: smooth;
 	overflow-x:hidden;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 	font-size: 15px;
 	letter-spacing: 0.5px;
 	line-height: 1.5;
 	color: #1c1b1b;
+	font-family: 'roboto';
 }
 
 ul {
@@ -68,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 	font-weight: 700;
 	margin-top: 0;
 }
@@ -112,7 +120,7 @@ code {
 }
 
 pre {
-	background-color: #f8f8f8;
+	background-color: #f5f5f5;
 	border: 1px solid #eee;
 	border-radius: 4px;
 	padding: 10px;
@@ -148,7 +156,7 @@ dl dd {
 }
 
 blockquote {
-	background-color: #f8f8f8;
+	background-color: #f5f5f5;
 	border-radius: 0 4px 4px 0;
 	padding: 5px 15px;
 
@@ -190,19 +198,26 @@ button:focus {
 	background-color: #fff;
 }
 
+
+
 .mu-send-msg-btn {
 	color: #555;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 14px 24px;
-	margin-top: 10px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	width: 130px;
-	color: #fff;
-	border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 14px 24px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 130px;
+    color: #fff;
+    border-radius: 10px;
+    width: 230px;
+    color: #fff;
+    background-color: var(--btn-color-1);
+    line-height: 18px;
+    margin: 0px auto 0px;
 }
 
 .mu-send-msg-btn:hover,
@@ -228,8 +243,9 @@ button:focus {
 .mu-header-overlay {
 	display: inline;
 	float: left;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 	width: 100%;
+	background-color: var(--main-color-1);
 }
 
 .mu-logo-area {
@@ -244,6 +260,7 @@ button:focus {
 	display: inline-block;
 	font-weight: 700;
 	margin-top: 35px;
+	font-family: 'nunito';
 }
 
 .mu-logo:hover,
@@ -253,16 +270,17 @@ button:focus {
 
 .mu-menu-btn {
 	position: fixed;
-	right: 5%;
-	top: 50px;
-	color: #fff;
-	font-size: 25px;
-	border: 2px solid #fff;
-	padding: 5px 14px;
-	z-index: 999;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+    right: 36px;
+    top: 36px;
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #fff;
+    padding: 5px 14px;
+    z-index: 999;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #61666d75;
 }
 
 .mu-menu-btn:hover,
@@ -296,15 +314,15 @@ button:focus {
 }
 
 .mu-header-featured-content h1 {
-	font-size: 80px;
+	font-size: 90px;
 	color: #fff;
 	font-weight: 400;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	text-shadow: 0 0 8px #00000045;
 }
 
 .mu-header-featured-content h2 {
-	font-size: 55px;
+	font-size: 65px;
     color: #fff;
     font-style: italic;
     font-weight: 400;
@@ -696,7 +714,7 @@ button:focus {
 .mu-feature-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 80px 0 50px;
 	width: 100%;
 }
 
@@ -706,6 +724,10 @@ button:focus {
 	text-align: center;
 	padding: 0 120px;
 	width: 100%;
+}
+
+.mu-title-area p{
+	font-size:17px;
 }
 
 .mu-title {
@@ -723,6 +745,8 @@ button:focus {
 	display: inline-block;
 	margin-bottom: 20px;
 	position: relative;
+	background-color: var(--btn-color-1);
+
 }
 
 .mu-title-dot::before {
@@ -732,6 +756,7 @@ button:focus {
 	height: 3px;
 	width: 50px;
 	top: 2px;
+	background-color: var(--btn-color-1);
 }
 
 .mu-title-dot::after {
@@ -741,13 +766,18 @@ button:focus {
 	height: 3px;
 	width: 50px;
 	top: 2px;
+	background-color: var(--btn-color-1);
+}
+
+.mu-title-dot.white, .mu-title-dot.white::before, .mu-title-dot.white::after {
+	background-color: white;
 }
 
 .mu-feature-content {
 	background-color: #fff;
 	display: inline;
 	float: left;
-	margin-top: 30px;
+	margin-top: 0px;
 	width: 100%;
 }
 
@@ -771,6 +801,9 @@ button:focus {
 .mu-feature-btn {
 	color: #fff;
 	font-size: 18px;
+	background-color: var(--btn-color-1);
+	cursor: default;
+	font-weight: 700;
 }
 
 .mu-feature-btn:hover {
@@ -978,7 +1011,7 @@ button:focus {
 
 #mu-download {
 	/* background-image: url("assets/images/download-bg.jpeg"); */
-	background-color: #ea545e;
+	background-color: var(--main-color-1);
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1032,7 +1065,7 @@ button:focus {
 
 #how-section {
 	/* background-image: url("assets/images/download-bg.jpeg"); */
-	background-color: #0000008c;
+	background-color: var(--dark-background-1);
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1061,7 +1094,9 @@ button:focus {
 }
 
 .how-feature-content h3{
-	color: white
+	color: white;
+	margin-top: 1px;
+    line-height: 36px;
 }
 
 .how-feature-content .row{
@@ -1070,6 +1105,13 @@ button:focus {
 
 .how-feature-content .media p{
 	font-size: 18px;
+}
+
+.how-feature-content-right {
+	display: inline;
+	float: left;
+	margin-top: 30px;
+	width: 100%;
 }
 
 .mu-download-area h4 {
@@ -1088,6 +1130,17 @@ button:focus {
 	width: 100%;
 	text-align: center;
 	margin-top: 50px;
+}
+
+.how-content-content .media {
+	margin-top: 15px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	/* height: 110px; */
 }
 
 
@@ -1111,13 +1164,25 @@ button:focus {
 	width: 100%;
 }
 
+.mu-title-dot.purple, .mu-title-dot.purple::before, .mu-title-dot.purple::after {
+	background-color: var(--main-color-1);
+}
+
+.panel .fa{
+	color: var(--main-color-1);
+}
+
 .mu-faq-content {
 	display: inline;
 	float: left;
 	width: 100%;
 	text-align: center;
 	padding: 0 120px;
-	margin-top: 50px;
+	margin-top: 20px;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: var(--main-color-1);
 }
 
 .mu-faq-content .panel-default {
@@ -1138,7 +1203,7 @@ button:focus {
 }
 
 .panel-body a{
-	color:#337ab7;
+	color:var(--main-color-1);
 	font-weight: 600;
 }
 
@@ -1162,7 +1227,19 @@ button:focus {
 	margin-right: 5px;
 }
 
+.faq-footer{
+    font-size: 15px;
+	margin: 30px 0px 0px;
+}
 
+.faq-footer a{
+	color:var(--main-color-1);
+	font-weight: 600;
+}
+
+.faq-footer a:hover{
+	text-decoration: underline;
+}
 
 /*--------------------*/
 /* how it works */
@@ -1199,9 +1276,30 @@ button:focus {
 	width: 100%;
 }
 
+.services-title-area {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+}
+
 .delivery-services h4 {
     color: black;
     line-height: 30px;
+}
+
+.service-icons-list {
+	display: inline-flex;
+	margin-top: 20px;
+}
+
+.service-icon {
+    margin: 0px 5px;
+}
+
+.service-icon img {
+    max-height: 140px;
 }
 
 /* .mu-download-area .mu-title, */
@@ -1225,7 +1323,7 @@ button:focus {
 
 
 section#pricing-section {
-	background-color: #f8f8f8;
+	background-color: var(--main-color-1);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -1233,18 +1331,31 @@ section#pricing-section {
     float: left;
     position: relative;
     width: 100%;
-    color: black;
+    color: white;
 }
 
 .pricing-content {
 	display: inline-flex;
 	margin-top: 20px;
+	color: black;
+}
+
+.pricing-title{
+	color: white;
+    margin-bottom: 15px;
+    padding: 0;
+    z-index: 10;
+    text-transform: capitalize;
+}
+
+.pricing-subtitle{
+	font-size: 18px;
 }
 
 .option-content {
     width: 33%;
 	text-align: center;
-	height: 640px;
+	height: 600px;
 }
 
 .option-background {
@@ -1253,7 +1364,13 @@ section#pricing-section {
     margin: 0 10px;
     box-shadow: 0 0 6px 0px #00000040;
     height: calc(100% - 80px);
-    margin-top: 40px;
+	margin-top: 40px;
+	position: relative;
+
+}
+
+.option-content p{
+	color:rgb(102, 102, 102);
 }
 
 .option-background.option-main {
@@ -1262,7 +1379,8 @@ section#pricing-section {
 }
 
 img.option-img {
-    max-width: 160px;
+	max-width: 160px;
+	margin-top: 40px;
 }
 
 .option-content h2 {
@@ -1280,7 +1398,7 @@ img.option-img {
     font-size: 16px;
     margin-top: 20px;
     margin: 10px 30px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .option-price-outline{
@@ -1298,6 +1416,30 @@ img.option-img {
     font-size: 20px;
 }
 
+.option-price-outline.coming-soon{
+	transform: rotate(5deg);
+	width: 240px;
+	height: 70px;
+	z-index: 4;
+    position: relative;
+	background-color: white;
+	box-shadow: 1px 1px 5px 0px #00000061
+}
+
+.option-price-outline.coming-soon span{
+	line-height: 70px;
+    font-size: 25px;
+}
+
+.coming-soon-coverup{
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+    background-color: #00000024;
+    z-index: 3;
+}
+
 .option-extra-outline{
     width: 240px;
     margin: 20px auto 0px;
@@ -1311,6 +1453,12 @@ img.option-img {
     height: 100%;
     line-height: 35px;
     font-size: 18px;
+}
+
+.pricing-small-print{
+	margin: 30px 0px 0px;
+	text-align: center;
+	font-size: 15px;
 }
 
 /*--------------------*/
@@ -1327,7 +1475,7 @@ img.option-img {
 .mu-contact-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 80px 0;
 	width: 100%;
 }
 
@@ -1384,6 +1532,12 @@ img.option-img {
 	display: inline;
 	float: left;
 	width: 100%;
+	text-align: center;
+}
+
+.form-group{
+	max-width: 400px;
+    margin: 0px auto 15px;
 }
 
 .mu-contact-form .form-group input {
@@ -1496,10 +1650,11 @@ img.option-img {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: var(--dark-background-1);
 	display: inline;
 	float: left;
 	width: 100%;
+	color: white;
 }
 
 .mu-footer-area{
