@@ -1396,7 +1396,7 @@ img.option-img {
 .option-content h3 {
     font-size: 18px;
     font-weight: 400;
-	margin: 10px 25px 20px;
+	margin: 10px 22px 20px;
 }
 
 .option-content p {
@@ -1408,7 +1408,7 @@ img.option-img {
 
 .option-price-outline{
 	width: 220px;
-    margin: 50px auto 20px;
+    margin: 20px auto;
     height: 60px;
     border-radius: 5px;
     background-color: #8378b82b;
@@ -1422,6 +1422,22 @@ img.option-img {
     font-size: 24px;
     color: #8378b8;
 }
+
+.option-main .option-price-outline{
+	margin: 30px auto;
+    height: 90px;
+}
+
+.option-main .option-price-outline span{
+	font-size: 32px;
+    font-weight: 500;
+    line-height: 88px;
+}
+
+.option-content p.option-sub-text{
+		font-size: 13px;
+		margin: -12px 30px 10px;
+	}
 
 .option-price-outline.coming-soon{
 	transform: rotate(5deg);
