@@ -1356,7 +1356,7 @@ section#pricing-section {
 .option-content {
     width: 33%;
 	text-align: center;
-	height: 600px;
+	height: 540px;
 }
 
 .option-background {
@@ -1403,18 +1403,20 @@ img.option-img {
 }
 
 .option-price-outline{
-	width: 200px;
-    margin: 50px auto 0px;
+	width: 220px;
+    margin: 50px auto 20px;
     height: 60px;
     border-radius: 5px;
-	box-shadow: 1px 1px 3px 0px #00000061;
+    background-color: #8378b82b;
+	box-shadow: 1px 1px 4px 0px #00000061;
 }
 
 .option-price-outline span{
 	width: 100%;
     height: 100%;
-    line-height: 55px;
-    font-size: 20px;
+    line-height: 58px;
+    font-size: 24px;
+    color: #8378b8;
 }
 
 .option-price-outline.coming-soon{
@@ -1443,17 +1445,18 @@ img.option-img {
 
 .option-extra-outline{
     width: 240px;
-    margin: 20px auto 0px;
+    margin: 10px auto 0px;
     height: 40px;
     border-radius: 5px;
-	box-shadow: 1px 1px 3px 0px #00000061;
+	/* box-shadow: 1px 1px 3px 0px #00000061; */
 }
 
 .option-extra-outline span{
 	width: 100%;
     height: 100%;
     line-height: 35px;
-    font-size: 18px;
+	font-size: 18px;
+	color: #666666;
 }
 
 .pricing-small-print{
@@ -1500,7 +1503,7 @@ img.option-img {
 	display: inline;
 	float: left;
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 30px;
 	padding-left: 15px;
 }
 

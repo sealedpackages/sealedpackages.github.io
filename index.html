@@ -54,7 +54,7 @@
 					<!-- Start Logo -->
 					<div class="mu-logo-area">
 						<!-- text based logo -->
-						<a class="mu-logo" href="#">Sealed</a>
+						<a class="mu-logo" href="https://sealedpackages.com">Sealed</a>
 						<!-- image based logo -->
 						<!-- <a class="mu-logo" href="#"><img src="assets/images/logo.png" alt="logo img"></a> -->
 					</div>
@@ -793,14 +793,14 @@
 												<h3 class="option-subtitle">Personal mailroom with secure local pickup</h3>
 												<p class="option-text">Dedicated package tracking and notifications</p>
 												<p class="option-text">Includes 4 packages/month</p>
-												<div class='option-price-outline'>
+												<div class='option-price-outline' style='margin: 15px auto;'>
 													<span>$9 / month</span>
 												</div>
 												<div class='option-extra-outline'>
-													<span>$2 / addtional package</span>
+													<span>+ $2 / addtional package</span>
 												</div>
 												<div class='option-extra-outline'>
-													<span>$5-9 / home handoff</span>
+													<span>+ $5 - $9 / home handoff</span>
 												</div>
 										</div>
 									</div>
@@ -814,7 +814,7 @@
 												<p class="option-text">+ Unlimited packages/month</p>
 												<p class="option-text">+ 2 free home handoffs/month</p>
 												<div class='coming-soon-coverup'></div>
-												<div class='option-price-outline coming-soon'>
+												<div class='option-price-outline coming-soon' style='margin: 16px auto;'>
 													<span>Coming Soon</span>
 												</div>
 										</div>
@@ -822,7 +822,7 @@
 								</div>
 	
 								<p class='pricing-small-print'>* Additional fees may apply to routing and handoff of oversized packages (over 50 lbs or 60”) <br>
-										but we’ll never charge you without first notifying you and letting you opt for free pickup.</p>
+										but we’ll never charge you without first notifying you and letting you opt for free pickup instead.</p>
 
 							</div>
 						</div>
@@ -888,11 +888,19 @@
 													<input class="form-control" type='number' placeholder="Zip Code" id="zipcode" name="zipcode" required>
 												</div>
 												<button type="submit" class="mu-send-msg-btn"><span>Check Availability</span></button>
-												<!-- <input type="hidden" name="_confirmation" value="Thanks for signing up!"> -->
+												<input type="hidden" name="_confirmation" value="Thanks for signing up!">
 											</form> -->
 											<form action=" https://formsubmit.co/signup@sealedpackages.com " method="POST">
+												<div class="form-group">
+
 												<input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
+											</div>
+
+												<div class="form-group">
+
 												<input class="form-control" type='number' placeholder="Zip Code" id="zipcode" name="zipcode" required>
+											</div>
+
 												<button type="submit">Check Availability</button>
 												<input type="hidden" name="_next" value="https://sealedpackages.com/signup_thanks.html">
 											</form>
@@ -911,34 +919,24 @@
 
 									<div class="col-md-6">
 										<div class="mu-contact-right">
-											<div class="mu-contact-right-single">
+											<!-- <div class="mu-contact-right-single">
 												<div class="mu-icon"><i class="fa fa-map-marker"></i></div>
 												<p><strong>Office Location</strong></p>
 												<p>Dooley Branch Rd Millen, GA 30442, USA</p>
-											</div>
+											</div> -->
 
-											<div class="mu-contact-right-single">
+											<!-- <div class="mu-contact-right-single">
 												<div class="mu-icon"><i class="fa fa-phone"></i></div>
 												<p><strong>Phone Number</strong></p>
 												<p>+90 987 678 9834</p>
 												<p>+90 567 098 785</p>
-											</div>
+											</div> -->
 
 											<div class="mu-contact-right-single">
 												<div class="mu-icon"><i class="fa fa-envelope"></i></div>
 												<p><strong>Email Address</strong></p>
-												<p>contact@domain.com</p>
-												<p>support@domain.com</p>
-											</div>
-
-											<div class="mu-contact-right-single">
-												<div class="mu-social-media">
-													<a href="#"><i class="fa fa-facebook"></i></a>
-													<a href="#"><i class="fa fa-twitter"></i></a>
-													<a href="#"><i class="fa fa-google-plus"></i></a>
-													<a href="#"><i class="fa fa-linkedin"></i></a>
-													<a href="#"><i class="fa fa-youtube"></i></a>
-												</div>
+												<p>hello@sealedpackages.com</p>
+												<!-- <p>support@domain.com</p> -->
 											</div>
 
 										</div>
@@ -979,11 +977,9 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
 	<!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/slick.min.js"></script> -->
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="assets/js/app.js"></script>
-
-
 
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
