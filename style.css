@@ -1928,6 +1928,23 @@ form .mu-all-btn:hover{
 
 }
 
+@media (max-width: 380px){
+
+	.option-background {
+		height: calc(100% - 30px);
+	}
+	.option-main img.option-img {
+		margin-top: 18px;
+	}
+	.option-main .option-price-outline {
+		margin: 14px auto !important;
+	}
+
+	.option-price-outline.coming-soon {
+		margin-top: 30px !important;
+	}
+}
+
 
 @media (max-width: 360px){
 
