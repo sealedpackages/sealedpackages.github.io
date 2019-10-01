@@ -1250,6 +1250,63 @@ button:focus {
 /* how it works */
 /*--------------------*/
 
+#sealed-mockups {
+	/* background-image: url("assets/images/download-bg.jpeg"); */
+	background-color: white;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	color: black;
+}
+
+.mockup-point-area {
+	display: inline;
+	float: left;
+	padding: 80px 0;
+	width: 100%;
+}
+
+#sealed-mockups::before {
+	/* background: rgba(0,0,0,0.9); */
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+
+.sealed-mockups-area {
+	display: inline;
+	float: left;
+	padding: 80px 30px 40px;
+	width: 100%;
+}
+
+h2.mockups-main {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+h3.mockups-sub {
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.mu-download-area {
+	display: inline;
+	float: left;
+	padding: 80px 0;
+	width: 100%;
+}
+
 #delivery-services {
 	/* background-image: url("assets/images/download-bg.jpeg"); */
 	background-color: white;
@@ -1775,6 +1832,22 @@ form .mu-all-btn:hover{
 	.option-content {
 		width: 100%;
 	}
+
+	.sealed-mockups-area {
+		display: inline;
+		float: left;
+		padding: 80px 0px 40px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.mockup-point-area {
+		padding: 20px 0;
+	}
+/* 
+	.mu-download-area {
+		padding: 50px 0;
+	} */
 
 	.pricing-small-print {
 		margin: 0px;
