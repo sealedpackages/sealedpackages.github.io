@@ -3,12 +3,31 @@ html, body{
     height: 100%;
 }
 
+.mu-logo {
+	color: #fff;
+	font-size: 50px;
+	display: inline-block;
+	font-weight: 700;
+	margin-top: 35px;
+	font-family: 'comfortaa';
+}
+
+
+.mu-logo:hover,
+.mu-logo:focus {
+	color: #fff;
+}
+
 #mu-header {
-    height: calc(100% - 82px);
+    min-height: calc(100% - 82px);
+    position: relative;
 }
 
 .mu-header-overlay{
-    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: block;
 }
 
 .mu-header-featured-content {
@@ -29,4 +48,121 @@ html, body{
 
 .sharethis-inline-share-buttons{
     margin-top: 20px;
+}
+
+.mu-footer{
+    position: relative;
+    z-index: 2;
+}
+
+
+@media (max-width: 1199px) {
+
+    .mu-logo{
+        margin-left: 40px;
+    }
+
+    #st-1.st-has-labels .st-btn {
+        width: 36%;
+        margin-top: 8px;
+    }
+
+    .mu-header-featured-content h2 {
+        font-size: 33px;
+    }
+
+    .mu-header-featured-content h3 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .mu-header-featured-area {
+        padding-top: 50px;
+    }    
+
+	.mu-header-featured-content {
+		margin-top: 20px;
+	}
+
+	.mu-video-iframe-area {
+		padding: 16% 0;
+	}
+
+	.mu-video-close-btn {
+		top: 5%;
+		right: 5%;
+		margin-top: 0;
+	}
+
+	.mu-apps-screenshot-slider .slick-prev {
+		left: -25px;
+	}
+
+	.mu-apps-screenshot-slider .slick-next {
+		right: -25px;
+	}
+
+	.mu-contact-content {
+		padding: 0;
+	}
+}
+
+
+
+@media(max-width: 640px){
+
+    .mu-header-featured-area {
+        padding-top: 0px;
+    }
+
+    .mu-logo-area{
+        text-align: center;
+    }
+
+    .mu-logo{
+        margin:35px auto;
+    }
+
+    #mu-header {
+        height: auto;
+    }
+
+    .mu-header-featured-img, .mu-header-featured-content {
+        text-align: center;
+    }
+
+    .mu-header-featured-img img{
+        max-width: 60%;
+        margin: auto;
+    }
+
+    #st-1.st-has-labels .st-btn {
+        width: 36%;
+        margin-top: 8px;
+        height: 44px;
+    }
+
+    #st-1 .st-btn > span {
+        line-height: 44px;
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    #st-1 .st-btn > img {
+        height: 26px;
+        width: 26px;
+        top: 9px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .mu-header-featured-content h2 {
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    .mu-header-featured-content h3 {
+        font-size: 26px;
+    }
 }

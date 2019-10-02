@@ -652,6 +652,7 @@ button:focus {
   }
   #st-1.st-has-labels .st-btn {
 	min-width: 120px;
+	margin-right: 4px;
 	/* box-shadow: 0 0 3px #ffffff4f; */
   }
   #st-1.st-has-labels .st-btn.st-remove-label {
