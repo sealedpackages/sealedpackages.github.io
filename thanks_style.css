@@ -111,6 +111,10 @@ html, body{
 
 @media(max-width: 640px){
 
+    .mu-header-overlay {
+        position: relative;
+    }
+
     .mu-header-featured-area {
         padding-top: 0px;
     }
