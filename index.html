@@ -1135,6 +1135,7 @@
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
+    <!-- Second navbar appears after scrolling down a variable length -->
     <script type="text/javascript">
             (function ($) {
           $(document).ready(function(){
@@ -1160,7 +1161,16 @@
         }(jQuery));
     </script>
 
-    </script>
+    <!-- close mobile navbar after user clicks on item-->
+    <script type="text/javascript">
+    $(function(){
+         var navMain = $(".navbar-collapse");
+
+         navMain.on("click", "a", null, function () {
+             navMain.collapse('hide');
+         });
+     });
+        </script>
 
 
   </body>
