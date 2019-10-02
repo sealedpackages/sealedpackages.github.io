@@ -238,6 +238,7 @@ button:focus {
 	width: 100%;
 	background-position: center center;
 	background-attachment: fixed;
+
 }
 
 .mu-header-overlay {
@@ -247,13 +248,51 @@ button:focus {
 	width: 100%;
 	background-color: var(--main-color-1);
 }
-
+/*
 .mu-logo-area {
 	display: inline;
 	float: left;
 	width: 100%;
+}*/
+.navbar-static,
+.navbar{
+	background: #8378B8;
+	border: none;
+	padding:10px 0px 10px 0px;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+	font-family: 'roboto';
+
+}
+.navbar-brand{
+	color: #fff;
+	font-size: 50px;
+	display: inline-block;
+	font-weight: 700;
+	font-family: 'comfortaa';
+
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+	color:#fff;
 }
 
+
+
+.navbar-toggle{
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+
+}
+
+
+
+/*
 .mu-logo {
 	color: #fff;
 	font-size: 50px;
@@ -262,6 +301,7 @@ button:focus {
 	margin-top: 35px;
 	font-family: 'comfortaa';
 }
+
 
 .mu-logo:hover,
 .mu-logo:focus {
@@ -284,11 +324,21 @@ button:focus {
     background-color: #61666d75;
 }
 
+
 .mu-menu-btn:hover,
 .mu-menu-btn:focus {
-	border: 2px solid #fff;
+	border: 2px solid #FFF;
 }
-
+*/
+.nav>li>a {
+	opacity: 0.8;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent;
+		opacity: 1;
+  }
 
 
 /*=== Featured section ===*/
@@ -298,6 +348,7 @@ button:focus {
 	float: left;
 	padding: 50px 0;
 	width: 100%;
+	padding-top: 120px;
 }
 
 .mu-header-featured-img {
@@ -1844,7 +1895,7 @@ form .mu-all-btn:hover{
 	.mockup-point-area {
 		padding: 20px 0;
 	}
-/* 
+/*
 	.mu-download-area {
 		padding: 50px 0;
 	} */
