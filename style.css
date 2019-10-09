@@ -236,6 +236,22 @@ button:focus {
 
 
 
+
+.panel-default .panel-heading:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: var(--main-color-1);         /* adjust as needed */
+}
+.panel-default a.collapsed .panel-heading:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+
+
+
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
@@ -1587,6 +1603,8 @@ div#accordion {
 }
 
 .panel-heading {
+	display: inline-flex;
+	width: 100%;
 	padding: 15px;
 	color: #2f2f2f;
 }
@@ -1598,6 +1616,8 @@ div#accordion {
 
 .panel-title {
 	font-weight: 100;
+	width: 100%;
+	line-height: 22px;
 }
 
 
