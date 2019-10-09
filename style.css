@@ -256,7 +256,8 @@ button:focus {
 	float: left;
 	/* opacity: 0.8; */
 	width: 100%;
-	background-color: var(--main-color-1);
+	background-color: white;
+	color: #222222;
 }
 /*
 .mu-logo-area {
@@ -474,27 +475,27 @@ i.material-icons {
 
 .mu-header-featured-content h1 {
 	font-size: 90px;
-	color: #fff;
+	/* color: #fff; */
 	font-weight: 400;
 	margin-bottom: 0px;
-	text-shadow: 0 0 8px #00000045;
+	/* text-shadow: 0 0 8px #00000045; */
 }
 
 .mu-header-featured-content h2 {
 	font-size: 65px;
-    color: #fff;
+    /* color: #fff; */
     font-style: italic;
     font-weight: 400;
 	margin-bottom: 10px;
-	text-shadow: 0 0 8px #00000045;
+	/* text-shadow: 0 0 8px #00000045; */
 }
 
 .mu-header-featured-content h3 {
 	font-size: 35px;
-	color: #fff;
+	/* color: #fff; */
 	font-weight: 400;
 	margin-bottom: 15px;
-	text-shadow: 0 0 8px #00000045;
+	/* text-shadow: 0 0 8px #00000045; */
 }
 
 
@@ -502,9 +503,8 @@ i.material-icons {
 	font-weight: 700;
 }
 
-.mu-header-featured-content p{
-	color: #fff;
-}
+/* .mu-header-featured-content p{ */
+/* } */
 
 .mu-app-download-area {
 	display: inline;

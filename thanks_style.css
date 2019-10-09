@@ -4,7 +4,7 @@ html, body{
 }
 
 .mu-logo {
-	color: #fff;
+	color: var(--main-color-1);
 	font-size: 50px;
 	display: inline-block;
 	font-weight: 700;
@@ -21,6 +21,7 @@ html, body{
 #mu-header {
     min-height: calc(100% - 82px);
     position: relative;
+    padding: 0px;
 }
 
 .mu-header-overlay{
