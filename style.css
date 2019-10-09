@@ -1586,6 +1586,16 @@ div#accordion {
 	padding: 15px;
 }
 
+.panel-heading {
+	padding: 15px;
+	color: #2f2f2f;
+}
+
+.panel-heading p{
+	color: #2f2f2f !important;
+	margin: 0px;
+}
+
 .panel-title {
 	font-weight: 100;
 }
