@@ -1837,6 +1837,13 @@ form .mu-all-btn:hover{
 	width: 100%;
 }
 
+#signup {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
 .mu-contact-area {
 	display: inline;
 	float: left;
@@ -2328,7 +2335,6 @@ form .mu-all-btn:hover{
 	.mu-google-btn,
 	.mu-windows-btn {
 		margin-bottom: 10px;
-		padding-top: 0px;
 	}
 
 	.mu-menu-btn {
