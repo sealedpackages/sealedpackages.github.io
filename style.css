@@ -1832,12 +1832,12 @@ img.option-img {
 
 form .mu-all-btn{
 	background-color: var(--main-color-1);
+	border: 2px solid var(--main-color-1);
 }
 
 form .mu-all-btn:hover{
 	color: var(--main-color-1);
 	background-color: white;
-	border: 2px solid var(--main-color-1);
 }
 
 #mu-contact a{
@@ -2091,12 +2091,13 @@ form .mu-all-btn:hover{
 	margin: 70px 0;
 	box-shadow: 0px 23px 80px 0px #8576ff, 2px 2px 5px 0px #4c4c4c;
 	transition: all 0.5s;
+		border: 1px solid var(--main-color-1);
+
 }
 
 .signup-btn:hover{
     background-color: white;
 	color: var(--main-color-1);
-	border: 1px solid var(--main-color-1);
 }
 /*--------------------*/
 /* RESPONSIVE STYLE */
