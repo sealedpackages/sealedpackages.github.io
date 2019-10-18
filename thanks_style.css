@@ -8,18 +8,19 @@ html, body{
 	font-size: 50px;
 	display: inline-block;
 	font-weight: 700;
-	margin-top: 35px;
+	margin-top: 20px;
 	font-family: 'comfortaa';
+    margin-left:40px;
 }
 
 
 .mu-logo:hover,
 .mu-logo:focus {
-	color: #fff;
+	color: var(--main-color-1);
 }
 
 #mu-header {
-    min-height: calc(100% - 82px);
+    /*min-height: calc(100% - 82px);*/
     position: relative;
     padding: 0px;
 }
@@ -57,6 +58,10 @@ html, body{
     z-index: 2;
 }
 
+#bottom-wave{
+    bottom:0px;
+    position:absolute;
+}
 
 @media (max-width: 1199px) {
 
@@ -80,7 +85,7 @@ html, body{
 
     .mu-header-featured-area {
         padding-top: 50px;
-    }    
+    }
 
 	.mu-header-featured-content {
 		margin-top: 20px;
@@ -109,8 +114,11 @@ html, body{
 	}
 }
 
-
-
+@media (max-width: 767px){
+    .mu-logo {
+        font-size: 40px;
+    }
+}
 @media(max-width: 640px){
 
     .mu-header-overlay {
@@ -120,14 +128,14 @@ html, body{
     .mu-header-featured-area {
         padding-top: 0px;
     }
-
+/*
     .mu-logo-area{
         text-align: center;
     }
 
     .mu-logo{
         margin:35px auto;
-    }
+    }*/
 
     #mu-header {
         height: auto;
@@ -170,5 +178,9 @@ html, body{
 
     .mu-header-featured-content h3 {
         font-size: 26px;
+    }
+    #bottom-wave{
+
+        position:unset;
     }
 }
