@@ -540,7 +540,7 @@ i.material-icons {
 .mu-apple-btn,
 .mu-google-btn,
 .mu-windows-btn {
-	border: 2px solid #fff;
+	/*border: 2px solid #fff;*/
     border-radius: 50px;
     color: #fff;
     display: inline-block;
@@ -550,9 +550,13 @@ i.material-icons {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+	background-color: var(--main-color-1);
+	border: 2px solid var(--main-color-1);
+
 }
 
-/* .mu-all-btn:hover,
+
+.mu-all-btn:hover,
 .mu-apple-btn:hover,
 .mu-google-btn:hover,
 .mu-windows-btn:hover,
@@ -560,8 +564,10 @@ i.material-icons {
 .mu-apple-btn:focus,
 .mu-google-btn:focus,
 .mu-windows-btn:focus {
-	background-color: #ffffff;
-} */
+	/*background-color: #ffffff;*/
+	color: var(--main-color-1);
+	background-color: white;
+}
 
 .mu-all-btn i,
 .mu-apple-btn i,
@@ -1826,19 +1832,10 @@ img.option-img {
 	font-size: 15px;
 }
 
+
 /*--------------------*/
 /* CONTACT US */
 /*--------------------*/
-
-form .mu-all-btn{
-	background-color: var(--main-color-1);
-	border: 2px solid var(--main-color-1);
-}
-
-form .mu-all-btn:hover{
-	color: var(--main-color-1);
-	background-color: white;
-}
 
 #mu-contact a{
 	color:var(--main-color-1);
@@ -2079,6 +2076,15 @@ form .mu-all-btn:hover{
 .signup-btn-container{
 	text-align: center;
 }
+.signup-btn-container-right-align{
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+.signup-btn-container-right-align .mu-all-btn{
+	margin: auto 0px;
+	height: 45px;
+}
 
 .signup-btn{
 	font-size: 22px;
@@ -2088,10 +2094,11 @@ form .mu-all-btn:hover{
     border-radius: 25px;
     height: 50px;
     line-height: 50px;
-	margin: 70px 0;
+	margin: 70px auto;
 	box-shadow: 0px 23px 80px 0px #8576ff, 2px 2px 5px 0px #4c4c4c;
 	transition: all 0.5s;
-		border: 1px solid var(--main-color-1);
+	border: 1px solid var(--main-color-1);
+	text-transform: uppercase;
 
 }
 
@@ -2449,6 +2456,9 @@ form .mu-all-btn:hover{
 
 @media (max-width: 360px){
 
+	.signup-btn-container-right-align .mu-all-btn {
+	    padding: 11px;
+	}
 
 	.mu-header-featured-content h1 {
 		font-size: 60px;
