@@ -184,6 +184,12 @@ button:focus {
 	outline: none;
 	border: none;
 }
+.sealed-inline {
+	color: #7C4DFF;
+	font-family:'comfortaa';
+	font-weight:700;
+}
+
 
 
 /* ========= BUTTON =========*/
@@ -555,6 +561,17 @@ i.material-icons {
 
 }
 
+.mu-all-btn.green-btn{
+	background-color: var(--green-color-1);
+	border: 2px solid var(--green-color-1);
+}
+
+.mu-all-btn.green-btn.pronounced{
+	box-shadow: 2px 3px 5px 1px #00000040;
+	font-size: 17px;
+	font-weight: 700;
+	/*box-shadow: 0px 23px 80px 0px var(--green-color-1), 2px 2px 5px 0px #4c4c4c */
+}
 
 .mu-all-btn:hover,
 .mu-apple-btn:hover,
@@ -567,6 +584,11 @@ i.material-icons {
 	/*background-color: #ffffff;*/
 	color: var(--main-color-1);
 	background-color: white;
+}
+
+.mu-all-btn.green-btn:hover{
+	color: var(--green-color-1);
+	box-shadow: 0px 21px 69px 0px var(--green-color-1), 2px 2px 5px 0px #4c4c4c
 }
 
 .mu-all-btn i,
@@ -1861,11 +1883,18 @@ img.option-img {
 	width: 100%;
 }
 
+.contact-footer-area{
+	margin-top:80px;
+	padding:0px;
+}
+
 .mu-contact-area {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 0px 0 50px;
+	/*padding: 0px 0 50px;*/
+	padding: 0px 0 0px;
+
 }
 
 .mu-contact-header {
@@ -2041,7 +2070,7 @@ img.option-img {
 
 
 #mu-footer {
-	background-color: var(--dark-background-1);
+	background-color: var(--main-color-1);
 	display: inline;
 	float: left;
 	width: 100%;
