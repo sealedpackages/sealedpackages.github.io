@@ -47,9 +47,10 @@ body {
 	letter-spacing: 0.5px;
 	line-height: 1.5;
 	color: #1c1b1b;
-	/* font-family: 'roboto'; */
-	font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 100;
+	/* font-family: 'roboto';
+	font-family: 'Hind Siliguri', sans-serif; */
+	font-family: 'Muli', sans-serif;
+    font-weight: 300;
 }
 
 ul {
@@ -93,12 +94,12 @@ h1 {
 h2 {
 	font-size: 38px;
 	line-height: 1.13;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 h3 {
 	font-size: 21px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 26px;
     color: #616161;
 
@@ -558,6 +559,7 @@ i.material-icons {
     transition: all 0.5s;
 	background-color: var(--main-color-1);
 	border: 2px solid var(--main-color-1);
+	font-weight: 400;
 
 }
 
@@ -1643,7 +1645,7 @@ div#accordion {
 }
 
 .panel-title {
-	font-weight: 100;
+	font-weight: 300;
 	width: 100%;
 	line-height: 22px;
 }
@@ -2116,7 +2118,7 @@ img.option-img {
 }
 
 .signup-btn{
-	font-size: 22px;
+	font-size: 20px;
     background-color: var(--main-color-1);
     width: 180px;
     color: white;
