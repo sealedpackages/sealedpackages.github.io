@@ -1892,6 +1892,10 @@ img.option-img {
 	padding:0px;
 }
 
+.z-index-1{
+	z-index: 1;
+}
+
 .mu-contact-area {
 	display: inline;
 	float: left;
