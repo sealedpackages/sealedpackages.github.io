@@ -393,10 +393,11 @@ button:focus {
 }
 
 i.material-icons {
-    font-size: 40px;
+    font-size: 30px;
 	color: var(--green-color-1);
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
 }
 
 .panel-default{
@@ -1480,12 +1481,12 @@ i.material-icons {
     font-size: 15px;
 	margin: 30px 0px 0px 30px;
 }
-
+.contact-footer-area a,
 .faq-footer a{
 	color:var(--main-color-1);
-	font-weight: 100;
 }
 
+.contact-footer-area a:hover,
 .faq-footer a:hover{
 	text-decoration: underline;
 }
@@ -2118,7 +2119,8 @@ img.option-img {
 }
 
 .signup-btn{
-	font-size: 20px;
+	font-size: 17px;
+	font-weight: 700;
     background-color: var(--main-color-1);
     width: 180px;
     color: white;
