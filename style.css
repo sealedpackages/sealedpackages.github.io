@@ -1771,7 +1771,8 @@ img.option-img {
 }
 
 .pricing-section-gradient{
-	background-image: linear-gradient(#ffffff00, #7c4dff2b);
+	/*background-image: linear-gradient(#ffffff00, #7c4dff2b);*/
+	background-image: linear-gradient(#ffffff00, #7c4dff54 65%, #ffffff);
 	position: absolute;
 	bottom: 0px;
 	height: 300px;
