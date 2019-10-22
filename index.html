@@ -45,7 +45,6 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148913805-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-
 		function gtag() {
 			dataLayer.push(arguments);
 		}
@@ -225,8 +224,11 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="value-feature-area" id='messages-img'>
+						<!-- <div class="value-feature-area" id='messages-img'>
 							<img src='assets/images/Messages.png'>
+						</div> -->
+						<div id='messages-img' class="value-feature-area mobile-app-mockup">
+							<img src='assets/images/Overview Screen.png'>
 						</div>
 					</div>
 					<div class="row mobile-only">
@@ -237,7 +239,7 @@
 										<div class='sec1-value'>
 												<i class="material-icons">message</i>
 											<div class='sec1-value-txt'>
-												<h4>Real-time package management</h4>
+												<h4>Real-time management</h4>
 												<p>Live tracking of your items, from opening to ordering. Easily reroute an item from any carrier, change delivery time, or select a convienent pickup point.
 													</p>
 											</div>
@@ -259,7 +261,7 @@
 
 				<div class="row">
 
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="value-feature-area mobile-app-mockup">
 							<img src='assets/images/Routing Screen.png'>
 						</div>
@@ -269,7 +271,7 @@
 							<!-- Start Feature Content -->
 							<div class="mu-feature-content">
 								<div class="row">
-									<div class="col-md-2">
+									<div class="col-md-0">
 									</div>
 
 									<div class="col-md-10">
@@ -720,7 +722,7 @@
 
 										<div class="col-md-6 z-index-1">
 											<div class="mu-contact-right-single">
-												<div class="mu-icon"><i class="fa fa-envelope"></i></div>
+												<div class="mu-icon"><i class="fa fa-envelope icon-centering"></i></div>
 												<p>Reach us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a> </p>
 												<!-- <p>support@domain.com</p> -->
 											</div>
@@ -766,7 +768,6 @@
 				</p>
 			</div>
 		</div>
-
 	</footer> -->
 	<!-- End footer -->
 
@@ -786,16 +787,11 @@
 
 	<!-- Second navbar appears after scrolling down a variable length -->
 	<script type="text/javascript">
-
 		function faq_dropdown(event){
 			console.log(event);
 		}
-
-
 // document.getElementById('wrapper1').onclick = function() {
-
 // var className = ' ' + wrapper1.className + ' ';
-
 // this.className = ~className.indexOf(' active ') ?
 // 					 className.replace(' active ', ' ') :
 // 					 this.className + ' active';
@@ -806,7 +802,6 @@
 	<script type="text/javascript">
 		$(function () {
 			var navMain = $(".navbar-collapse");
-
 			navMain.on("click", "a", null, function () {
 				navMain.collapse('hide');
 			});
