@@ -416,6 +416,13 @@ i.material-icons {
 	border: none;
 	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.08);
 }
+
+span.sealed-name{
+    color: var(--main-color-1);
+    font-family: comfortaa;
+    font-size: inherit;
+    font-weight: 100;
+}
 /*
 .mu-logo {
 	color: #fff;

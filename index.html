@@ -8,7 +8,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>sealed</title>
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/icon" href="assets/images/seal.ico" />
+	<link rel="icon" type="image/png" href="assets/images/s_reg_icon_48.png">
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/99a2c4d702.js" crossorigin="anonymous"></script>
 
@@ -122,8 +122,8 @@
 						No more theft or missed deliveries. Sealed accepts your packages 24/7 and deliveries them on-demand to your home or local access point.
 					</h3>
 					<div class='signup-btn-container'>
-							<a href="#signup"><div class='signup-btn'>Sign Up Now</div></a>
-						</div>
+						<a href="#signup"><div class='signup-btn'>Sign Up Now</div></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -697,20 +697,23 @@
 											<form action=" https://formsubmit.co/signup@sealedpackages.com "
 												method="POST">
 												<div class="form-group">
-
 													<input type="email" class="form-control" placeholder="Email Address"
-														id="email" name="email" required>
+														id="email" name="email" required autocomplete="email">
 												</div>
 
 												<div class="form-group">
-
 													<input class="form-control" type='number' placeholder="Zip Code"
-														id="zipcode" name="zipcode" required>
+														id="zipcode" name="zipcode" required autocomplete="postal-code">
 												</div>
 
-												<button class='mu-all-btn green-btn pronounced' type="submit">Sign Up Now</button>
-												<input type="hidden" name="_next"
-													value="https://sealedpackages.com/signup_thanks.html">
+												<button class='mu-all-btn pronounced' type="button" onclick='check_zip();'>Sign Up Now</button>
+
+												<button class='mu-all-btn' type="submit" id='submit_signup_form' style="display:none;"></button>
+
+												<input type="hidden" name="_next" id='next_page_url' value="https://sealedpackages.com/signup_thanks.html">
+											
+												<!-- <button class='mu-all-btn green-btn pronounced' type="submit">Sign Up Now</button> -->
+												<!-- <input type="hidden" name="_next" value="https://sealedpackages.com/signup_thanks.html"> -->
 											</form>
 
 										</div>
@@ -789,6 +792,35 @@
 	<script type="text/javascript">
 		function faq_dropdown(event){
 			console.log(event);
+		}
+
+		var current_zips = [
+			"94102"
+			,"94103"
+			,"94104"
+			,"94105"
+			,"94107"
+			,"94108"
+			,"94109"
+			,"94110"
+			,"94111"
+			,"94114"
+			,"94115"
+			,"94117"
+			,"94118"
+			,"94123"
+		];
+		function check_zip(){
+
+			const zip = $('#zipcode').val();
+			const email = $('#email').val();
+
+			if (email && zip && current_zips.includes(zip)){
+				const new_url = 'https://app.sealedpackages.com/signup?zip='+zip+'&email='+email;
+				document.getElementById('next_page_url').setAttribute('value', new_url);
+			}
+
+			document.getElementById('submit_signup_form').click();
 		}
 // document.getElementById('wrapper1').onclick = function() {
 // var className = ' ' + wrapper1.className + ' ';
