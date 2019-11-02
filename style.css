@@ -382,6 +382,7 @@ button:focus {
 	display: inline-flex;
 	width: 100%;
 	margin-bottom: 10px;
+	position: relative;
 }
 
 .option-content .option-price h2{
@@ -391,7 +392,7 @@ button:focus {
 }
 
 .option-content .option-price p{
-    margin: 20px 5px 0px;
+    margin: 0px 5px 0px;
 	font-weight: 600;
 }
 
@@ -1708,9 +1709,9 @@ section#pricing-section {
 }
 
 .option-content {
-    width: 33%;
+    width: 40%;
 	text-align: center;
-	height: 400px;
+	height: 450px;
 }
 
 .option-background {
@@ -1723,6 +1724,10 @@ section#pricing-section {
 	position: relative;
 	padding: 15px 20px;
 	text-align: left;
+
+	height: calc(100%);
+	margin-top: 0px;
+
 }
 
 .mobile-app-mockup{
@@ -1828,7 +1833,7 @@ img.option-img {
 
 .option-content p.option-sub-text{
     font-size: 12px;
-    margin: -10px 10px -20px;
+    margin: -12px 10px -20px;
 	}
 
 .option-price-outline.coming-soon{
@@ -2138,6 +2143,9 @@ img.option-img {
 .signup-btn-container-right-align{
 	margin-left: auto;
 	margin-right: 0px;
+	position: absolute;
+    right: 0px;
+    bottom: 5px;
 }
 
 .signup-btn-container-right-align .mu-all-btn{
@@ -2223,6 +2231,7 @@ img.option-img {
 
 	.option-content {
 		width: 100%;
+		margin: 0px auto !important;
 	}
 
 	.sealed-mockups-area {
@@ -2310,6 +2319,18 @@ img.option-img {
 }
 
 @media (max-width: 767px) {
+
+.signup-btn-container-right-align .mu-all-btn {
+    margin: auto 0px;
+    height: 35px;
+    width: 70px;
+	text-align: center;
+	padding: 6px 0px;
+}
+
+	.option-background.option-main {
+		margin-top: 10px;
+	}
 	#mu-header{
 		padding: 20px 0 0 20px;
 	}
@@ -2398,7 +2419,7 @@ img.option-img {
 
 
 	.option-content h2 {
-		font-size: 28px;
+		font-size: 22px;
 		margin-top: 10px;
 	}
 
@@ -2528,9 +2549,9 @@ img.option-img {
 
 @media (max-width: 360px){
 
-	.signup-btn-container-right-align .mu-all-btn {
-	    padding: 11px;
-	}
+	/* .signup-btn-container-right-align .mu-all-btn { */
+	    /* padding: 11px; */
+	/* } */
 
 	.mu-header-featured-content h1 {
 		font-size: 60px;
