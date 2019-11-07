@@ -270,7 +270,7 @@ button:focus {
 	width: 100%;
 	background-position: center center;
 	background-attachment: fixed;
-	padding: 30px 0px 0px 40px;
+	padding: 30px 40px 0px 40px;
 
 }
 
@@ -321,8 +321,6 @@ button:focus {
 	color: var(--main-color-1);
 }
 
-
-
 .navbar-toggle{
     background-color: transparent;
     background-image: none;
@@ -332,6 +330,21 @@ button:focus {
     background-color: #fff;
 
 }
+.navbar-login-container{
+	display:flex;
+	height: 50px;
+	float: right;
+
+}
+.navbar-login {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 15px;
+	font-size: 19px;
+	font-weight: 600;
+	color: var(--main-color-1);
+}
+
 
 .sec-title{
     margin-bottom: 15px;
@@ -2332,11 +2345,14 @@ img.option-img {
 		margin-top: 10px;
 	}
 	#mu-header{
-		padding: 20px 0 0 20px;
+		padding: 20px 20px 0 20px;
 	}
 	.navbar-brand{
 		font-size: 40px;
 		padding: 15px 5px;
+	}
+	.navbar-login{
+		margin-right: 5px;
 	}
 	section#header-section {
 		padding-bottom: 0px;
