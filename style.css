@@ -188,7 +188,7 @@ button:focus {
 .sealed-inline {
 	color: #7C4DFF;
 	font-family:'comfortaa';
-	font-weight:700;
+	font-weight:200;
 }
 
 
@@ -312,7 +312,7 @@ button:focus {
 	/* color: #fff; */
 	font-size: 50px;
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 200;
 	font-family: 'comfortaa';
 
 }
