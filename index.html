@@ -679,23 +679,22 @@
 										<div class="mu-contact-left">
 											<div id="form-messages"></div>
 
-											<form action=" https://formsubmit.co/signup@sealedpackages.com "
-												method="POST">
+											<form onsubmit="check_zip(); return false;">
 												<div class="form-group">
 													<input type="email" class="form-control" placeholder="Email Address"
 														id="email" name="email" required autocomplete="email">
 												</div>
 
 												<div class="form-group">
-													<input class="form-control" type='number' placeholder="Zip Code"
+													<input class="form-control" type='number' placeholder="Zip Code" autocomplete="postal-code"
 														id="zipcode" name="zipcode" required autocomplete="postal-code">
 												</div>
 
-												<button class='mu-all-btn pronounced' type="button" onclick='check_zip();'>Sign Up Now</button>
+												<button class='mu-all-btn pronounced' type="submit">Sign Up Now</button>
 
 												<button class='mu-all-btn' type="submit" id='submit_signup_form' style="display:none;"></button>
 
-												<input type="hidden" name="_next" id='next_page_url' value="https://sealedpackages.com/signup_thanks.html">
+												<!-- <input type="hidden" name="_next" id='next_page_url' value="https://sealedpackages.com/signup_thanks.html"> -->
 											
 												<!-- <button class='mu-all-btn green-btn pronounced' type="submit">Sign Up Now</button> -->
 												<!-- <input type="hidden" name="_next" value="https://sealedpackages.com/signup_thanks.html"> -->
@@ -775,46 +774,36 @@
 
 	<!-- Second navbar appears after scrolling down a variable length -->
 	<script type="text/javascript">
-		function faq_dropdown(event){
-			console.log(event);
-		}
+	function faq_dropdown(event){
+		console.log(event);
+	}
 
-		var current_zips = [
-			"94102"
-			,"94103"
-			,"94104"
-			,"94105"
-			,"94107"
-			,"94108"
-			,"94109"
-			,"94110"
-			,"94111"
-			,"94114"
-			,"94115"
-			,"94117"
-			,"94118"
-			,"94123",
-			"94133",
-			"94131"
-		];
-		function check_zip(){
+	function check_zip(){
 
-			const zip = $('#zipcode').val();
-			const email = $('#email').val();
+		const new_zip = $('#zipcode').val();
+		const new_email = $('#email').val();
 
-			if (email && zip && current_zips.includes(zip)){
-				const new_url = 'https://app.sealedpackages.com/signup?zip='+zip+'&email='+email;
-				document.getElementById('next_page_url').setAttribute('value', new_url);
-			}
+		if (new_email && new_zip){
 
-			document.getElementById('submit_signup_form').click();
-		}
-// document.getElementById('wrapper1').onclick = function() {
-// var className = ' ' + wrapper1.className + ' ';
-// this.className = ~className.indexOf(' active ') ?
-// 					 className.replace(' active ', ' ') :
-// 					 this.className + ' active';
-// }
+			var formData = new FormData();
+			var request = new XMLHttpRequest();
+
+			formData.append("zipcode",  new_zip);
+			formData.append("email", new_email);
+
+			request.onload = function() {
+				resp_obj = JSON.parse(request.response);
+				console.log(resp_obj);
+				if (resp_obj.next){
+					window.location.href = resp_obj.next;
+				}
+			};
+
+			url = "https://app.sealedpackages.com/landing_page_signup";
+			request.open("POST", url);
+			request.send(formData);
+		} 
+	}
 	</script>
 
 	<!-- close mobile navbar after user clicks on item-->
