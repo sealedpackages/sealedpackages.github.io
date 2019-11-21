@@ -14,7 +14,9 @@
 
 	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- Bootstrap -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<!-- Slick slider -->
 	<link href="assets/css/slick.css" rel="stylesheet">
 	<!-- Theme color -->
@@ -85,12 +87,33 @@
 
 	<!-- Start Header -->
 	<header id="mu-header" class="white-section" role="banner">
-		<a class="navbar-brand" href="#">sealed</a>
-		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a>
+		<!--<a class="navbar-brand" href="#">sealed</a>
+		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a> -->
+
+
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<a class="navbar-brand" href="http://sealedpackages.com">sealed</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<!-- <li class="nav-item active">
+						<a class="nav-link" href="index.html">Personal Plans<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="properties.html">Communities</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="http://app.sealedpackages.com">Log In</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<!-- End Header -->
 
-	`
 	<!-- Start main content -->
 
 	<main role="main">
@@ -99,7 +122,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="header-feature-area">
-						<div class="col-md-7">
+						<div class="col-lg-7">
 							<h2>
 								All your online orders, exactly when you want them.
 
@@ -113,16 +136,16 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-5">
+						<div class="col-lg-5">
 							<img id="header-diagram" src='assets/images/Frame 14_1.svg'>
 						</div>
 					</div>
 
 
 				</div>
-				<div class="col-md-8 mobile-only">
+				<div class="col-lg-8 mobile-only">
 					<h3>
-						No more theft or missed deliveries. Sealed accepts your packages 24/7 and deliveries them on-demand to your home or local access point.
+						No more theft or missed deliveries. Sealed accepts your packages 24/7 and delivers them on-demand to your home or local access point.
 					</h3>
 					<div class='signup-btn-container'>
 						<a href="#signup" onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Signup_header'});">
@@ -137,23 +160,23 @@
 		<section id="first-feature" class="off-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<div class="mu-feature-area">
 							<!-- Start Feature Content -->
 							<div class="mu-feature-content">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-lg-12">
 										<h2 class="sec-title">Your On-demand Doorman</h2>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-lg-7">
 										<div class="sec1-feature-area">
 											<img src='assets/images/Mac Window.png'>
 										</div>
 									</div>
 
-									<div class="col-md-5">
+									<div class="col-lg-5">
 										<div class="sec1-feature-area">
 											<div class='sec1-value'>
 												<i class="material-icons">shopping_cart</i>
@@ -195,16 +218,16 @@
 		<section id="values-section2" class="white-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-lg-8">
 						<div class="mu-feature-area" style='padding-bottom: 20px;'>
 							<!-- Start Feature Content -->
 							<div class="mu-feature-content">
 								<h2 class="sec-title">Know where your packages are, and decide where they go.</h2>
 								<div class="row desktop-only">
-									<div class="col-md-2">
+									<div class="col-lg-2">
 									</div>
 
-									<div class="col-md-10">
+									<div class="col-lg-10">
 										<div class="sec1-feature-area">
 											<div class='sec1-value'>
 												<i class="material-icons">message</i>
@@ -228,7 +251,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-lg-4">
 						<!-- <div class="value-feature-area" id='messages-img'>
 							<img src='assets/images/Messages.png'>
 						</div> -->
@@ -239,7 +262,7 @@
 					<div class="row mobile-only">
 						<div class="mu-feature-area">
 							<div class="mu-feature-content">
-								<div class="col-md-10">
+								<div class="col-lg-10">
 									<div class="sec1-feature-area" style='padding:0px 15px;'>
 										<div class='sec1-value'>
 											<i class="material-icons">message</i>
@@ -266,26 +289,26 @@
 
 				<div class="row">
 
-					<div class="col-md-4">
+					<div class="col-lg-4">
 						<div class="value-feature-area mobile-app-mockup">
 							<img src='assets/images/Routing Screen.png'>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-lg-8">
 						<div class="mu-feature-area second">
 							<!-- Start Feature Content -->
 							<div class="mu-feature-content">
 								<div class="row">
-									<div class="col-md-0">
+									<div class="col-lg-0">
 									</div>
 
-									<div class="col-md-10">
+									<div class="col-lg-10">
 										<div class="sec1-feature-area">
 											<div class='sec1-value'>
 												<i class="material-icons">settings_application</i>
 												<div class='sec1-value-txt'>
 													<h4>No missed deliveries</h4>
-													<p>At work during the day? Don’t come home to those frustrating “missed” deliviery notes ever again. We work with any carrier, and will get you your package whenever you want it.
+													<p>At work during the day? Don’t come home to those frustrating “missed” delivery notes ever again. We work with any carrier, and will get you your package whenever you want it.
 													</p>
 												</div>
 											</div>
@@ -320,320 +343,265 @@
 		<section id="mu-faq" class="off-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<div class="mu-faq-area">
 							<div class="mu-feature-area">
 								<h2 class="sec-title">Frequently asked questions</h2>
+								<!--<div id="accordion"> -->
 
-								<div class="panel-group" id="accordion">
+									<div class="panel-group" id="accordion">
+										<div id="heading6" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse6" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														How much does it cost?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
 
-									<!-- <div class="panel panel-default">
-											<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">
-
-										<div class="panel-heading">
-											<h4 class="panel-title">
-													What is a Harbor?
-											</h4>
-										</div>
-									</a>
-
-										<div id="collapseTwo" class="panel-collapse collapse">
-											<div class="panel-body">
-												A Harbor is a secure access point near your home where you can choose
-												to have each new package routed to. You're notifed as soon as it's available for pickup.
-												We’re launching new Harbors all the time, so stay updated by signing up
-												below.
+											</a>
+											<div id="collapse6" class="panel-collapse collapse" aria-labelledby="heading6" data-parent="#accordion">
+												<div class="panel-body">
+													Check out our <a href='#pricing-section'>Pricing Section</a> below.
+												</div>
 											</div>
 										</div>
-									</div> -->
 
-									<!-- <div class="panel panel-default">
-											<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseFour">
-
-										<div class="panel-heading">
-											<h4 class="panel-title">
-
-													Where are these Harbors located?
-											</h4>
-										</div>
-									</a>
-
-										<div id="collapseFour" class="panel-collapse collapse">
-											<div class="panel-body">
-												Our Harbors are local businesses in your area that partner with Sealed
-												and are dedicated to the security of your packages.
-												We won't offer Harbors services in your neighborhood until we know you'll
-												have a secure location within a 5-minute walk.
-												Signup below to see which one is closest to you!
+										<div id="heading7" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse7" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														Is this like a PO box or an Amazon locker?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
+											<div id="collapse7" class="panel-collapse collapse" aria-labelledby="heading7" data-parent="#accordion">
+												<div class="panel-body">
+													Sealed is better than a PO box. PO boxes are expensive and don’t provide you with smart notifications or convenient delivery options. Amazon lockers only hold your Amazon orders. They’re often full,
+													can’t accept large packages, and can have limited service hours.
+												</div>
 											</div>
 										</div>
-									</div> -->
 
-									<!-- <div class="panel panel-default">
-											<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseThree">
+										<div id="heading8" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse8" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
 
-										<div class="panel-heading">
-											<h4 class="panel-title">
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-													Should I route my package to a Harbor or order a home handoff?
-											</h4>
-										</div>
-									</a>
+														I’m already offered free shipping from a retailer or shipping
+														company. Why should I pay for this?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-										<div id="collapseThree" class="panel-collapse collapse">
-											<div class="panel-body">
-												You choose! We can bring your packages wherever you want.
-												Picking up your packages at a nearby Harbor is the most affordable,
-												while home handoffs are the most convenient.
-												Both are safe and secure, eliminating the chance of theft.
+											<div id="collapse8" class="panel-collapse collapse" aria-labelledby="heading8" data-parent="#accordion">
+												<div class="panel-body">
+													Unfortunately, free shipping still doesn’t mean it’s safely in your hands at the end of the day. Most failed delivery attempts occur in the middle of the day when you are at work, and package theft
+													is
+													on the rise as online shopping grows. If you’re tired of dealing with missed deliveries or stolen packages, Sealed is a convenient option to get your items securely delivered to you on your
+													schedule.
+												</div>
 											</div>
 										</div>
-									</div> -->
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse6">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
+										<div id="heading9" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse9" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														Do I have to use a specific shipping company?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-													How much does it cost?
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse6" class="panel-collapse collapse">
-											<div class="panel-body">
-												Check out our <a href='#pricing-section'>Pricing Section</a> below.
-												<!-- <br><br>
-												Our main Sealed service is only $9 per month, which includes the first 4
-												packages - all routed to your favorite Harbor.
-												Additional packages handled each month are only $2 each.
-												There is an additional fee to schedule a package handoff at your home,
-												which range from $5-9 depending on package size and time of day.
-												Oversized item fees will also apply to packages greater than 50 lbs or
-												60 inches in size.
-												<br><br>
-												We hate surprise fees as much as you! We'll never charge you before
-												first notifying you of the costs via text or mobile app and getting your
-												confirmation for the additional services.
-												Picking up your package directly from our service centers will always be
-												a free alternative to Harbor routing and home handoffs. -->
+											<div id="collapse9" class="panel-collapse collapse" aria-labelledby="heading9" data-parent="#accordion">
+												<div class="panel-body">
+													No. What makes us different from the lockers or access points provided
+													by shipping companies is that you don't need to navigate separate
+													websites, lookup availability, and update shipping information each
+													time. We accept your packages from anybody and anywhere. Just ship
+													directly to us, and we’ll get it to you.
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse7">
+										<div id="heading13" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse13" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
+														<p>
+															My package is time-sensitive. Will using Sealed slow down delivery?
+														</p>
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-													Is this like a PO box or an Amazon locker?
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse7" class="panel-collapse collapse">
-											<div class="panel-body">
-												Sealed is better than a PO box. PO boxes are expensive and don’t provide you with smart notifications or convenient delivery options. Amazon lockers only hold your Amazon orders. They’re often full,
-												can’t accept large packages, and can have limited service hours.
-
-											</div>
-										</div>
-									</div>
-
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse8">
-
-											<div class="panel-heading">
-												<h4 class="panel-title">
-
-													I’m already offered free shipping from a retailer or shipping
-													company. Why should I pay for this?
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse8" class="panel-collapse collapse">
-											<div class="panel-body">
-												Unfortunately, free shipping still doesn’t mean it’s safely in your hands at the end of the day. Most failed delivery attempts occur in the middle of the day when you are at work, and package theft is
-												on the rise as online shopping grows. If you’re tired of dealing with missed deliveries or stolen packages, Sealed is a convenient option to get your items securely delivered to you on your schedule.
+											<div id="collapse13" class="panel-collapse collapse" aria-labelledby="heading13" data-parent="#accordion">
+												<div class="panel-body">
+													No. Your package is available for pickup or handoff the same day that we receive it. Sealed protects your package against thefts, and delays from missed deliveries, so you’ll always receive your
+													items
+													securely and reliably.
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse9">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
+										<div id="heading12" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse12" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-													Do I have to use a specific shipping company?
-												</h4>
-											</div>
-										</a>
+														<p>
+															Can I use Sealed to receive packages from a meal-kit service (i.e. Blue Apron, HelloFresh, etc...)?
+														</p>
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-										<div id="collapse9" class="panel-collapse collapse">
-											<div class="panel-body">
-												No. What makes us different from the lockers or access points provided
-												by shipping companies is that you don't need to navigate separate
-												websites, lookup availability, and update shipping information each
-												time. We accept your packages from anybody and anywhere. Just ship
-												directly to us, and we’ll get it to you.
-											</div>
-										</div>
-									</div>
-
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse13">
-											<div class="panel-heading">
-												<h4 class="panel-title">
-
-													<p>
-														My package is time-sensitive. Will using Sealed slow down delivery?
-													</p>
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse13" class="panel-collapse collapse">
-											<div class="panel-body">
-												No. Your package is available for pickup or handoff the same day that we receive it. Sealed protects your package against thefts, and delays from missed deliveries, so you’ll always receive your items
-												securely and reliably.
+											<div id="collapse12" class="panel-collapse collapse" aria-labelledby="heading12" data-parent="#accordion">
+												<div class="panel-body">
+													Yes, we can receive these packages and deliver them same-day to your home.
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse12">
-											<div class="panel-heading">
-												<h4 class="panel-title">
+										<div id="heading15" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse15" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
 
-													<p>
-														Can I use Sealed to receive packages from a meal-kit service (i.e. Blue Apron, HelloFresh, etc...)?
-													</p>
-												</h4>
-											</div>
-										</a>
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-										<div id="collapse12" class="panel-collapse collapse">
-											<div class="panel-body">
-												Yes, we can receive these packages and deliver them same-day to your home.
-											</div>
-										</div>
-									</div>
+														Where is Sealed currently operating?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse15">
+											<div id="collapse15" class="panel-collapse collapse" aria-labelledby="heading15" data-parent="#accordion">
+												<div class="panel-body">
+													We’re rapidly expanding our service in the city of San
+													Francisco.
+													To check if your neighborhood is covered, <a href="#signup">sign up</a> below.
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
-
-													Where is Sealed currently operating?
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse15" class="panel-collapse collapse">
-											<div class="panel-body">
-												We’re rapidly expanding our service in the city of San
-												Francisco.
-												To check if your neighborhood is covered, <a href="#signup">sign up</a> below.
-
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse11">
+										<div id="heading11" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse11" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-													When can I schedule my deliveries?
-												</h4>
-											</div>
-										</a>
+														When can I schedule my deliveries?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-										<div id="collapse11" class="panel-collapse collapse">
-											<div class="panel-body">
-												We currently offer evening deliveries 7 days a week, from 5pm to 11pm. You may select the delivery window that fits best with your schedule.
+											<div id="collapse11" class="panel-collapse collapse" aria-labelledby="heading11" data-parent="#accordion">
+												<div class="panel-body">
+													We currently offer evening deliveries 7 days a week, from 5pm to 11pm. You may select the delivery window that fits best with your schedule.
 
 
-											</div>
-										</div>
-									</div>
-
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse16">
-
-											<div class="panel-heading">
-												<h4 class="panel-title">
-
-													I have ordered multiple packages. Can I have them brought to me all at once to save on delivery costs? </h4>
-											</div>
-										</a>
-
-										<div id="collapse16" class="panel-collapse collapse">
-											<div class="panel-body">
-												Yes, and you can save money by grouping multiple packages into one <b>scheduled delivery trip</b>. Please check out the <a href='#pricing-section'>Pricing Section</a> below for more information.
-
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse18">
+										<div id="heading16" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse16" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
+												<div class="panel-heading">
+													<h4 class="panel-title">
 
-													What is a scheduled delivery trip? </h4>
-											</div>
-										</a>
+														I have ordered multiple packages. Can I have them brought to me all at once to save on delivery costs? </h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
 
-										<div id="collapse18" class="panel-collapse collapse">
-											<div class="panel-body">
+											<div id="collapse16" class="panel-collapse collapse" aria-labelledby="heading16" data-parent="#accordion">
+												<div class="panel-body">
+													Yes, and you can save money by grouping multiple packages into one <b>scheduled delivery trip</b>. Please check out the <a href='#pricing-section'>Pricing Section</a> below for more information.
 
-												A <b>delivery trip</b> is when you schedule a time for Sealed to come to your door and hand your packages to you. The cost of each <b>delivery trip</b> is independent of the number of packages that we are bringing. For instance, if we bring three of your packages at once, that delivery trip will only cost you $3.50 if you're a Sealed Member or $5 if you're on Anyone Pricing.
-
-											</div>
-										</div>
-									</div>
-
-									<div class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse17">
-
-											<div class="panel-heading">
-												<h4 class="panel-title">
-
-													How do I get started?
-												</h4>
-											</div>
-										</a>
-
-										<div id="collapse17" class="panel-collapse collapse">
-											<div class="panel-body">
-												Start by <a href="#signup">signing up below</a>. Once you have made an account and picked a plan, you’re ready to start having orders shipped to the address shown in the app. We’ll take care of the rest by notifying you when
-												we receive a package and providing you with convenient delivery scheduling options.
-
+												</div>
 											</div>
 										</div>
+
+										<div id="heading18" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse18" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+
+												<div class="panel-heading">
+													<h4 class="panel-title">
+
+														What is a scheduled delivery trip? </h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
+
+											<div id="collapse18" class="panel-collapse collapse" aria-labelledby="heading18" data-parent="#accordion">
+												<div class="panel-body">
+
+													A <b>delivery trip</b> is when you schedule a time for Sealed to come to your door and hand your packages to you. The cost of each <b>delivery trip</b> is independent of the number of packages that
+													we are bringing. For instance, if we bring three of your packages at once, that delivery trip will only cost you $3.50 if you're a Sealed Member or $5 if you're on Anyone Pricing.
+
+												</div>
+											</div>
+										</div>
+
+										<div id="heading17" class="panel panel-default">
+											<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse17" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+
+												<div class="panel-heading">
+													<h4 class="panel-title">
+
+														How do I get started?
+													</h4>
+													<i class="fas fa-chevron-right"></i>
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</a>
+
+											<div id="collapse17" class="panel-collapse collapse" aria-labelledby="heading17" data-parent="#accordion">
+												<div class="panel-body">
+													Start by <a href="#signup">signing up below</a>. Once you have made an account and picked a plan, you’re ready to start having orders shipped to the address shown in the app. We’ll take care of the
+													rest by notifying you when
+													we receive a package and providing you with convenient delivery scheduling options.
+
+												</div>
+											</div>
+										</div>
+
+
 									</div>
 
 
+									<p class='faq-footer'>
+										Not seeing an answer to your question here?
+										Email us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a>.
+									</p>
 								</div>
 
-								<p class='faq-footer'>
-									Not seeing an answer to your question here?
-									Email us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a>.
-								</p>
 							</div>
-
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 		<!-- End FAQ -->
 
@@ -643,13 +611,13 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<h2 class="sec-title">Simple pricing</h2>
 						<h3 class="sec-subtitle">Offering one-time and subscription services</h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<div class="pricing-card-area">
 
 							<div class="pricing-content">
@@ -753,8 +721,8 @@
 		<section id="signup" class="white-section">
 			<div class="container">
 				<div class="row">
-					<!--<div class="col-md-8">-->
-					<div class="col-md-12">
+					<!--<div class="col-lg-8">-->
+					<div class="col-lg-12">
 						<div class="mu-feature-area">
 
 							<h2 class="sec-title">Join <b class="sealed-inline">sealed</b> today!</h2>
@@ -766,14 +734,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-lg-12">
 						<div class="mu-contact-area">
 
 							<!-- Start Contact Content -->
 							<div id="contact" class="mu-contact-content">
 								<div class="row">
 
-									<div class="col-md-12">
+									<div class="col-lg-12">
 										<div class="mu-contact-left">
 											<div id="form-messages"></div>
 
@@ -800,17 +768,17 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-12 contact-footer-area">
+									<div class="col-lg-12 contact-footer-area">
 										<!--<div class="mu-contact-right">-->
 
-										<div class="col-md-6 z-index-1">
+										<div class="col-lg-6 z-index-1">
 											<div class="mu-contact-right-single">
 												<div class="mu-icon"><i class="fa fa-envelope icon-centering"></i></div>
 												<p>Reach us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a> </p>
 												<!-- <p>support@domain.com</p> -->
 											</div>
 										</div>
-										<div class="col-md-6">
+										<div class="col-lg-6">
 											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fsealedpackages%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId"
 												width="450" height="80" style="margin: 0px 15px; border:none;overflow:hidden; width: calc(100% - 30px);" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
 											</iframe>
@@ -853,10 +821,13 @@
 
 
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<!-- Bootstrap -->
-	<script src="assets/js/bootstrap.min.js"></script>
+	<!--<script src="assets/js/bootstrap.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Slick slider -->
 	<!-- <script type="text/javascript" src="assets/js/slick.min.js"></script> -->
 	<!-- Ajax contact form  -->
