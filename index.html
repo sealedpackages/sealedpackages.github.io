@@ -858,7 +858,10 @@
 					console.log(resp_obj);
 					if (resp_obj.next){
 						if (refcode){
-							window.location.href = resp_obj.next + '?ref='+refcode
+							if (resp.next.includes('?zip')){
+								window.location.href = resp_obj.next + '&ref='+refcode;
+							}
+							window.location.href = resp_obj.next + '?ref='+refcode;
 						}
 						else{
 							window.location.href = resp_obj.next;
