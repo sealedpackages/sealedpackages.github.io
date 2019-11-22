@@ -310,8 +310,8 @@ b {
 }
 .navbar-light .nav-item{
 	list-style-type: none;
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 17px;
+	font-weight: 600;
 	align-self: flex-end;
 
 
@@ -2469,7 +2469,7 @@ img.option-img {
 	}
 
 	.sec1-feature-area {
-		padding: 20px 0px 0px;
+		padding: 0px 0px 0px;
 	}
 
 	div#accordion {

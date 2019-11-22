@@ -14,8 +14,8 @@
 .property-feature {
 	padding-left: 30px;
     padding-right: 30px;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     flex-grow: 1;
     width: 33%;
@@ -26,6 +26,10 @@
 .property-text{
 	font-size: 17px;
 	color:#444;
+}
+
+.property-text a{
+	color:var(--main-color-1);
 }
 
 .property-feature-section {
