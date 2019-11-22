@@ -861,7 +861,9 @@
 							if (resp_obj.next.includes('?zip')){
 								window.location.href = resp_obj.next + '&ref='+refcode;
 							}
-							window.location.href = resp_obj.next + '?ref='+refcode;
+							else{
+								window.location.href = resp_obj.next + '?ref='+refcode;
+							}
 						}
 						else{
 							window.location.href = resp_obj.next;
