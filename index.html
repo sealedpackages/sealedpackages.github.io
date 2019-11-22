@@ -105,7 +105,7 @@
 						<a class="nav-link" href="/properties">Properties</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://app.sealedpackages.com">Log In</a>
+						<a class="nav-link" id='app_link' href="https://app.sealedpackages.com">Log In</a>
 					</li>
 
 				</ul>
@@ -857,7 +857,12 @@
 					resp_obj = JSON.parse(request.response);
 					console.log(resp_obj);
 					if (resp_obj.next){
-						window.location.href = resp_obj.next;
+						if (refcode){
+							window.location.href = resp_obj.next + '?ref='+refcode
+						}
+						else{
+							window.location.href = resp_obj.next;
+						}
 					}
 				};
 
@@ -877,6 +882,8 @@
 			});
 		});
 
+		var refcode;
+
 		function getUrlVars() {
 			var vars = {};
 			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -889,11 +896,13 @@
 		console.log(urlvars);
 		if (urlvars['ref']){
 			console.log('Got referral code!');
+			refcode = urlvars['ref']
 			if (typeof(Storage) !== "undefined") {
-				localStorage.setItem("refcode", urlvars['ref']);
+				localStorage.setItem("refcode", refcode);
+				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
 			} 
 		}
-		
+
 	</script>
 
 
