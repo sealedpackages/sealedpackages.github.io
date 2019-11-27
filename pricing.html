@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Sealed Pricing</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/s_reg_icon_48.png">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/99a2c4d702.js" crossorigin="anonymous"></script>
+
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- Bootstrap -->
+	<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Slick slider -->
+	<link href="assets/css/slick.css" rel="stylesheet">
+	<!-- Theme color -->
+	<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Main Style -->
+	<link href="style.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa" />
+
+	<!-- Open Sans for body and title font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148913805-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-148913805-1');
+	</script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2260245104084455');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2260245104084455&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+	<!-- Start Header -->
+	<header id="mu-header" class="white-section" role="banner">
+		<!--<a class="navbar-brand" href="#">sealed</a>
+		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a> -->
+
+
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<a class="navbar-brand" href="https://sealedpackages.com">sealed</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Personal Plans<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/properties">Properties</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id='app_link' href="https://app.sealedpackages.com">Log In</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start main content -->
+
+	<main role="main">
+
+
+		<!-- Start Pricing -->
+		<section id="pricing-section" style="margin-top: 40px;" >
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="sec-title">Pricing Details</h2>
+						<h3 class="sec-subtitle">Pay-as-you-go and subscription personal plans</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="pricing-card-area">
+
+							<div class="pricing-content">
+								<div class='option-content' style="margin-left:10%;">
+									<div class='option-background'>
+										<!-- <img class="option-img" src="assets/images/seal_bronze.png"> -->
+										<h2 class="option-title">Anyone Pricing</h2>
+
+										<div class='option-price'>
+											<!-- <h2>$5</h2> -->
+											<p>NO COMMITMENT</p>
+											<div class='signup-btn-container-right-align'>
+												<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Order'});">Order</a>
+											</div>
+										</div>
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">$2.50 per package received</p>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">$5 per scheduled delivery trip</p>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">3-hour delivery window</p>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">10-day package storage</p>
+										</div>
+
+										<!--<div class='signup-btn-container'>
+											<a href="#signup" class='mu-all-btn'>Get Packages</a>
+										</div> -->
+									</div>
+								</div>
+								<div class='option-content' style="margin-right:10%;">
+									<div class='option-background option-main'>
+										<h2 class="option-title">Sealed Member</h2>
+										<div class='option-price'>
+											<!-- <h2>$9</h2> -->
+											<p>$15 / MONTH</p>
+											<div class='signup-btn-container-right-align'>
+												<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Join'});">Join</a>
+											</div>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<div style="display: block;">
+
+												<p class="option-text">$0 for first 10 packages </p>
+												<p class='option-sub-text'> +$2 each additional package</p>
+											</div>
+
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">$3.50 per scheduled delivery trip</p>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">1-hour delivery window</p>
+										</div>
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+											<p class="option-text">30-day package storage</p>
+										</div>
+
+
+										<div class='option-feature'>
+											<img src='assets/images/feature-check.png'>
+
+											<div style="display: block;">
+
+												<p class="option-text">Dedicated mailbox</p>
+												<p class='option-sub-text'>Paper mail received for free</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End PRicing -->
+
+
+		<!-- Start Pricing -->
+		<section id="pricing-section" class='off-section' style='padding: 30px 0px 60px;'>
+			<!-- <div class='pricing-section-gradient'></div> -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="sec-title" style='margin-bottom: 10px;'>Oversized Fees</h2>
+						<h3 class="sec-subtitle" style='font-size: 20px;'>Larger packages require extra storage space and delivery effort, but we've got you covered!</h3>
+					</div>
+				</div>
+				<div class="row" style='margin-top: 20px;'> 
+					<div class="col-lg-5">
+							<img src='assets/images/purple_oversize.png'>
+					</div>
+					<div class="col-lg-7">
+						<div class="oversize-table">
+
+							<style type="text/css">
+								.tg {
+									border-collapse: collapse;
+									border-spacing: 0;
+								}
+
+								.tg td {
+									font-family: Arial, sans-serif;
+									font-size: 14px;
+									padding: 10px 5px;
+									border-style: solid;
+									border-width: 0px;
+									overflow: hidden;
+									word-break: normal;
+									border-top-width: 1px;
+									border-bottom-width: 1px;
+									border-color: black;
+								}
+
+								.tg th {
+									font-family: Arial, sans-serif;
+									font-size: 14px;
+									font-weight: normal;
+									padding: 10px 5px;
+									border-style: solid;
+									border-width: 0px;
+									overflow: hidden;
+									word-break: normal;
+									border-bottom-width: 1px;
+									border-color: black;
+								}
+
+								.tg .tg-73oq {
+									border-color: #000000;
+									text-align: center;
+									vertical-align: top
+								}
+
+								.tg .tg-0lax {
+									text-align: center;
+									vertical-align: top;
+									padding: 10px 30px;
+    								font-size: 16px;
+								}
+								.last-row td.tg-0lax {
+									border-bottom: 0px;
+								}
+							</style>
+							<table class="tg oversize-pricing-table">
+								<tr class='first-row'>
+									<th class="tg-73oq"></th>
+									<th class="tg-73oq">Weight</th>
+									<th class="tg-73oq"></th>
+									<th class="tg-73oq">Size (W+L+H)</th>
+									<th class="tg-73oq">Price</th>
+								</tr>
+								<tr>
+									<td class="tg-0lax"><span style="font-weight:bold">Level 1</span></td>
+									<td class="tg-0lax">40-49 lbs</td>
+									<td class="tg-0lax">or</td>
+									<td class="tg-0lax">60-79 in</td>
+									<td class="tg-0lax">$6</td>
+								</tr>
+								<tr>
+									<td class="tg-0lax"><span style="font-weight:700">Level 2</span></td>
+									<td class="tg-0lax">50-59 lbs</td>
+									<td class="tg-0lax">or</td>
+									<td class="tg-0lax">80-99 in</td>
+									<td class="tg-0lax">$12</td>
+								</tr>
+								<tr class='last-row'>
+									<td class="tg-0lax"><span style="font-weight:700">Level 3</span></td>
+									<td class="tg-0lax">60+ lbs</td>
+									<td class="tg-0lax">or</td>
+									<td class="tg-0lax">100+ in</td>
+									<td class="tg-0lax">$28</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End PRicing -->
+
+
+		<!-- Start Contact -->
+		<section id="signup" class="white-section">
+			<div class="container">
+				<div class="row">
+					<!--<div class="col-lg-8">-->
+					<div class="col-lg-12">
+						<div class="mu-feature-area">
+
+							<h2 class="sec-title">Join <b class="sealed-inline">sealed</b> today!</h2>
+							<!--<h3 class="sec-subtitle">Interested in joining? Sign up now and we'll notify you as soon as
+							we're online in your area</h3> -->
+							<h3 class="sec-subtitle">Start getting your orders exactly when you want them by signing up <b>today!</b></h3>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="mu-contact-area">
+
+							<!-- Start Contact Content -->
+							<div id="contact" class="mu-contact-content">
+								<div class="row">
+
+									<div class="col-lg-12">
+										<div class="mu-contact-left">
+											<div id="form-messages"></div>
+
+											<form onsubmit="check_zip(); return false;">
+												<div class="form-group">
+													<input type="email" class="form-control" placeholder="Email Address"
+														id="email" name="email" required autocomplete="email">
+												</div>
+
+												<div class="form-group">
+													<input class="form-control" type='number' placeholder="Zip Code" autocomplete="postal-code"
+														id="zipcode" name="zipcode" required autocomplete="postal-code">
+												</div>
+
+												<button class='mu-all-btn pronounced' type="submit">Sign Up Now</button>
+
+												<button class='mu-all-btn' type="submit" id='submit_signup_form' style="display:none;"></button>
+
+											</form>
+
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 contact-footer-area">
+										<!--<div class="mu-contact-right">-->
+
+										<div class="col-lg-6 z-index-1">
+											<div class="mu-contact-right-single">
+												<div class="mu-icon"><i class="fa fa-envelope icon-centering"></i></div>
+												<p>Reach us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a> </p>
+												<!-- <p>support@domain.com</p> -->
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fsealedpackages%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId"
+												width="450" height="80" style="margin: 0px 15px; border:none;overflow:hidden; width: calc(100% - 30px);" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+											</iframe>
+										</div>
+
+										<!--</div> -->
+									</div>
+
+								</div>
+							</div>
+							<!-- End Contact Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+	</main>
+
+	<!-- End main content -->
+
+	<div id='bottom-wave'>
+		<img src='assets/images/Wave.png'>
+	</div>
+
+
+	<!-- Start footer -->
+	<!--<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+			<div class="mu-footer-area">
+				<p class="mu-copy-right">
+					© 2019 Sealed Technologies Inc.
+				</p>
+			</div>
+		</div>
+	</footer> -->
+	<!-- End footer -->
+
+
+	<!-- jQuery library -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
+	<!--<script src="assets/js/bootstrap.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Slick slider -->
+	<!-- <script type="text/javascript" src="assets/js/slick.min.js"></script> -->
+	<!-- Ajax contact form  -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	<!-- Second navbar appears after scrolling down a variable length -->
+	<script type="text/javascript">
+		function faq_dropdown(event){
+			console.log(event);
+		}
+
+		function check_zip(){
+
+			const new_zip = $('#zipcode').val();
+			const new_email = $('#email').val();
+
+			if (new_email && new_zip){
+
+				var formData = new FormData();
+				var request = new XMLHttpRequest();
+
+				formData.append("zipcode",  new_zip);
+				formData.append("email", new_email);
+
+				request.onload = function() {
+					resp_obj = JSON.parse(request.response);
+					console.log(resp_obj);
+					if (resp_obj.next){
+						if (refcode){
+							if (resp_obj.next.includes('?zip')){
+								window.location.href = resp_obj.next + '&ref='+refcode;
+							}
+							else{
+								window.location.href = resp_obj.next + '?ref='+refcode;
+							}
+						}
+						else{
+							window.location.href = resp_obj.next;
+						}
+					}
+				};
+
+				url = "https://app.sealedpackages.com/landing_page_signup";
+				request.open("POST", url);
+				request.send(formData);
+			}
+		}
+		</script>
+
+	<!-- close mobile navbar after user clicks on item-->
+	<script type="text/javascript">
+		$(function() {
+			var navMain = $(".navbar-collapse");
+			navMain.on("click", "a", null, function() {
+				navMain.collapse('hide');
+			});
+		});
+
+		var refcode;
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+
+		urlvars = getUrlVars();
+		console.log(urlvars);
+		if (urlvars['ref']){
+			console.log('Got referral code!');
+			refcode = urlvars['ref']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("refcode", refcode);
+				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
+			} 
+		}
+
+	</script>
+
+
+</body>
+
+</html>
