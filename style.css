@@ -1924,8 +1924,7 @@ section#values-section2 {
 	height: 100%;
 	margin-top: 0px;
 	padding: 20px;
-	box-shadow: 2px 5px 12px 3px #00000040;
-
+	/* box-shadow: 2px 5px 12px 3px #00000040; */
 }
 
 img.option-img {
@@ -2680,6 +2679,11 @@ table.tg.oversize-pricing-table{
 
 	.oversize-table .tg .tg-0lax {
 		padding: 10px 5px;
+		font-size: 14px;
+    vertical-align: middle;
+	}
+	.oversize-table td.tg-0lax.or {
+		padding: 10px 2px;
 	}
 
 }
