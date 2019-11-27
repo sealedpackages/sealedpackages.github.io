@@ -404,6 +404,10 @@ b {
 	color: #616161;
 }
 
+.sec-subtitle.oversize-subtitle{
+	font-size: 20px;
+}
+
 .sec1-feature-area {
 	padding: 30px 0px;
 	width: 100%;
@@ -1856,6 +1860,23 @@ section#pricing-section {
 	/* color: white; */
 }
 
+section#pricing-section.oversize-section1{
+	margin-top: 40px;
+}
+
+section#oversize-section {
+	/* background-color: var(--main-color-1); */
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+	/* color: white; */
+}
+
 .pricing-content {
 	display: inline-flex;
 	margin-top: 20px;
@@ -2520,6 +2541,14 @@ table.tg.oversize-pricing-table{
 
 @media (max-width: 767px) {
 
+	.navbar-light .navbar-brand {
+		font-size: 40px;
+	}
+
+	section#pricing-section.oversize-section1{
+		margin-top: 0px;
+	}
+
 	.signup-btn-container-right-align .mu-all-btn {
 		margin: auto 0px;
 		height: 35px;
@@ -2533,7 +2562,7 @@ table.tg.oversize-pricing-table{
 	}
 
 	#mu-header {
-		padding: 10px 20px 10px 20px;
+		padding: 0px 20px;
 	}
 
 	.navbar-brand {
@@ -2593,10 +2622,18 @@ table.tg.oversize-pricing-table{
 		margin: 10px 15px 0px;
 	}
 
-	.sec-subtitle {
+	.sec-subtitle{
 		padding: 0px 10px;
 		margin-top: 0px;
-		/*font-size: 17px;*/
+		font-size: 17px;
+		line-height: normal;
+	}
+
+	.sec-subtitle.oversize-subtitle {
+		padding: 0px 10px;
+		margin-top: 0px;
+		font-size: 16px;
+		line-height: normal;
 	}
 
 	.pricing-card-area {
