@@ -101,7 +101,6 @@ h3 {
 	font-weight: 300;
 	line-height: 26px;
 	color: #616161;
-
 }
 
 h4 {
@@ -110,6 +109,7 @@ h4 {
 
 h5 {
 	font-size: 20px;
+	color: #616161;
 }
 
 h6 {
@@ -407,6 +407,26 @@ b {
 .sec-subtitle.oversize-subtitle{
 	font-size: 20px;
 }
+
+h3.package-storage {
+    margin: 10px;
+    text-align: center;
+}
+
+h5.package-storage {
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.package-storage b {
+    color: var(--main-color-1);
+}
+
+#storage-section .col-lg-8 {
+    padding: 35px 15px;
+	}
 
 .sec1-feature-area {
 	padding: 30px 0px;
@@ -1877,6 +1897,20 @@ section#oversize-section {
 	/* color: white; */
 }
 
+
+section#storage-section {
+	/* background-color: var(--main-color-1); */
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	/* color: white; */
+	padding: 30px 0px 60px;
+}
+
 .pricing-content {
 	display: inline-flex;
 	margin-top: 20px;
@@ -2545,10 +2579,37 @@ table.tg.oversize-pricing-table{
 		font-size: 40px;
 	}
 
+	h5.package-storage {
+		font-size: 14px;
+		margin: 0px 10px;
+	}
+
+	h3.package-storage {
+		font-size: 16px;
+		margin: 10px 0px;
+		line-height: normal;
+	}
+
 	section#pricing-section.oversize-section1{
 		margin-top: 0px;
 	}
 
+	.option-feature {
+		margin: 2px 0px;
+	}
+
+	section#storage-section {
+		padding: 0px 0px 60px;
+	}
+
+	#storage-section img {
+		margin-top: 30px;
+	}
+
+	#storage-section .col-lg-8 {
+		padding: 0px 15px;
+	}
+	
 	.signup-btn-container-right-align .mu-all-btn {
 		margin: auto 0px;
 		height: 35px;
