@@ -50,6 +50,7 @@ body {
 	font-family: 'Hind Siliguri', sans-serif; */
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
+	position: relative;
 }
 
 ul {
@@ -1560,6 +1561,70 @@ span.sealed-name {
 }
 
 
+.footer-container{
+	background: var(--main-color-1);
+	color: white;
+	/* position: absolute; */
+    /* bottom: 0px; */
+}
+
+footer.details {
+	padding: 40px 30px 10px;
+}
+
+.social-icons {
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+div.social-icons {
+	margin-top: 12px;
+}
+
+footer .social-icons li {
+	margin-right: 40px;
+	list-style: none;
+}
+
+.social-icons li {
+    float: left;
+    margin-right: 24px;
+    font-size: 24px;
+}
+
+.social-icons li a, .footer-links li a{
+	color:white;
+	font-weight: 400;	
+}
+
+.footer-links li{
+    list-style: none;
+	padding: 0px;
+	font-size: 15px;
+}
+
+.subscribe_form{
+	position: relative;
+}
+
+.subscribe_email{
+	width: calc(100% - 160px);
+	padding: 6px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.subscribe_submit{
+	right: 163px;
+    border-radius: 20px;
+    background-color: var(--main-color-1);
+    border: none;
+    padding: 4px 10px;
+    position: absolute;
+    color: white;
+    top: 3px;
+}
 
 /*--------------------*/
 /* FAQ */
@@ -1567,8 +1632,9 @@ span.sealed-name {
 
 #mu-faq {
 	background-color: #f8f8f8;
-	display: inline;
-	float: left;
+	/* display: inline; */
+	display: block;
+	/* float: left; */
 	position: relative;
 	width: 100%;
 }
@@ -1872,8 +1938,8 @@ section#pricing-section {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-	display: inline;
-	float: left;
+	/* display: inline; */
+	/* float: left; */
 	position: relative;
 	width: 100%;
 	padding-bottom: 40px;
@@ -2121,15 +2187,13 @@ img.option-img {
 #mu-contact {
 	background-color: #fff;
 	display: inline;
-	float: left;
 	width: 100%;
 }
 
 #signup {
 	background-color: #fff;
-	display: inline;
-	float: left;
 	width: 100%;
+	padding: 0px 0px 80px;
 }
 
 .contact-footer-area {
@@ -2574,6 +2638,22 @@ table.tg.oversize-pricing-table{
 }
 
 @media (max-width: 767px) {
+
+	#signup {
+		padding: 0px 0px 50px;
+	}
+
+	.newsletter{
+		margin-top: 12px;
+	}
+
+	.subscribe_email{
+		width: 100%;
+	}
+	
+	.subscribe_submit{
+		right: 3px;
+	}
 
 	.navbar-light .navbar-brand {
 		font-size: 40px;
