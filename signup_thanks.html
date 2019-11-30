@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style='height: 100%;'>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,12 @@
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/99a2c4d702.js" crossorigin="anonymous"></script>
 
+
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Theme color -->
@@ -21,7 +24,7 @@
 
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
-    <link href="thanks_style.css" rel="stylesheet">
+    <!-- <link href="thanks_style.css" rel="stylesheet"> -->
 
     <!-- Fonts -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa" />
@@ -58,36 +61,50 @@
     <!-- End Facebook Pixel Code -->
 
   </head>
-  <body class='signup_thanks'>
+  <body class='signup_thanks' style='height: 100%;'>
 
-      <div class="mu-logo-area">
-          <a class="mu-logo" href="https://sealedpackages.com">sealed</a>
-      </div>
+	<!-- Start Header -->
+	<header id="mu-header" class="white-section" role="banner">
+		<!--<a class="navbar-brand" href="#">sealed</a>
+		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a> -->
+
+
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<a class="navbar-brand" href="https://sealedpackages.com">sealed</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Personal Plans<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/properties">Properties</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id='app_link' href="https://app.sealedpackages.com">Log In</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
 
 
   	<!-- Start Header -->
-	<header id="mu-header" class="" role="banner">
-		<div class="mu-header-overlay">
+	<section id="main-page" class="" role="banner" style='min-height: calc(100% - 252px);'>
+		<!-- <div class="mu-header-overlay"> -->
 			<div class="container">
-				<div class="mu-header-area">
+				<!-- <div class="mu-header-area"> -->
 
-					<!--<div class="mu-logo-area">
-						<a class="mu-logo" href="https://sealedpackages.com">sealed</a>
-					</div> -->
+						<div class="thanks-content" style='padding: 20% 0px;'>
 
-					<div class="mu-header-featured-area">
-                    <!--
-                        <div class="mu-header-featured-img">
-							<img src="assets/images/sealed_logo_dark_purple.png" alt="iphone image">
-						</div>
-                    -->
-
-						<div class="mu-header-featured-content">
-
-							<h2>Thanks for signing up!</h2>
+							<h3>Thanks for signing up!</h3>
 							<p>We'll notify you as soon as we're online in your area.</p>
 
-							<h3>Want Sealed service now?</h3>
+							<h3 style='margin-top: 40px;'>Want Sealed service now?</h3>
 							<p>The more signups we receive from your neighborhood, the faster we’ll be offering you the Sealed service. So tell your friends and neighbors too!</p>
 
 							<div class="sharethis-inline-share-buttons st-center st-has-labels  st-inline-share-buttons st-animated" id="st-1">
@@ -108,18 +125,70 @@
 							</div>
 
 						</div>
-
-					</div>
-
-				</div>
+					<!-- </div> -->
+				<!-- </div> -->
 			</div>
-		</div>
-	</header>
+	</section>
 	<!-- End Header -->
 
-	<div id='bottom-wave'>
-			<img src='assets/images/Wave.png'>
-		</div>
+	<!-- Start Footer -->
+	<div class="footer-container">
+		<footer class="details">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<h6 class="footer-gray">Solutions</h6>
+						<div class="menu-header-left-container">
+							<ul id="menu-header-left-2" class="footer-links">
+								<li class="menu-item"><a href="https://sealedpackages.com/">Personal Plans</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/pricing">Pricing</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/properties">Properties</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 ml-auto">
+						<div class="newsletter">
+							<label>
+								<h6>Subscribe to Updates</h6>
+							</label>
+							<form class="subscribe_form" onsubmit="footer_email_signup(); return false;">
+								<div  id='subscribe_email_check' style='display:none; height: 36px; font-weight: 400;' >
+									<i class="fas fa-check"></i>
+									Subscribed
+								</div>
+								<input type="email" id='subscribe_email' name="your-email" value="" size="40" class="subscribe_email"
+									placeholder="Email Address">
+								<input type="submit" value="Subscribe" class="subscribe_submit" id='subscribe_submit'>
+							</form>
+						</div>
+
+						<div class="social-icons">
+							<h6><span>Connect</span></h6>
+
+							<ul class="social-icons">
+								<li><a href="https://twitter.com/sealedPackages" target="_blank" ><i
+											class="fab fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.facebook.com/sealedpackages/" target="_blank"><i
+											class="fab fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/sealed.delivery/" target="_blank"><i
+											class="fab fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="mailto:hello@sealedpackages.com/" target="_blank"><i
+											class="far fa-envelope" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row large-margin-top">
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<p><span class="sub">© 2019 Resolute Labs Inc. All rights reserved.</span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- End Footer -->
 
 
 	<!-- Start footer -->
@@ -133,6 +202,21 @@
 	</footer> -->
 	<!-- End footer -->
 
+	<style>
+		#main-page{
+		    min-height: calc(100% - 252px);
+		}
+	.st-btn {
+		margin: 3px;
+		}
+
+		@media (max-width: 767px) {
+			#main-page{
+				min-height: calc(100% - 30px);
+			}
+		}
+	</style>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -145,6 +229,7 @@
 
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/footer_signup.js"></script>
 
   </body>
 </html>

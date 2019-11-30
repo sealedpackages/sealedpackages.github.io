@@ -2639,6 +2639,18 @@ table.tg.oversize-pricing-table{
 
 @media (max-width: 767px) {
 
+	footer.details {
+		padding: 20px 15px 10px;
+	}
+
+	span.sub {
+		font-size: 13px;
+	}
+
+	footer .social-icons li {
+		margin-right: 30px;
+	}
+
 	#signup {
 		padding: 0px 0px 50px;
 	}
