@@ -2703,11 +2703,15 @@ table.tg.oversize-pricing-table{
 	}
 	
 	.signup-btn-container-right-align .mu-all-btn {
-		margin: auto 0px;
+		letter-spacing: 0.1px;
+		margin: 0px;
 		height: 35px;
 		width: 70px;
 		text-align: center;
-		padding: 6px 0px;
+		padding: 0px;
+		line-height: 32px;
+		font-size: 15px;
+		font-weight: 600;
 	}
 
 	.option-background.option-main {
