@@ -192,6 +192,7 @@ button:focus {
 	font-weight: 200;
 }
 
+
 b {
 	font-weight: 700;
 }
@@ -267,6 +268,7 @@ b {
 	padding: 0px 40px 0px 40px;
 
 }
+
 
 #header-diagram {
 	display: block;
@@ -577,6 +579,9 @@ span.sealed-name {
 
 .off-section {
 	background-color: #f9f9f9;
+}
+.purple-section {
+	background-color: #7c4dff14
 }
 
 
@@ -1595,7 +1600,7 @@ footer .social-icons li {
 
 .social-icons li a, .footer-links li a{
 	color:white;
-	font-weight: 400;	
+	font-weight: 400;
 }
 
 .footer-links li{
@@ -2482,6 +2487,110 @@ table.tg.oversize-pricing-table{
 }
 
 /*--------------------*/
+/* ABOUT PAGE */
+/*--------------------*/
+#about-section-1,
+#about-section-2,
+#about-section-3
+{
+	padding-bottom: 40px;
+}
+
+
+#about-section-1 p,
+#about-section-2 p,
+#about-section-3 p
+{
+	color:#444;
+	font-size: 17px;
+	line-height: 1.55;
+}
+
+#about-section-1 h2,
+#about-section-2 h2,
+#about-section-3 h2
+{
+	padding-bottom: 20px;
+}
+
+#about-section-1 blockquote,
+#about-section-2 blockquote,
+#about-section-3 blockquote
+{
+	background-color: transparent;
+	font-size: 20px;
+	color: var(--main-color-1);
+	font-weight: 500;
+}
+.about-feature-area {
+	display: inline-flex;
+	float: left;
+	/* padding: 75px 0 0px; */
+	padding: 0px 0 0px;
+	width: 100%;
+}
+.header-area .about-feature-area {
+	padding: 75px 0 0px;
+}
+.about-feature-area h3 {
+	line-height: 30px;
+}
+
+
+.quote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.quote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095";
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.quote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+
+  content:"\f10d";
+  font-size: 150px;
+  color: rgba(0,0,0,0.1);
+  color: var(--main-color-1);
+  opacity: 0.1;
+
+}
+
+/*.quote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid var(--main-color-1);
+    height: 3px;
+    width: 200px;
+}*/
+
+
+#shirtman-photo{
+	display: block;
+	margin: -30px auto 0px;
+	width: 100%;
+	max-width: 400px;
+}
+
+
+/*--------------------*/
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
@@ -2517,8 +2626,16 @@ table.tg.oversize-pricing-table{
 }
 
 @media (max-width: 991px) {
+	.quote
+	{
+		padding: 60px 30px 40px;
+	}
 
 	#header-diagram {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#shirtman-photo {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -2526,7 +2643,9 @@ table.tg.oversize-pricing-table{
 	.header-feature-area {
 		display: inline;
 	}
-
+	.about-feature-area {
+		display: inline;
+	}
 	.mu-header-featured-content h1 {
 		font-size: 80px;
 	}
@@ -2662,7 +2781,7 @@ table.tg.oversize-pricing-table{
 	.subscribe_email{
 		width: 100%;
 	}
-	
+
 	.subscribe_submit{
 		right: 3px;
 	}
@@ -2701,7 +2820,7 @@ table.tg.oversize-pricing-table{
 	#storage-section .col-lg-8 {
 		padding: 0px 15px;
 	}
-	
+
 	.signup-btn-container-right-align .mu-all-btn {
 		letter-spacing: 0.1px;
 		margin: 0px;
@@ -2734,6 +2853,12 @@ table.tg.oversize-pricing-table{
 	section#header-section {
 		padding-bottom: 0px;
 	}
+	section#about-section-1,
+	section#about-section-2,
+	section#about-section-3
+	{
+		padding-bottom: 0px;
+	}
 
 	#messages-img {
 		margin-top: 0px;
@@ -2753,6 +2878,13 @@ table.tg.oversize-pricing-table{
 	}
 
 	.header-feature-area {
+		padding: 10px;
+	}
+
+	.header-area .about-feature-area {
+	    padding: 10px;
+	}
+	.about-feature-area {
 		padding: 10px;
 	}
 
