@@ -74,7 +74,7 @@
 .property-header-feature-area {
 	display: inline;
 	float: left;
-	padding: 75px 0 50px;
+	padding: 150px 0 50px;
 	width: 100%;
 }
 
@@ -90,7 +90,7 @@
     width: 50%;
 }
 .property-header-feature-area {
-	padding: 10px;
+	padding: 150px 10px 10px 10px;
 
 }
 .property-header-subarea {

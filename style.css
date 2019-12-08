@@ -259,8 +259,10 @@ b {
 
 #mu-header {
 	/* background-image: url("assets/images/header-bg.jpg"); */
-	display: inline;
-	float: left;
+	display: block;
+	/* float: left; */
+	position: absolute;
+
 	width: 100%;
 	background-position: center center;
 	background-attachment: fixed;
@@ -1105,7 +1107,7 @@ span.sealed-name {
 .header-feature-area {
 	display: inline-flex;
 	float: left;
-	padding: 75px 0 50px;
+	padding: 150px 0 50px;
 	width: 100%;
 }
 
@@ -2878,7 +2880,7 @@ table.tg.oversize-pricing-table{
 	}
 
 	.header-feature-area {
-		padding: 10px;
+		padding: 100px 10px 10px 10px;
 	}
 
 	.header-area .about-feature-area {
