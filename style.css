@@ -259,8 +259,10 @@ b {
 
 #mu-header {
 	/* background-image: url("assets/images/header-bg.jpg"); */
-	display: inline;
-	float: left;
+	display: block;
+	/* float: left; */
+	position: absolute;
+
 	width: 100%;
 	background-position: center center;
 	background-attachment: fixed;
@@ -1105,7 +1107,7 @@ span.sealed-name {
 .header-feature-area {
 	display: inline-flex;
 	float: left;
-	padding: 75px 0 50px;
+	padding: 150px 0 50px;
 	width: 100%;
 }
 
@@ -2758,6 +2760,31 @@ table.tg.oversize-pricing-table{
 
 @media (max-width: 767px) {
 
+	.navbar-collapse{
+		position: absolute;
+		z-index: 1;
+		right: 0px;
+		top: 70px;
+	}
+
+	.navbar-light .navbar-nav{
+		position: relative;
+		background: white;
+		width: fit-content;
+		padding: 0px 15px;
+		border-radius: 5px;
+		box-shadow: 1px 1px 5px #0000003b;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		width: 150px;
+		text-align: right;
+	}
+	
+	.navbar-light .navbar-nav .nav-link.not-last {
+		border-bottom: 1px solid #8080805e;
+	}
+
 	footer.details {
 		padding: 20px 15px 10px;
 	}
@@ -2878,7 +2905,7 @@ table.tg.oversize-pricing-table{
 	}
 
 	.header-feature-area {
-		padding: 10px;
+		padding: 100px 10px 10px 10px;
 	}
 
 	.header-area .about-feature-area {
