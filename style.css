@@ -3053,6 +3053,11 @@ table.tg.oversize-pricing-table{
 		width: fit-content;
 		padding: 0px 15px;
 		border-radius: 5px;
+		/* box-shadow: 1px 1px 5px #0000003b; */
+	}
+
+	.navbar-light .navbar-collapse{
+		border-radius: 5px;
 		box-shadow: 1px 1px 5px #0000003b;
 	}
 
@@ -3060,7 +3065,7 @@ table.tg.oversize-pricing-table{
 		width: 150px;
 		text-align: right;
 	}
-	
+
 	.navbar-light .navbar-nav .nav-link.not-last {
 		border-bottom: 1px solid #8080805e;
 	}
