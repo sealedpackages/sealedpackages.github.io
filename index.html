@@ -628,9 +628,7 @@
 										<div class='option-price'>
 											<!-- <h2>$5</h2> -->
 											<p>NO COMMITMENT</p>
-											<div class='signup-btn-container-right-align'>
-												<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Order'});">Order</a>
-											</div>
+
 										</div>
 										<div class='option-feature'>
 											<img src='assets/images/feature-check.png'>
@@ -655,18 +653,22 @@
 										<!--<div class='signup-btn-container'>
 											<a href="#signup" class='mu-all-btn'>Get Packages</a>
 										</div> -->
+
+										<div class='signup-btn-container'>
+											<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Order'});">Order</a>
+										</div>
 									</div>
 								</div>
 								<div class='option-content' style="margin-right:10%;">
 									<div class='option-background option-main'>
 										<h2 class="option-title">Sealed Member</h2>
+
 										<div class='option-price'>
 											<!-- <h2>$9</h2> -->
 											<p>$15 / MONTH</p>
-											<div class='signup-btn-container-right-align'>
-												<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Join'});">Join</a>
-											</div>
+											<p id="cross-off"></p>
 										</div>
+										<img id="month_free_seal" src='assets/images/month_free_text.svg'>
 
 										<div class='option-feature'>
 											<img src='assets/images/feature-check.png'>
@@ -702,6 +704,9 @@
 												<p class='option-sub-text'>Paper mail received for free</p>
 											</div>
 										</div> -->
+										<div class='signup-btn-container'>
+											<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Join'});">Join</a>
+										</div>
 
 									</div>
 								</div>
@@ -822,7 +827,7 @@
 							<ul id="menu-footer-help-1" class="footer-links">
 								<li class="menu-item"><a href="https://sealedpackages.com/about">About</a></li>
 							</ul>
-						</div>                
+						</div>
 					</div>
 
 					<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 ml-auto">
@@ -858,7 +863,7 @@
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="row large-margin-top">
 					<div class="col-md-8 col-sm-8 col-xs-12">
 						<!-- <p><a href="#" class="footer-gray">Privacy Policy</a><span class="vertical-line" class="footer-gray">|</span><a href="#" target="_blank" class="footer-gray">Terms of Service</a></p> -->
@@ -960,7 +965,7 @@
 			if (typeof(Storage) !== "undefined") {
 				localStorage.setItem("refcode", refcode);
 				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
-			} 
+			}
 		}
 
 	</script>

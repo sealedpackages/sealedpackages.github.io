@@ -1659,6 +1659,22 @@ footer .social-icons li {
 	padding: 10px 0px 10px;
 	width: 100%;
 }
+#month_free_seal {
+	position: absolute;
+	top: 0px;
+	float: right;
+	right: 0px;
+	height: 110px;
+}
+
+#cross-off {
+    position: absolute;
+    border-bottom: 2px solid #42ca9a99;
+    top: 0;
+    width: 111px;
+    height: 15px;
+    left: -5px;
+}
 
 .mu-title-dot.purple,
 .mu-title-dot.purple::before,
@@ -2439,7 +2455,7 @@ img.option-img {
 	text-align: center;
 }
 
-.signup-btn-container-right-align {
+/* .signup-btn-container-right-align {
 	margin-left: auto;
 	margin-right: 0px;
 	position: absolute;
@@ -2450,7 +2466,7 @@ img.option-img {
 .signup-btn-container-right-align .mu-all-btn {
 	margin: auto 0px;
 	height: 45px;
-}
+} */
 
 .signup-btn {
 	font-size: 17px;
@@ -2823,7 +2839,7 @@ table.tg.oversize-pricing-table{
 		padding: 0px 15px;
 	}
 
-	.signup-btn-container-right-align .mu-all-btn {
+	/* .signup-btn-container-right-align .mu-all-btn {
 		letter-spacing: 0.1px;
 		margin: 0px;
 		height: 35px;
@@ -2833,7 +2849,7 @@ table.tg.oversize-pricing-table{
 		line-height: 32px;
 		font-size: 15px;
 		font-weight: 600;
-	}
+	} */
 
 	.option-background.option-main {
 		margin-top: 10px;
@@ -3124,9 +3140,15 @@ table.tg.oversize-pricing-table{
 
 @media (max-width: 360px) {
 
-	/* .signup-btn-container-right-align .mu-all-btn { */
-	/* padding: 11px; */
-	/* } */
+
+	#month_free_seal {
+		position: absolute;
+		top: -12px;
+		float: right;
+		right: -12px;
+		height: 95px;
+	}
+
 
 	.mu-header-featured-content h1 {
 		font-size: 60px;
@@ -3147,6 +3169,8 @@ table.tg.oversize-pricing-table{
 	h2 {
 		font-size: 25px;
 	}
+
+
 }
 
 
