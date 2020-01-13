@@ -400,6 +400,7 @@ b {
 	z-index: 10;
 	padding: 18px;
 	color: #333333;
+	text-align:center;
 }
 
 .sec-subtitle {
@@ -407,10 +408,18 @@ b {
 	margin-top: -20px;
 	font-size: 24px;
 	color: #616161;
+	text-align:center;
 }
 
 .sec-subtitle.oversize-subtitle{
 	font-size: 20px;
+}
+
+.sec-title.small{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 0px;
+	padding:10px;
 }
 
 h3.package-storage {
@@ -1638,7 +1647,7 @@ footer .social-icons li {
 /*--------------------*/
 
 #mu-faq {
-	background-color: #f8f8f8;
+	/* background-color: #f8f8f8; */
 	/* display: inline; */
 	display: block;
 	/* float: left; */
@@ -1786,6 +1795,124 @@ footer .social-icons li {
 .collapsed .fa-chevron-down {
 	display: none;
 }
+
+/*--------------------*/
+/* testimonials */
+/*--------------------*/
+#testimonial-slider{
+	/* padding-bottom: 40px; */
+	padding-top: 20px;
+
+}
+.testimonial{
+    text-align: center;
+}
+.description{
+    /* color:#656565; */
+    font-size: 20px;
+    /* line-height: 35px; */
+    margin-bottom: 30px;
+    padding:0px 11%;
+    position: relative;
+}
+.description:before{
+    content: "\f10d";
+    font-family: "FontAwesome"; font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 2%;
+    color:var(--green-color-1);
+    font-size: 33px;
+}
+.description:after{
+    content: "\f10e";
+    font-family: "FontAwesome"; font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 2%;
+    color:var(--green-color-1);
+    font-size: 33px;
+}
+.pic{
+    width: 94px;
+    height: 94px;
+    margin: 0 auto;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial-title{
+    font-size: 18px;
+    color:#333;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.testimonial-title > small{
+    display: block;
+    color:#656565;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #3498db;
+	background: var(--green-color-1);
+}
+.owl-theme .owl-controls .owl-page span{
+    opacity: 1;
+}
+@media screen and (max-width: 480px) {
+    .description{
+        font-size:16px;
+        /* line-height: 29px; */
+    }
+    .description:before,
+    .description:after{
+        font-size: 20px;
+    }
+}
+
+/*--------------------*/
+/* brand slider */
+/*--------------------*/
+/* #brands-slider{
+	padding-top: 40px;
+	padding-bottom: 40px;
+} */
+.brand-logo-container{
+	display: flex;
+  	align-items: center;
+	height: 150px;
+	justify-content: center;
+
+}
+.brand-logo-sm{
+	width: 75px;
+}
+.brand-logo-md{
+	width: 100px;
+}
+.brand-logo-lg{
+	width: 125px;
+}
+@media screen and (max-width: 768px){
+	.brand-logo-sm{
+		width: 50px;
+	}
+	.brand-logo-md{
+		width: 75px;
+	}
+	.brand-logo-lg{
+		width: 100px;
+	}
+}
+
+
+
 
 /*--------------------*/
 /* how it works */
@@ -1965,7 +2092,7 @@ section#pricing-section {
 	/* float: left; */
 	position: relative;
 	width: 100%;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	/* color: white; */
 }
 
@@ -2884,6 +3011,7 @@ table.tg.oversize-pricing-table{
 	}
 	#shirtman-homepage{
 		padding-bottom: 20px;
+		padding-top: 20px;
 	}
 
 	#accordion {
