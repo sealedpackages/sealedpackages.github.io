@@ -2946,9 +2946,9 @@ table.tg.oversize-pricing-table{
 		line-height: normal;
 	}
 
-	section#pricing-section.oversize-section1{
+	/* section#pricing-section.oversize-section1{
 		margin-top: 0px;
-	}
+	} */
 
 	.option-feature {
 		margin: 2px 0px;
