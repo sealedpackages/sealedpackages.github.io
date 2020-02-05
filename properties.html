@@ -89,6 +89,40 @@
 <body>
 
 	<!-- Start Header -->
+
+	<!-- Start Nav-->
+	<div id='mobile-nav-coverup' onclick="close_mobile_nav();"></div>
+	<div id='mobile_nav_bar'>
+		<i id="mobile-open-nav-btn" onclick="open_mobile_nav();" class="fas fa-bars"></i>
+		<a class='sealed-title' >sealed</a>
+	</div>
+	<div class="header-nav-bar" id='header-nav-bar'>
+		<a class='sealed-title' >sealed</a>
+		<div class="nav-options-right" id="app_nav_options">
+			<div class="nav-option-w-icon">
+				<a href="/">
+					<!-- <img src="/static/img/box-icon.svg"> -->
+					<p>Personal Plans</p>
+				</a>
+			</div>
+			<div class="nav-option-w-icon">
+				<a href="/properties">
+					<!-- <i class="material-icons">account_circle</i> -->
+					<!-- <img src="/static/img/profile-icon.svg"> -->
+					<p>Properties</p>
+				</a>
+			</div>
+			<div class="nav-option-w-icon">
+				<a href="https://app.sealedpackages.com">
+					<!-- <i class="material-icons">account_circle</i> -->
+					<!-- <img src="/static/img/profile-icon.svg"> -->
+					<p>Log In</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav-->
+
 	<header id="mu-header" role="banner">
 
 		<!--
@@ -104,7 +138,7 @@
 
 
 
-		<nav class="navbar navbar-expand-sm navbar-light">
+		<!-- <nav class="navbar navbar-expand-sm navbar-light">
 			<a class="navbar-brand" href="https://sealedpackages.com">sealed</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fas fa-bars"></span>
@@ -123,7 +157,7 @@
 
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
 
 
 	</header>
@@ -526,14 +560,44 @@
 	</script>
 
 	<!-- close mobile navbar after user clicks on item-->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(function() {
 			var navMain = $(".navbar-collapse");
 			navMain.on("click", "a", null, function() {
 				navMain.collapse('hide');
 			});
 		});
+	</script> -->
+
+	<!--Mobile Nav Coverup-->
+	<script>
+	   function open_mobile_nav(){
+		   $('#mobile-nav-coverup').css('display','block');
+		   $('#header-nav-bar').css('left','0px');
+		   setTimeout(function(){
+			   $('#mobile-nav-coverup').css('opacity','1');
+		   }, 100);
+	   }
+	   function close_mobile_nav(){
+		   $('#mobile-nav-coverup').css('opacity','0');
+		   $('#header-nav-bar').css('left','-220px');
+		   setTimeout(function(){
+			   $('#mobile-nav-coverup').css('display','none');
+		   }, 450);
+	   }
+   </script>
+   <script>
+		function add_touch_events(div){
+			div.addEventListener('touchstart',function(){div.classList.add('dark-highlight');} ,{passive: true});
+			div.addEventListener('touchend',function(){div.classList.remove('dark-highlight');} ,{passive: true});
+			div.addEventListener('touchcancel',function(){div.classList.remove('dark-highlight');} ,{passive: true});
+		}
+
+		$( ".nav-option-w-icon" ).each(function(i) {
+			add_touch_events(this);
+		});
 	</script>
+	<!--End Mobile Coverup-->
 
 
 </body>
