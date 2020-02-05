@@ -574,6 +574,8 @@
 	   function open_mobile_nav(){
 		   $('#mobile-nav-coverup').css('display','block');
 		   $('#header-nav-bar').css('left','0px');
+		   $(window).scrollTop(0);
+		   $('html, body').css('overflow','hidden');
 		   setTimeout(function(){
 			   $('#mobile-nav-coverup').css('opacity','1');
 		   }, 100);
@@ -581,12 +583,13 @@
 	   function close_mobile_nav(){
 		   $('#mobile-nav-coverup').css('opacity','0');
 		   $('#header-nav-bar').css('left','-220px');
+		   $('html, body').css('overflow','unset');
 		   setTimeout(function(){
 			   $('#mobile-nav-coverup').css('display','none');
 		   }, 450);
 	   }
-   </script>
-   <script>
+	</script>
+	<script>
 		function add_touch_events(div){
 			div.addEventListener('touchstart',function(){div.classList.add('dark-highlight');} ,{passive: true});
 			div.addEventListener('touchend',function(){div.classList.remove('dark-highlight');} ,{passive: true});
