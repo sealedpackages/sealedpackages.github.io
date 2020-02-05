@@ -597,7 +597,7 @@ div#mobile-nav-coverup {
     box-sizing: content-box;
     /* position: relative; */
     z-index: 9;
-    position: fixed;
+    position: absolute;
     transition: box-shadow 0.5s;
     /* box-shadow: 0 0 3px 1px #0000002e; */
 }
