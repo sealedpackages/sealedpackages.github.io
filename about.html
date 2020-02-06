@@ -466,7 +466,7 @@
 		   $('#mobile-nav-coverup').css('display','block');
 		   $('#header-nav-bar').css('left','0px');
 		   $(window).scrollTop(0);
-		   $('html, body').css('overflow','hidden');
+		   $('html, body').css('overflow-y','hidden');
 		   setTimeout(function(){
 			   $('#mobile-nav-coverup').css('opacity','1');
 		   }, 100);
@@ -474,7 +474,7 @@
 	   function close_mobile_nav(){
 		   $('#mobile-nav-coverup').css('opacity','0');
 		   $('#header-nav-bar').css('left','-220px');
-		   $('html, body').css('overflow','unset');
+		   $('html, body').css('overflow-y','unset');
 		   setTimeout(function(){
 			   $('#mobile-nav-coverup').css('display','none');
 		   }, 450);
