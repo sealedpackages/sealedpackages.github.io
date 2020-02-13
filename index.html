@@ -1112,6 +1112,27 @@
 			console.log(event);
 		}
 
+		var refcode;
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+
+		urlvars = getUrlVars();
+		console.log(urlvars);
+		if (urlvars['ref']){
+			console.log('Got referral code!');
+			refcode = urlvars['ref']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("refcode", refcode);
+				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
+			}
+		}
+
 		function check_zip(){
 
 			const new_zip = $('#zipcode').val();
@@ -1158,28 +1179,6 @@
 				navMain.collapse('hide');
 			});
 		});
-
-		var refcode;
-
-		function getUrlVars() {
-			var vars = {};
-			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-				vars[key] = value;
-			});
-			return vars;
-		}
-
-		urlvars = getUrlVars();
-		console.log(urlvars);
-		if (urlvars['ref']){
-			console.log('Got referral code!');
-			refcode = urlvars['ref']
-			if (typeof(Storage) !== "undefined") {
-				localStorage.setItem("refcode", refcode);
-				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
-			}
-		}
-
 	</script> -->
 
 	<!-- for the testimonial section/owlcarousel -->
