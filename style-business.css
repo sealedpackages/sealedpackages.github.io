@@ -1,0 +1,133 @@
+.header-feature-area{
+	padding-bottom:50px;
+}
+
+section#header-section {
+    padding-bottom: 0px;
+}
+
+#kefirlab-image{
+	width:100%;
+	max-width: 425px;
+}
+#farmaandme-image{
+	width:100%;
+	max-width: 400px;
+}
+
+.business-feature {
+	padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.business-title{
+	font-size: 20px;
+	color:#000;
+}
+
+.business-text{
+	font-size: 16px;
+	color:#000;
+}
+.business-text a{
+	color:var(--main-color-1);
+}
+
+h3.stat-text{
+	font-size: 60px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+/* .stat-text.purple{
+	color:var(--main-color-1);sd
+}
+.stat-text.green{
+	color:var(--green-color-1);
+} */
+/* #stat-section{
+	background-image: url("assets/images/b11.png");
+	background-position: top center;
+	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.4);
+} */
+#stat-section{
+	background-color: var(--main-color-1);
+}
+
+#stat-section h2,
+#stat-section h3,
+#stat-section stat-text,
+#stat-section p{
+	color:#fff;
+}
+
+#stat-section p{
+	font-weight:500;
+}
+#stat-section b{
+	font-weight:900;
+}
+
+
+.sec1-value.stat-box{
+	margin:0px;
+	display:block;
+	padding: 30px 10px;
+	max-width: 400px;
+}
+.business-feature-section {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	padding:0px 0px 40px 0px;
+}
+
+.business-feature-area {
+	display: inline;
+	float: left;
+	padding: 30px 0 30px;
+	width: 100%;
+
+}
+
+.business-icon {
+	margin-bottom: 20px;
+	color: var(--main-color-1);
+	height:115px;
+}
+
+#package {
+	height:75px;
+	margin-top: 40px;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.business-feature-section .business-feature{
+	    border-right: 1px solid rgba(255,255,255,0.2) !important;
+	    width: 50%;
+	}
+}
+@media screen and (max-width: 480px){
+	.business-feature-section .business-feature {
+	    width: 100%;
+	    border-right: none !important;
+	    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+	}
+
+}
