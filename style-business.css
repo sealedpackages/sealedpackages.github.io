@@ -122,6 +122,15 @@ h3.stat-text{
 	    border-right: 1px solid rgba(255,255,255,0.2) !important;
 	    width: 50%;
 	}
+
+	.header-feature-area {
+		padding-bottom: 0px;
+	}
+
+	.brand-title {
+		font-size:20px;
+		padding-top:20px;
+	}
 }
 @media screen and (max-width: 480px){
 	.business-feature-section .business-feature {
