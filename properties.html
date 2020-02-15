@@ -39,7 +39,7 @@
 	<link href="style-properties.css" rel="stylesheet">
 
 	<!-- Fonts -->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa" />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
 
 	<!-- Open Sans for body and title font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
@@ -95,31 +95,44 @@
 	<div id='mobile_nav_bar'>
 		<i id="mobile-open-nav-btn" onclick="open_mobile_nav();" class="fas fa-bars"></i>
 		<a class='sealed-title' >sealed</a>
+
 	</div>
 	<div class="header-nav-bar" id='header-nav-bar'>
 		<a class='sealed-title' >sealed</a>
-		<div class="nav-options-right" id="app_nav_options">
+		<div class="nav-options-left" id="app_nav_options">
+		    <div class="nav-option-w-icon">
+		        <a href="/">
+		            <!-- <img src="/static/img/box-icon.svg"> -->
+		            <p>Personal</p>
+		        </a>
+		    </div>
+		    <div class="nav-option-w-icon">
+		        <a href="/properties">
+		            <!-- <i class="material-icons">account_circle</i> -->
+		            <!-- <img src="/static/img/profile-icon.svg"> -->
+		            <p>Properties</p>
+		        </a>
+		    </div>
 			<div class="nav-option-w-icon">
-				<a href="/">
-					<!-- <img src="/static/img/box-icon.svg"> -->
-					<p>Personal Plans</p>
-				</a>
-			</div>
-			<div class="nav-option-w-icon">
-				<a href="/properties">
+				<a href="/business">
 					<!-- <i class="material-icons">account_circle</i> -->
 					<!-- <img src="/static/img/profile-icon.svg"> -->
-					<p>Properties</p>
+					<p>Business</p>
 				</a>
 			</div>
-			<div class="nav-option-w-icon">
+			<!-- <div class="nav-option-w-icon">
 				<a href="https://app.sealedpackages.com">
-					<!-- <i class="material-icons">account_circle</i> -->
-					<!-- <img src="/static/img/profile-icon.svg"> -->
 					<p>Log In</p>
 				</a>
-			</div>
+			</div> -->
 		</div>
+		<div class="navbar-btn-container">
+			<a href="#signup" class='mu-all-btn navbar-btn'>Join <b class="sealed-inline-navbar-btn">sealed</b></a>
+			<a href="https://app.sealedpackages.com" class='mu-all-btn alt-btn navbar-btn'>Log In</a>
+		</div>
+
+
+
 	</div>
 	<!-- End Nav-->
 
@@ -387,14 +400,17 @@
 
 
 		<!-- Start Contact -->
-		<section id="signup" class="white-section">
+		<section id="signup" class="purple-section">
 			<div class="container">
 				<div class="row">
 					<!--<div class="col-md-8">-->
 					<div class="col-md-12">
+						<div class="mu-feature-area">
 
 							<h2 class="sec-title">Want <b class="sealed-inline">sealed</b> in your building?</h2>
+							<h3 class="sec-subtitle">Learn more about what we can do for you and your tenants.</h3>
 
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -443,6 +459,30 @@
 		</section>
 		<!-- End Contact -->
 
+		<!-- Start Plan Switch Section -->
+		<section id="switch-section" class="white-section">
+			<div class="container">
+				<div class="row">
+					<!--<div class="col-lg-8">-->
+					<div class="col-lg-12">
+						<div class="mu-feature-area">
+
+							<h2 class="sec-title small">Not a property manager? Jump to...</h2>
+							<!--<h3 class="sec-subtitle">Interested in joining? Sign up now and we'll notify you as soon as
+							we're online in your area</h3> -->
+							<div class="dual-btn-container">
+								<a href="/" class='mu-all-btn alt-btn'>Consumer Plans</a>
+								<a href="/business" class='mu-all-btn alt-btn'>Local Business Plans</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Ened Plan Switch Section -->
+
 	</main>
 
 	<!-- End main content -->
@@ -458,6 +498,7 @@
 							<ul id="menu-header-left-2" class="footer-links">
 								<li class="menu-item"><a href="https://sealedpackages.com/">Personal Plans</a></li>
 								<li class="menu-item"><a href="https://sealedpackages.com/pricing">Pricing</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/business">Local Business</a></li>
 								<li class="menu-item"><a href="https://sealedpackages.com/properties">Properties</a></li><br>
 							</ul>
 						</div>
