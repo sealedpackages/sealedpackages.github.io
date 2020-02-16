@@ -2801,7 +2801,8 @@ img.option-img {
 
 
 
-.mobile-only {
+.mobile-only,
+.mobile-only-inline-block {
 	display: none;
 }
 
@@ -3127,6 +3128,9 @@ table.tg.oversize-pricing-table{
 
 	.mobile-only {
 		display: block;
+	}
+	.mobile-only-inline-block {
+		display: inline-block;
 	}
 
 
