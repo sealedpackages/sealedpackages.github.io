@@ -607,7 +607,7 @@ div#mobile-nav-coverup {
 .header-nav-bar{
     width: calc(100% - 130px);
     height: 40px;
-    background-color: transparent;
+    background-color: white;
     /* background-color: var(--main-color-1); */
     color:var(--main-color-1);
     padding: 20px 65px;
@@ -2405,64 +2405,6 @@ section#header-section {
 	padding-bottom: 40px;
 }
 
-.animation-section {
-  position: relative;
-  background-color: #f8f6f8;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-.animation-section video {
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto; */
-  z-index: 0;
-  /* -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); */
-
-  width: 800px;
-  right: 0;
-  bottom: 0;
-}
-
-@media (max-width: 1200px) {
-	.animation-section video {
-		width: 700px;
-	}
-}
-@media (max-width: 991px) {
-	.animation-section video {
-		width: 80%;
-	}
-	.animation-section{
-		 height: 1000px;
-	}
-}
-@media (max-width: 771px) {
-	.animation-section video {
-		width: 130%;
-	}
-	.animation-section{
-		 height: 675px;
-	}
-}
-
-.animation-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-
-
-
 section#values-section2 {
 	padding-bottom: 40px;
 }
@@ -3436,7 +3378,6 @@ table.tg.oversize-pricing-table{
 
 	section#header-section {
 		padding-bottom: 0px;
-
 	}
 	section#about-section-1,
 	section#about-section-2,
