@@ -126,7 +126,7 @@
 		<div class="navbar-btn-container">
 			<a href="#signup" class='mu-all-btn navbar-btn desktop-only'>Join <b class="sealed-inline-navbar-btn">sealed</b></a>
 			<a href="#signup" class='mu-all-btn navbar-btn mobile-only-inline-block' onclick="close_mobile_nav();">Join <b class="sealed-inline-navbar-btn">sealed</b></a>
-			<a href="https://app.sealedpackages.com" class='mu-all-btn alt-btn navbar-btn'>Log In</a>
+			<a href="https://app.sealedpackages.com" id='app_link' class='mu-all-btn alt-btn navbar-btn'>Log In</a>
 		</div>
 
 
@@ -408,6 +408,7 @@
 		}
 
 		var refcode;
+		var routecode;
 
 		function getUrlVars() {
 			var vars = {};
@@ -424,8 +425,19 @@
 			refcode = urlvars['ref']
 			if (typeof(Storage) !== "undefined") {
 				localStorage.setItem("refcode", refcode);
-				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
 			}
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
+		}
+		if (urlvars['route']){
+			console.log('Got routing code!');
+			routecode = urlvars['route']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("routecode", routecode);
+			}
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?route='+routecode;
+		}
+		if (urlvars['route'] && urlvars['ref']){
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode+'&route='+routecode;
 		}
 
 		function check_zip() {
@@ -444,16 +456,25 @@
 				request.onload = function() {
 					resp_obj = JSON.parse(request.response);
 					console.log(resp_obj);
-					if (resp_obj.next) {
-						if (refcode) {
-							if (resp_obj.next.includes('?zip')) {
-								window.location.href = resp_obj.next + '&ref=' + refcode;
-							} else {
-								window.location.href = resp_obj.next + '?ref=' + refcode;
+					if (resp_obj.next){
+						var new_url = resp_obj.next;
+						if (refcode){
+							if (new_url.includes('?')){
+								new_url += '&ref='+refcode;
 							}
-						} else {
-							window.location.href = resp_obj.next;
+							else{
+								new_url += '?ref='+refcode;
+							}
 						}
+						if (routecode){
+							if (new_url.includes('?')){
+								new_url += '&route='+routecode;
+							}
+							else{
+								new_url += '?route='+routecode;
+							}
+						}
+						window.location.href = new_url;
 					}
 				};
 
