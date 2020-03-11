@@ -1160,6 +1160,9 @@
 			}
 			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
 		}
+		else if(localStorage.getItem('refcode')){
+			refcode = localStorage.getItem('refcode');
+		}
 		if (urlvars['route']){
 			console.log('Got routing code!');
 			routecode = urlvars['route']
@@ -1167,6 +1170,9 @@
 				localStorage.setItem("routecode", routecode);
 			}
 			document.getElementById('app_link').href = 'https://app.sealedpackages.com?route='+routecode;
+		}
+		else if(localStorage.getItem('routecode')){
+			routecode = localStorage.getItem('routecode');
 		}
 		if (urlvars['route'] && urlvars['ref']){
 			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode+'&route='+routecode;
@@ -1190,6 +1196,9 @@
 				if (routecode){
 					formData.append("routecode", routecode);
 				}
+
+				localStorage.removeItem('refcode');
+				localStorage.removeItem('routecode');
 
 				request.onload = function() {
 					resp_obj = JSON.parse(request.response);
