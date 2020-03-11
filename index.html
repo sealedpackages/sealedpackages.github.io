@@ -1184,6 +1184,12 @@
 
 				formData.append("zipcode",  new_zip);
 				formData.append("email", new_email);
+				if (refcode){
+					formData.append("refcode", refcode);
+				}
+				if (routecode){
+					formData.append("routecode", routecode);
+				}
 
 				request.onload = function() {
 					resp_obj = JSON.parse(request.response);
