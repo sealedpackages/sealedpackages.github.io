@@ -3247,8 +3247,8 @@ table.tg.oversize-pricing-table{
 		background-color: white;
 	}
 	
-	.animation-section .container {
-		top: 80px;
+	#header-section .container {
+		margin-top: 80px;
 	}
 
     .nav-options-right {
