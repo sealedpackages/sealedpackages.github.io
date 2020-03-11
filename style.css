@@ -3197,6 +3197,10 @@ table.tg.oversize-pricing-table{
 
 @media (max-width: 770px){
 
+	html, body{
+		height: 100%;
+	}
+
     .dark-highlight{
         background-color: #5858581f;
     }
@@ -3239,8 +3243,13 @@ table.tg.oversize-pricing-table{
         height: 100%;
         width: 220px;
         left: -220px;
-        transition: left 0.5s;
-    }
+		transition: left 0.5s;
+		background-color: white;
+	}
+	
+	.animation-section .container {
+		top: 80px;
+	}
 
     .nav-options-right {
         display: block;
@@ -3277,7 +3286,7 @@ table.tg.oversize-pricing-table{
     .nav-option-w-icon p{
         position: relative;
         top: 0px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         /* width: 70px; */
         letter-spacing: 0.5px;
@@ -3329,6 +3338,8 @@ table.tg.oversize-pricing-table{
 
 	.navbar-btn-container{
 		text-align: center;
+		position: absolute;
+		bottom: 40px;
 	}
 
 
@@ -3467,7 +3478,7 @@ table.tg.oversize-pricing-table{
 	}
 
 	.header-feature-area {
-		padding: 80px 10px 10px 10px;
+		padding: 0px 10px 10px 10px;
 	}
 
 	.header-area .about-feature-area {
