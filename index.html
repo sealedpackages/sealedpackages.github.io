@@ -1118,15 +1118,18 @@
 			return vars;
 		}
 
-		function removeUrlVars(){
+		function removeUrlVars(){			
 			if (window.history && window.origin != "null"){
-				window.history.replaceState({}, document.title, "/");
+				setTimeout(function(){
+				// 	window.history.pushState({}, document.title, "/");
+					window.history.replaceState({}, document.title, "/");
+		  		 }, 500);
 			}
 		}
 
 		urlvars = getUrlVars();
 		console.log(urlvars);
-		// removeUrlVars();
+		removeUrlVars();
 
 		if (urlvars['ref']){
 			console.log('Got referral code!');
