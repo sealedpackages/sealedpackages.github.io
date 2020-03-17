@@ -89,6 +89,55 @@
 	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2260245104084455&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
 
+	<!-- Temp covid banner styling -->
+	<style>
+		.header-nav-bar{
+			top: 50px;
+		}
+		#covid-header-section {
+			min-height: unset;
+			height: auto;
+			padding: 0;
+		}
+		#covid-feature{
+			padding: 0px 0px 0px;
+		}
+		#covid-feature .col-lg-12{
+			background-color: var(--main-color-1);
+			text-align: center;
+		}
+		#covid-feature h2{
+			font-size: 21px;
+			padding: 10px;
+			font-weight: 500;
+			margin-bottom: 0px;
+			line-height: 30px;
+		}
+
+		@media (max-width: 770px) {
+			#covid-header-section .container {
+				margin-top: 0px;
+			}
+			section#covid-header-section {
+				padding-bottom: 0px;
+			}	
+			#covid-feature{
+				padding: 0px 0px 0px;
+			}
+			#covid-feature h2{
+				font-size: 20px;
+				line-height: 25px;    			
+				padding: 10px 0px;
+			}
+			div#mobile_nav_bar {
+    			top: 75px;
+			}
+			.header-nav-bar{
+			top: 0px;
+		}
+		}
+	</style>
+
 </head>
 
 <body>
@@ -141,47 +190,21 @@
 	</div>
 	<!-- End Nav-->
 
-
-	<!-- <header id="mu-header" class="white-section" role="banner"> -->
-		<!--<a class="navbar-brand" href="#">sealed</a>
-		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a> -->
-
-
-
-<!--
-		<nav class="navbar navbar-expand-sm navbar-light">
-			<a class="navbar-brand" href="https://sealedpackages.com">sealed</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fas fa-bars" onclick="openNav()"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link not-last" href="/">Personal Plans<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link not-last" href="/properties">Properties</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id='app_link' href="https://app.sealedpackages.com">Log In</a>
-					</li>
-				</ul>
-			</div>
-		</nav> -->
-	<!-- </header> -->
-	<!-- End Header -->
-
-
-
-
-
-
-
-
-
 	<!-- Start main content -->
 
 	<main role="main">
+
+		<section id="covid-header-section" class="white-section animation-section">
+			<div class="container" style="    max-width: unset;width: 100%;">
+				<div class="row">
+					<div class="header-feature-area" id='covid-feature'>
+						<div class="col-lg-12">
+							<h2><a href="/covid19" style="color: white;">COVID-19 Updates: Sealed is Operating. <span> Click to read more.</span> </a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 		<section id="header-section" class="white-section animation-section">
@@ -189,7 +212,7 @@
   		    	<source src="assets/images/animation1.mp4" type="video/mp4">
   			</video>
 			<div class="container">
-				<div class="row">
+				<div class="row" >
 					<div class="header-feature-area">
 						<div class="col-lg-7">
 							<h2>
