@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>COVID-19 Updates</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/s_reg_icon_48.png">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/99a2c4d702.js" crossorigin="anonymous"></script>
+
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- Bootstrap -->
+	<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Slick slider -->
+	<link href="assets/css/slick.css" rel="stylesheet">
+	<!-- Theme color -->
+	<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Main Style -->
+	<link href="style.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- Open Sans for body and title font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148913805-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-148913805-1');
+	</script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2260245104084455');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2260245104084455&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<style>
+
+body, html {
+    height: 100%;
+}
+
+main{
+	min-height: calc(100% - 352px);
+}
+
+		main p a{
+			color: var(--main-color-1);
+    		font-weight: 500;
+		}
+
+		#about-section-1{
+			margin-top: 100px;
+			margin-bottom: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Start Header -->
+
+	<!-- Start Nav-->
+	<div id='mobile-nav-coverup' onclick="close_mobile_nav();"></div>
+	<div id='mobile_nav_bar'>
+		<i id="mobile-open-nav-btn" onclick="open_mobile_nav();" class="fas fa-bars"></i>
+		<a class='sealed-title' >sealed</a>
+
+	</div>
+	<div class="header-nav-bar" id='header-nav-bar'>
+		<a class='sealed-title' >sealed</a>
+		<div class="nav-options-left" id="app_nav_options">
+		    <div class="nav-option-w-icon">
+		        <a href="/">
+		            <!-- <img src="/static/img/box-icon.svg"> -->
+		            <p>Personal</p>
+		        </a>
+		    </div>
+			<div class="nav-option-w-icon">
+				<a href="/business">
+					<!-- <i class="material-icons">account_circle</i> -->
+					<!-- <img src="/static/img/profile-icon.svg"> -->
+					<p>Business</p>
+				</a>
+			</div>
+			<div class="nav-option-w-icon">
+		        <a href="/properties">
+		            <!-- <i class="material-icons">account_circle</i> -->
+		            <!-- <img src="/static/img/profile-icon.svg"> -->
+		            <p>Properties</p>
+		        </a>
+		    </div>
+			<!-- <div class="nav-option-w-icon">
+				<a href="https://app.sealedpackages.com">
+					<p>Log In</p>
+				</a>
+			</div> -->
+		</div>
+		<div class="navbar-btn-container">
+			<a href="#signup" class='mu-all-btn navbar-btn desktop-only'>Join <b class="sealed-inline-navbar-btn">sealed</b></a>
+			<a href="#signup" class='mu-all-btn navbar-btn mobile-only-inline-block' onclick="close_mobile_nav();">Join <b class="sealed-inline-navbar-btn">sealed</b></a>
+			<a href="https://app.sealedpackages.com" id='app_link' class='mu-all-btn alt-btn navbar-btn'>Log In</a>
+		</div>
+
+
+
+	</div>
+	<!-- End Nav-->
+
+	<header id="mu-header" class="white-section" role="banner">
+	</header>
+
+	<!-- End Header -->
+
+	<!-- Start main content -->
+
+	<main role="main">
+
+		<section id="about-section-1" class="white-section">
+			<div class="container">
+				<div class="row header-area">
+					<div class="col-lg-7">
+						<h3>
+							COVID-19 Updates
+						</h3>
+
+						<p>With the ongoing COVID-19 outbreak and San Francisco’s new <a href='https://sf.gov/stay-home-except-essential-needs' target='_blank'>Shelter-in-Place order </a>, 
+							we want you to know that Sealed is still operating as an essential service. This means that we are continuing to receive packages and offer evening deliveries 7 days a week. 
+							We are also following the <a href='https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html' target='_blank'> CDC Guidance for Businesses </a> to protect the health of the whole Sealed family.</p>
+						
+						<p>
+Beyond our existing package service, we are looking at offering more services to help connect you with local businesses who need your support. One way we can do this is by providing affordable same-day delivery for local products. Let us know if there’s a local business that you would love to have delivery from and we’ll try our best to make it happen!
+</p>
+<p>
+For your own safety, we encourage you to follow the <a href='https://www.cdc.gov/coronavirus/2019-ncov/' target='_blank'>CDC</a> and the City of <a href='https://sf.gov/topics/coronavirus-covid-19' target='_blank'>San Francisco</a> guidelines for important updates and information. 
+</p>
+<p>
+If you have any questions or concerns, please don’t hesitate to reach out!
+</p>
+<p>
+- The Sealed Team
+</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<!-- End main content -->
+
+	<!-- Start Footer -->
+	<div class="footer-container">
+		<footer class="details">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<h6 class="footer-gray">Solutions</h6>
+						<div class="menu-header-left-container">
+							<ul id="menu-header-left-2" class="footer-links">
+								<li class="menu-item"><a href="https://sealedpackages.com/">Personal Plans</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/pricing">Pricing</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/business">Local Business</a></li>
+								<li class="menu-item"><a href="https://sealedpackages.com/properties">Properties</a></li><br>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<h6 class="footer-gray">Company</h6>
+						<div class="menu-footer-help-container">
+							<ul id="menu-footer-help-1" class="footer-links">
+								<li class="menu-item"><a href="https://sealedpackages.com/about">About</a></li><br>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 ml-auto">
+						<div class="newsletter">
+							<label>
+								<h6>Subscribe to Updates</h6>
+							</label>
+							<form class="subscribe_form" onsubmit="footer_email_signup(); return false;">
+								<div id='subscribe_email_check' style='display:none; height: 36px; font-weight: 400;'>
+									<i class="fas fa-check"></i>
+									Subscribed
+								</div>
+								<input type="email" id='subscribe_email' name="your-email" value="" size="40" class="subscribe_email" placeholder="Email Address">
+								<input type="submit" value="Subscribe" class="subscribe_submit" id='subscribe_submit'>
+							</form>
+						</div>
+
+						<div class="social-icons">
+							<h6><span>Connect</span></h6>
+
+							<ul class="social-icons">
+								<!-- <li><a href="https://www.linkedin.com/company//" target="_blank" ><i class="fab fa-linkedin" aria-hidden="true"></i></a></li> -->
+								<li><a href="https://twitter.com/sealedPackages" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.facebook.com/sealedpackages/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/sealed.delivery/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="mailto:hello@sealedpackages.com/" target="_blank"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row large-margin-top">
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<!-- <p><a href="#" class="footer-gray">Privacy Policy</a><span class="vertical-line" class="footer-gray">|</span><a href="#" target="_blank" class="footer-gray">Terms of Service</a></p> -->
+						<!-- <p><span class="sub">© 2019<a href="/"> Resolute Labs Inc.</a>. All rights reserved.</span></p> -->
+						<p><span class="sub">© 2020 Sealed Technologies Corp. All rights reserved.</span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- End Footer -->
+
+
+	<!-- jQuery library -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
+	<!--<script src="assets/js/bootstrap.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Slick slider -->
+	<!-- <script type="text/javascript" src="assets/js/slick.min.js"></script> -->
+	<!-- Ajax contact form  -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/footer_signup.js"></script>
+
+	<!-- Second navbar appears after scrolling down a variable length -->
+	<script type="text/javascript">
+		function faq_dropdown(event) {
+			console.log(event);
+		}
+
+		var refcode;
+		var routecode;
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+
+		urlvars = getUrlVars();
+		console.log(urlvars);
+		if (urlvars['ref']){
+			console.log('Got referral code!');
+			refcode = urlvars['ref']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("refcode", refcode);
+			}
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
+		}
+		else if(localStorage.getItem('refcode')){
+			refcode = localStorage.getItem('refcode');
+		}
+		if (urlvars['route']){
+			console.log('Got routing code!');
+			routecode = urlvars['route']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("routecode", routecode);
+			}
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?route='+routecode;
+		}
+		else if(localStorage.getItem('routecode')){
+			routecode = localStorage.getItem('routecode');
+		}
+		if (urlvars['route'] && urlvars['ref']){
+			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode+'&route='+routecode;
+		}
+
+		function check_zip() {
+
+			const new_zip = $('#zipcode').val();
+			const new_email = $('#email').val();
+
+			if (new_email && new_zip) {
+
+				var formData = new FormData();
+				var request = new XMLHttpRequest();
+
+				formData.append("zipcode", new_zip);
+				formData.append("email", new_email);
+
+				if (refcode){
+					formData.append("refcode", refcode);
+				}
+				if (routecode){
+					formData.append("routecode", routecode);
+				}
+
+				localStorage.removeItem('refcode');
+				localStorage.removeItem('routecode');
+
+				request.onload = function() {
+					resp_obj = JSON.parse(request.response);
+					console.log(resp_obj);
+					if (resp_obj.next){
+						var new_url = resp_obj.next;
+						if (refcode){
+							if (new_url.includes('?')){
+								new_url += '&ref='+refcode;
+							}
+							else{
+								new_url += '?ref='+refcode;
+							}
+						}
+						if (routecode){
+							if (new_url.includes('?')){
+								new_url += '&route='+routecode;
+							}
+							else{
+								new_url += '?route='+routecode;
+							}
+						}
+						window.location.href = new_url;
+					}
+				};
+
+				url = "https://app.sealedpackages.com/landing_page_signup";
+				request.open("POST", url);
+				request.send(formData);
+			}
+		}
+	</script>
+
+
+	<!--Mobile Nav Coverup-->
+	<script>
+	   function open_mobile_nav(){
+		   $('#mobile-nav-coverup').css('display','block');
+		   $('#header-nav-bar').css('left','0px');
+		   $(window).scrollTop(0);
+		   $('html, body').css('overflow-y','hidden');
+		   setTimeout(function(){
+			   $('#mobile-nav-coverup').css('opacity','1');
+		   }, 100);
+	   }
+	   function close_mobile_nav(){
+		   $('#mobile-nav-coverup').css('opacity','0');
+		   $('#header-nav-bar').css('left','-220px');
+		   $('html, body').css('overflow-y','unset');
+		   setTimeout(function(){
+			   $('#mobile-nav-coverup').css('display','none');
+		   }, 450);
+	   }
+	</script>
+	<script>
+		function add_touch_events(div){
+			div.addEventListener('touchstart',function(){div.classList.add('dark-highlight');} ,{passive: true});
+			div.addEventListener('touchend',function(){div.classList.remove('dark-highlight');} ,{passive: true});
+			div.addEventListener('touchcancel',function(){div.classList.remove('dark-highlight');} ,{passive: true});
+		}
+
+		$( ".nav-option-w-icon" ).each(function(i) {
+			add_touch_events(this);
+		});
+	</script>
+	<!--End Mobile Coverup-->
+
+
+</body>
+
+</html>
