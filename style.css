@@ -406,6 +406,7 @@ b {
 	font-size: 24px;
 	color: #616161;
 	text-align:center;
+	margin-bottom: 0px;
 }
 
 .sec-subtitle.oversize-subtitle{
@@ -482,9 +483,9 @@ h5.package-storage {
 
 
 .option-content .option-price {
-	display: inline-flex;
+	/* display: inline-flex; */
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	position: relative;
 }
 
@@ -497,6 +498,7 @@ h5.package-storage {
 .option-content .option-price p {
 	margin: 0px 5px 0px;
 	font-weight: 600;
+	line-height: 22px;
 }
 
 #messages-img {
@@ -2878,6 +2880,7 @@ img.option-img {
 
 .signup-btn-container {
 	text-align: center;
+	margin-top: 10px;
 }
 .dual-btn-container {
 	text-align: center;
