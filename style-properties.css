@@ -105,6 +105,7 @@
 .property-header-subarea {
 	width: 50%;
 }
+}
 
 @media screen and (max-width: 480px){
 .property-feature-section .property-feature {
