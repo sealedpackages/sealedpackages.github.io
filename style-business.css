@@ -27,6 +27,22 @@ section#header-section {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
+.customer-feature {
+	padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	min-width: 200px;
+}
+.customers-feature-area{
+	padding:60px 0px 50px;
+}
+
 .business-title{
 	font-size: 20px;
 	color:#000;
@@ -57,21 +73,45 @@ h3.stat-text{
 	background-size: cover;
 	background-color: rgba(255, 255, 255, 0.4);
 } */
-#stat-section{
+#stat-section,
+#legacy-section{
 	background-color: var(--main-color-1);
 }
 
 #stat-section h2,
 #stat-section h3,
 #stat-section stat-text,
-#stat-section p{
+#stat-section p,
+#legacy-section h2,
+#legacy-section h3,
+#legacy-section h4,
+#legacy-section p,
+#legacy-section i.material-icons{
 	color:#fff;
+}
+
+#legacy-section h4{
+	font-size:17px;
+	line-height: 30px;
+	font-weight:400;
+}
+#legacy-section .sec1-value{
+	margin-bottom: 5px;
+	
+}
+#legacy-section i.material-icons{
+	padding-top:0px;
+}
+
+.legacy-bullets-area{
+	padding-top: 0px;
 }
 
 #stat-section p{
 	font-weight:500;
 }
-#stat-section b{
+#stat-section b,
+#legacy-section b{
 	font-weight:900;
 }
 
@@ -109,11 +149,84 @@ h3.stat-text{
 	height:115px;
 }
 
-#package {
+#package-icon {
 	height:75px;
 	margin-top: 40px;
 }
 
+#bubblealert-icon {
+	height:60px;
+	margin-top: 55px;
+}
+#trashbin-icon {
+	height:95px;
+	margin-top:20px
+}
+#integrations-icon {
+	height:100px;
+	margin-top:15px
+}
+
+#features-title {
+	padding-top: 80px;
+}
+
+
+.customer-feature-section {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	padding:0px 0px 40px 0px;
+}
+
+.customer-feature-area {
+	display: inline;
+	float: left;
+	padding: 30px 0 30px;
+	width: 100%;
+
+}
+.customer-logo {
+	margin-bottom: 20px;
+	max-height:55px;
+	display: block;
+    margin: auto;
+}
+
+.customer-product {
+	padding-top: 20px;
+	max-height:170px;
+	display: block;
+    margin: auto;
+}
+
+
+
+#beber-logo {
+	max-height: 75px;
+}
+#beber-product {
+	padding-top: 0px;
+    padding-bottom: 20px;
+}
+#sach-logo {
+
+}
+#sach-product {
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#housekombucha-product {
+	max-height: 225px;
+	padding-top:0px;
+}
 
 
 @media screen and (max-width: 768px){
@@ -130,6 +243,12 @@ h3.stat-text{
 	.brand-title {
 		font-size:20px;
 		padding-top:20px;
+	}
+	.legacy-bullets-area{
+		padding-top: 30px;
+	}
+	.customers-feature-area {
+		padding: 50px 0 30px;
 	}
 }
 @media screen and (max-width: 480px){
