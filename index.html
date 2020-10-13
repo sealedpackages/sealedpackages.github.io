@@ -39,16 +39,13 @@
 	<!-- Main Style -->
 	<link href="style.css" rel="stylesheet">
 
+	<!-- Business Style -->
+	<link href="style-business.css" rel="stylesheet">
+
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
-
 	<!-- Open Sans for body and title font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
-
-	<!-- sliders for the testimonial section -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,11 +86,12 @@
 	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2260245104084455&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
 
+
 	<!-- Temp covid banner styling -->
 	<style>
-		.header-nav-bar{
+		/* .header-nav-bar{
 			top: 50px;
-		}
+		} */
 		#covid-header-section {
 			min-height: unset;
 			height: auto;
@@ -114,6 +112,10 @@
 			line-height: 30px;
 		}
 
+		.menu-item{
+			font-weight: 600;
+		}
+
 		@media (max-width: 770px) {
 			#covid-header-section .container {
 				margin-top: 0px;
@@ -129,12 +131,12 @@
 				line-height: 25px;    			
 				padding: 10px 0px;
 			}
-			div#mobile_nav_bar {
+			/* div#mobile_nav_bar {
     			top: 75px;
-			}
-			.header-nav-bar{
+			} */
+			/* .header-nav-bar{
 			top: 0px;
-		}
+			} */
 		}
 	</style>
 
@@ -153,26 +155,21 @@
 	<div class="header-nav-bar" id='header-nav-bar'>
 		<a class='sealed-title' >sealed</a>
 		<div class="nav-options-left" id="app_nav_options">
-		    <div class="nav-option-w-icon">
+		    <!-- <div class="nav-option-w-icon">
 		        <a href="/">
-		            <!-- <img src="/static/img/box-icon.svg"> -->
 		            <p>Personal</p>
 		        </a>
 		    </div>
 			<div class="nav-option-w-icon">
 				<a href="/business">
-					<!-- <i class="material-icons">account_circle</i> -->
-					<!-- <img src="/static/img/profile-icon.svg"> -->
 					<p>Business</p>
 				</a>
 			</div>
 			<div class="nav-option-w-icon">
 				<a href="/properties">
-					<!-- <i class="material-icons">account_circle</i> -->
-					<!-- <img src="/static/img/profile-icon.svg"> -->
 					<p>Properties</p>
 				</a>
-			</div>
+			</div> -->
 			<!-- <div class="nav-option-w-icon">
 				<a href="https://app.sealedpackages.com">
 					<p>Log In</p>
@@ -180,9 +177,9 @@
 			</div> -->
 		</div>
 		<div class="navbar-btn-container">
-			<a href="#signup" class='mu-all-btn navbar-btn desktop-only'>Join <b class="sealed-inline-navbar-btn">sealed</b></a>
-			<a href="#signup" class='mu-all-btn navbar-btn mobile-only-inline-block' onclick="close_mobile_nav();">Join <b class="sealed-inline-navbar-btn">sealed</b></a>
-			<a href="https://app.sealedpackages.com" id='app_link' class='mu-all-btn alt-btn navbar-btn'>Log In</a>
+			<!-- <a href="#signup" class='mu-all-btn navbar-btn desktop-only'>Join <b class="sealed-inline-navbar-btn">sealed</b></a> -->
+			<!-- <a href="#signup" class='mu-all-btn navbar-btn mobile-only-inline-block' onclick="close_mobile_nav();">Join <b class="sealed-inline-navbar-btn">sealed</b></a> -->
+			<a href="https://app.sealedpackages.com" class='mu-all-btn alt-btn navbar-btn'>Log In</a>
 		</div>
 
 
@@ -190,11 +187,49 @@
 	</div>
 	<!-- End Nav-->
 
+
+	<header id="mu-header" class="white-section" role="banner">
+		<!--<a class="navbar-brand" href="#">sealed</a>
+		<a href="http://app.sealedpackages.com" class="navbar-login-container"><div class="navbar-login">Log In</div></a> -->
+
+
+
+<!--
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<a class="navbar-brand" href="https://sealedpackages.com">sealed</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars" onclick="openNav()"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link not-last" href="/">Personal Plans<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link not-last" href="/properties">Properties</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id='app_link' href="https://app.sealedpackages.com">Log In</a>
+					</li>
+				</ul>
+			</div>
+		</nav> -->
+	</header>
+	<!-- End Header -->
+
+
+
+
+
+
+
+
+
 	<!-- Start main content -->
 
 	<main role="main">
 
-		<section id="covid-header-section" class="white-section animation-section">
+		<!-- <section id="covid-header-section" class="white-section animation-section">
 			<div class="container" style="    max-width: unset;width: 100%;">
 				<div class="row">
 					<div class="header-feature-area" id='covid-feature'>
@@ -204,31 +239,29 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-
-		<section id="header-section" class="white-section animation-section">
-			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-  		    	<source src="assets/images/animation1.mp4" type="video/mp4">
-  			</video>
+		<section id="header-section" class="white-section">
 			<div class="container">
-				<div class="row" >
+				<div class="row">
 					<div class="header-feature-area">
-						<div class="col-lg-7">
+						<div class="col-lg-6 my-auto">
 							<h2>
-								All your packages, exactly when you want them
+								Boost Your Brand During Delivery
+
 							</h2>
 							<h3 class='desktop-only'>
-								No more theft or missed deliveries. Sealed accepts your packages 24/7 and delivers when you're actually home.
+								<!-- Happy customers are returning customers, made possible with a modern delivery experience -->
+								Faster, more reliable delivery experiences that fuel customer happiness. No more wasteful packaging, shipping delays, or spoilage.
 							</h3>
-							<div class='signup-btn-container desktop-only'>
+							<!-- <div class='signup-btn-container desktop-only'>
 								<a href="#signup" onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Signup_header'});">
-									<div class='signup-btn'>Sign Up Today</div>
+									<div class='signup-btn'>Request a Quote</div>
 								</a>
-							</div>
+							</div> -->
 						</div>
-						<div class="col-lg-5">
-							<!-- <img id="header-diagram" src='assets/images/Frame 14_1.svg'> -->
+						<div class="col-lg-6">
+							<img id="header-diagram" src='assets/images/business-header.png'>
 						</div>
 					</div>
 
@@ -236,19 +269,72 @@
 				</div>
 				<div class="col-lg-8 mobile-only">
 					<h3>
-						No more theft or missed deliveries. Sealed accepts your packages 24/7 and delivers when you're actually home.
+						<!-- Improve customer retention and loyalty with a premium, localized delivery experience -->
 					</h3>
-					<div class='signup-btn-container'>
+					<!-- <div class='signup-btn-container'>
 						<a href="#signup" onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Signup_header'});">
-							<div class='signup-btn'>Sign Up Today</div>
+							<div class='signup-btn'>Request a Quote</div>
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
 
+
+
+
+
 		<!-- Start Feature -->
-		<section id="first-feature" class="off-section">
+		<section class="white-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 id="features-title" class="sec-title">Designed for Perishables</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 business-feature-section">
+
+
+							<div class="business-feature">
+								<img class="business-icon" src='assets/images/purple-building.png'></img>
+								<h5 class="business-title">In-city Refrigeration</h5>
+								<p class='business-text'>Centrally-located cold storage for your products keeps them fresh until they arrive on your customers doorstep</p>
+							</div>
+							<div class="business-feature">
+								<img class="business-icon" src='assets/images/delivery-map.png'></img>
+								<h5 class="business-title">Same-Day Delivery</h5>
+								<p class='business-text'>Offer faster, scheduled delivery windows with same-day and next-day options at checkout</p>
+							</div>
+							<div class="business-feature">
+								<img class="business-icon" src='assets/images/reefer.png'></img>
+								<h5 class="business-title">Zero Spoilage</h5>
+								<p class='business-text'>Our refrigerated delivery fleet keeps products cold and achieves over 99% On-Time-Deliveries</p>
+							</div>
+							<div class="business-feature">
+								<img class="business-icon" id="bubblealert-icon" src='assets/images/bubblealert.svg'></img>
+								<h5 class="business-title">Customer Experience</h5>
+								<p class='business-text'>Real-time tracking, delivery ETA notifications, and chat directly with your courier</p>
+							</div>
+							<div class="business-feature">
+								<img class="business-icon" id="trashbin-icon" src='assets/images/trashbin.png'></img>
+								<h5 class="business-title">Reduced Waste</h5>
+								<p class='business-text'>Save on shipping costs without the need for bulky insulation, heavy ice packs, and expensive shipping labels</p>
+							</div>
+							<div class="business-feature">
+								<img class="business-icon" id="integrations-icon" src='assets/images/integrations.svg'></img>
+								<h5 class="business-title">Ecommerce Plugins</h5>
+								<p class='business-text'>Sealed easily integrates with your online store to automate fulfillment and deliveries</p>
+							</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End Feature -->
+
+		<!-- Start Feature -->
+		<section id="legacy-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -257,95 +343,231 @@
 							<div class="mu-feature-content">
 								<div class="row">
 									<div class="col-lg-12">
-										<h2 class="sec-title">Stop stressing about deliveries</h2>
+										<h2 class="sec-title">Traditional carriers are not designed for perishables</h2>
+									</div>
+								</div>
+								<div class="legacy-bullets-area">
+									
+									<div class="sec1-feature-area">
+										<div class="row">
+											<div class="col-lg-6">
+												
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>Spoilage in warm warehouses and trucks</h4>
+													</div>
+												</div>
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>Unreliable delivery windows</h4>
+													</div>
+												</div>
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>No reimbursements for spoilage</h4>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>Wasteful, bulky, and heavy ice packs and packaging</h4>
+													</div>
+												</div>
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>Large heavy boxes need expensive shipping labels</h4>
+													</div>
+												</div>
+												<div class='sec1-value'>
+													<i class="material-icons">cancel</i>
+													<div class='sec1-value-txt'>
+														<h4>Customers leaving with poor delivery experiences</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- End Feature -->
+		
+
+		<!-- Start Feature -->
+		<!-- <section class="white-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="mu-feature-area">
+							<div class="mu-feature-content">
+								<div class="row">
+									<div class="col-lg-12">
+										<h2 class="sec-title">Brands Love Us</h2>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-lg-5">
-										<div id="shirtman-homepage" class="sec1-feature-area text-center">
-											<!-- <img src='assets/images/Mac Window.png'> -->
-											<img src='assets/images/shirtman-nobackground.png' style='width:100%;max-width: 400px;'>
+
+						
+									<div class="col-lg-1">
+									</div>
+									<div class="col-lg-5 my-auto">
+										<div class="sec1-feature-area">
+											<div class='sec1-value'>
+												<div class='sec1-value-txt'>
+													<h3 class="brand-title text-center">Kefir Lab</h4>
+													<p class="text-center">
+																			Customers pick a delivery time to receive their perishable Kefir Lab products when they're home. Sealed couriers also accept returned bottles to be reused by Kefir Lab for a more eco-friendly service.
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="col-lg-5 my-auto">
+										<div class="sec1-feature-area text-center">
+											<img id="kefirlab-image" src='assets/images/kefirlab.png'>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-1">
+								</div>
+								<div class="row">
+									<div class="col-lg-1">
+									</div>
+									<div class="col-lg-5 my-auto desktop-only">
+										<div class="sec1-feature-area text-center">
+											<img id="farmaandme-image" src='assets/images/farmandme-min.png'>
+										</div>
+									</div>
+							
+
+									<div class="col-lg-5 my-auto">
+										<div class="sec1-feature-area">
+											<div class='sec1-value'>
+												<div class='sec1-value-txt'>
+													<h3 class="brand-title text-center">Farm & Me</h4>
+													<p class="text-center">
+														Produce from Farm & Me can now be delivered the same day that it comes out of the ground, made possible by Sealed's local fulfillment and delivery.
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="col-lg-5 my-auto mobile-only">
+										<div class="sec1-feature-area text-center">
+											<img id="farmaandme-image" src='assets/images/farmandme-min.png'>
+										</div>
+									</div>
+									<div class="col-lg-1">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</section> -->
+		<!-- End Feature -->
+
+		<!-- Start Feature -->
+		<section class="white-section">
+			<div class="container">
+				<div class="customers-feature-area">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="sec-title">Brands Love Us</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 customer-feature-section">
+
+								<div class="customer-feature">
+									<img class="customer-logo" id="beber-logo" src='assets/images/customers/beber-logo.png'></img>
+									<img class="customer-product" id="beber-product" src='assets/images/customers/beber-product.png'></img>
+								</div>
+								<div class="customer-feature">
+									<img class="customer-logo" src='assets/images/customers/dripdash-logo.png'></img>
+									<img class="customer-product" src='assets/images/customers/dripdash-product.png'></img>
+								</div>
+								<div class="customer-feature">
+									<img class="customer-logo" id="sach-logo" src='assets/images/customers/sach-logo.png'></img>
+									<img class="customer-product" id="sach-product" src='assets/images/customers/sach-product.png'></img>
+								</div>
+								<div class="customer-feature">
+									<!-- <img class="customer-logo" src='assets/images/customers/housekombucha-logo.png'></img> -->
+									<img class="customer-product" id="housekombucha-product" src='assets/images/customers/housekombucha.jpg'></img>
+								</div>
+								<div class="customer-feature">
+									<img class="customer-logo" src='assets/images/customers/kefirlab-logo.png'></img>
+									<img class="customer-product" src='assets/images/customers/kefirlab-product.jpg'></img>
+								</div>
+								<div class="customer-feature">
+									<img class="customer-logo" src='assets/images/customers/farmandme-logo.png'></img>
+									<img class="customer-product" src='assets/images/customers/farmandme-product.png'></img>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Feature -->
+
+		<!-------------->
+		<!-- Start Feature -->
+		<section id="stat-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="mu-feature-area">
+							<!-- Start Feature Content -->
+							<div class="mu-feature-content">
+								<div class="row">
+									<div class="col-lg-12">
+										<h2 class="sec-title">Post-Purchase Matters</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-1">
+									</div>
+									<div class="col-lg-5 my-auto">
+										<div class="">
+											<div class='sec1-value stat-box'>
+												<div class='sec1-value-txt'>
+													<h3 class="stat-text text-center">98%</h4>
+													<p class="text-center">of consumers say that shipping impacts brand loyalty
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="col-lg-5 my-auto">
+										<div class="">
+											<div class='sec1-value stat-box'>
+												<div class='sec1-value-txt'>
+													<h3 class="stat-text text-center">84%</h4>
+													<p class="text-center">of consumers <b>will not return</b> to a brand again after a poor delivery experience
+													</p>
+												</div>
+											</div>
+
 										</div>
 									</div>
 									<div class="col-lg-1">
 									</div>
 
-									<div class="col-lg-6">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">shopping_cart</i>
-												<div class='sec1-value-txt'>
-													<h4>Order Anything</h4>
-													<p>Use our address for your online shopping. We sign for your packages and immediately notify you.
-													</p>
-												</div>
-											</div>
-											<div class='sec1-value'>
-												<i class="material-icons">local_shipping</i>
-												<div class='sec1-value-txt'>
-													<h4>Schedule</h4>
-													<!-- <p>Choose an access point for local pickup or request delivery on-demand at a time that works for you.</p> -->
-													<!-- <p>Select a convenient evening delivery 5pm - 11pm, either same-day or when you're back in town.</p>
-													<p>Schedule a one-hour evening delivery window between 5pm - 11pm, either same-day or when you're back in town.</p>
-													<p>Schedule an evening delivery anytime between 5pm - 11pm, either same-day or when you're back in town.</p> -->
-													<p>Select the best evening delivery window for you, either same-day or when you're back in town.</p>
-												</div>
-											</div>
-											<div class='sec1-value'>
-												<i class="material-icons">card_giftcard</i>
-												<div class='sec1-value-txt'>
-													<h4>Receive</h4>
-													<!-- <p>Get your package the same day it’s delivered or when you’re back in town. No more stolen packages or missed deliveries.</p> -->
-													<p>Our friendly couriers personally hand off your packages. No more stolen packages or missed deliveries.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mu-feature-content">
-								<div class="row">
-									<div class="col-lg-12">
-										<h2 class="sec-title" style="padding-bottom: 18px;">Easy package pickup & returns</h2>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-4">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">traffic</i>
-												<div class='sec1-value-txt'>
-													<h4>Save valuable time</h4>
-													<p>No need to carry your packages to the post office or shipping center.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-4">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">emoji_transportation</i>
-												<div class='sec1-value-txt'>
-													<h4>Hand us your returns</h4>
-													<p>We’ll pick up your pre-labeled packages and ship them for you.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-4">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">transfer_within_a_station</i>
-												<div class='sec1-value-txt'>
-													<h4>Quick and convenient</h4>
-													<p>Returning items is finally as easy as buying them.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
+
 								</div>
 							</div>
 						</div>
@@ -353,299 +575,24 @@
 		</section>
 		<!-- End Feature -->
 
-		<!-- Start Customer Section -->
-		<section id="customers-section" class="white-section">
-			<div class="container">
-				<div class="row">
-						<div class="col-md-12">
-							<div class="mu-feature-area">
-								<div class="sec1-feature-area">
-
-									<h2 class="sec-title small">Our customers trust Sealed to deliver products from hundreds of brands</h2>
-									<!-- Start Brands -->
-									<div class="col-md-12">
-										<!-- <h3 class="sec-subtitle">Proudly trusted to deliver products from</h2> -->
-										<!-- <h2 class="sec-title">Our customers trust Sealed to deliver products from</h2> -->
-										<!-- <h2 class="sec-title">Sealed has been trusted to deliver products from hundreds of premium brands, including</h2> -->
-										<!-- <h2 class="sec-title">Our customers trust us to deliver from hundreds of brands</h2> -->
-										<div class="offset-sm-1 col-sm-10">
-											<div id="brands-slider" class="owl-carousel">
-
-
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Asos.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Aritzia.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/BestBuy.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Chewy.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/EBay.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Lululemon.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Madewell.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-lg" src='assets/images/brands/Methodology.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/OmahaSteaks.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/PotteryBarn.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-sm" src='assets/images/brands/RentTheRunway.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-sm" src='assets/images/brands/Target.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-sm" src='assets/images/brands/TheHomeDepot.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/UltaBeauty.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/Wayfair.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/WestElm.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-md" src='assets/images/brands/WilliamsSonoma.svg'>
-												</div>
-												<div class="brand-logo-container">
-													<img class="brand-logo-lg" src='assets/images/brands/WorldMarket.svg'>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End Brands -->
-								<!-- Start Testimonial -->
-								<div class="sec1-feature-area">
-									<h2 class="sec-title small">What our customers say</h2>
-
-									<div class="col-md-12">
-										<div class="offset-sm-1 col-sm-10">
-									<div id="testimonial-slider" class="owl-carousel">
-										<div class="testimonial">
-											<p class="description">
-												There is so much package theft in SF, I love the peace of mind in knowing my packages are safe.
-											</p>
-
-											<div class="testimonial-review">
-												<!-- <div class="pic">
-													<img src="images/img-1.jpg" alt="">
-												</div> -->
-												<h4 class="testimonial-title">
-													Sabrina B.
-													<small>Lower Haight, San Francisco</small>
-												</h4>
-											</div>
-										</div>
-
-										<div class="testimonial">
-											<p class="description">
-												Now I can shop online more without worrying about being home for delivery, and the savings I find online easily cover my Sealed membership - totally worth it!
-
-											<div class="testimonial-review">
-												<!-- <div class="pic">
-													<img src="images/img-2.jpg" alt="">
-												</div> -->
-												<h4 class="testimonial-title">
-													Nabilah K.
-													<small>Nob Hill, San Francisco</small>
-												</h4>
-											</div>
-										</div>
-										<div class="testimonial">
-											<p class="description">
-												Initially worried about having my packages sent to strangers, but the Sealed service has been incredible. They’ve been reliable and really friendly.
-
-											<div class="testimonial-review">
-												<!-- <div class="pic">
-													<img src="images/img-2.jpg" alt="">
-												</div> -->
-												<h4 class="testimonial-title">
-													Danielle M.
-													<small>Hayes Valley, San Francisco</small>
-												</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-									<div>
-								<div>
-								<!-- End Testimonial -->
-
-
-							<div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div class="row">
-
-				</div>
-			</div>
-		</section>
-		<!-- End Customer Section -->
-
-
-		<!-- Start Feature -->
-		<section id="values-section2" class="off-section">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="mu-feature-area" style='padding-bottom: 20px;'>
-							<!-- Start Feature Content -->
-							<div class="mu-feature-content">
-								<h2 class="sec-title">Know where your packages are, and decide where they go</h2>
-								<div class="row desktop-only">
-									<div class="col-lg-2">
-									</div>
-
-									<div class="col-lg-10">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">message</i>
-												<div class='sec1-value-txt'>
-													<h4>Real-time package management</h4>
-													<p>Live tracking of your items, from ordering to opening. Easily reroute an item from any carrier, change your delivery time, or select a convienent pickup point.
-													</p>
-												</div>
-											</div>
-											<div class='sec1-value' style="margin-bottom: 0px;">
-												<i class="material-icons">access_time</i>
-												<div class='sec1-value-txt'>
-													<h4>Your time is valuable</h4>
-													<p>Stop waiting at home for packages to be delivered, and don’t plan your day around delivery estimates. Get your packages exactly when you want them.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<!-- <div class="value-feature-area" id='messages-img'>
-							<img src='assets/images/Messages.png'>
-						</div> -->
-						<div id='messages-img' class="value-feature-area mobile-app-mockup">
-							<img src='assets/images/Overview Screen.png'>
-						</div>
-					</div>
-					<div class="row mobile-only">
-						<div class="mu-feature-area">
-							<div class="mu-feature-content">
-								<div class="col-lg-10">
-									<div class="sec1-feature-area" style='padding:0px 15px;'>
-										<div class='sec1-value'>
-											<i class="material-icons">message</i>
-											<div class='sec1-value-txt'>
-												<h4>Real-time management</h4>
-												<p>Live tracking of your items, from ordering to opening. Easily reroute an item from any carrier, change your delivery time, or select a convienent pickup point.
-												</p>
-											</div>
-										</div>
-										<div class='sec1-value' style='margin-bottom:10px;'>
-											<i class="material-icons">access_time</i>
-											<div class='sec1-value-txt'>
-												<h4>Your time is valuable</h4>
-												<p>Stop waiting at home for packages to be delivered, and don’t plan your day around delivery estimates. Get your packages exactly when you want them.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-
-					<div class="col-lg-4">
-						<div class="value-feature-area mobile-app-mockup">
-							<img src='assets/images/Routing Screen.png'>
-						</div>
-					</div>
-					<div class="col-lg-8">
-						<div class="mu-feature-area second">
-							<!-- Start Feature Content -->
-							<div class="mu-feature-content">
-								<div class="row">
-									<div class="col-lg-0">
-									</div>
-
-									<div class="col-lg-10">
-										<div class="sec1-feature-area">
-											<div class='sec1-value'>
-												<i class="material-icons">settings_application</i>
-												<div class='sec1-value-txt'>
-													<h4>No missed deliveries</h4>
-													<p>At work during the day? Don’t come home to those frustrating <i>missed delivery</i> notes ever again. We receive packages all day so that you can get them as soon as possible.
-													</p>
-												</div>
-											</div>
-											<div class='sec1-value'>
-												<i class="material-icons">security</i>
-												<div class='sec1-value-txt'>
-													<h4>Package security</h4>
-													<p>Sealed packages are always placed into your hands, not left out on your doorstep. Your food delivery courier doesn’t leave your order on the doorstep -
-														why should your valuable packages be handled any differently?
-													</p>
-
-												</div>
-											</div>
-
-
-											<div class='signup-btn-container'>
-												<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'GetOnYourSchedule'});">Packages on Your Schedule</a>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Feature -->
 
 
 
 		<!-- Start FAQ -->
-		<section id="mu-faq" class="white-section">
+		<!-- <section id="mu-faq" class="white-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="mu-faq-area">
 							<div class="mu-feature-area">
 								<h2 class="sec-title small">FAQ</h2>
-								<!--<div id="accordion"> -->
 
 								<div class="panel-group" id="accordion">
 									<div id="heading6" class="panel panel-default">
 										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse6" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													How much does it cost?
+													How does it work?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -654,7 +601,7 @@
 										</a>
 										<div id="collapse6" class="panel-collapse collapse" aria-labelledby="heading6" data-parent="#accordion">
 											<div class="panel-body">
-												Check out our <a href='/pricing'>Pricing Page</a> for all the details.
+												We’ll stage your product at a centrally-located facility. When an order is placed, your customer will get to select a delivery window. We’ll fullfill and complete the delivery on your behalf.
 											</div>
 										</div>
 									</div>
@@ -663,7 +610,7 @@
 										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse7" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													Is this like a PO box or an Amazon locker?
+													Why is your service unique?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -671,8 +618,13 @@
 										</a>
 										<div id="collapse7" class="panel-collapse collapse" aria-labelledby="heading7" data-parent="#accordion">
 											<div class="panel-body">
-												Sealed is better than a PO box! PO boxes are expensive and don’t provide you with smart notifications or convenient delivery options. Amazon lockers only hold Amazon orders. They’re often full,
-												can’t accept large packages, and many have limited service hours.
+												Lots of reasons! Here are a few:
+												<ul>
+													<li>Consumers get to schedule delivery when it is convenient, providing a great experience while elminating costs associated with theft and missed delivery attempts.</li>
+													<li>Brands love the opportunties to control the delivery experience ing opportunities at the point of delivery. Want something special and unique to your brand to happen during delivery? We’ll make it happen.</li>
+													<li>Because we strategically locate product within a city, we’re able to deliver faster than anyone else.</li>
+													<li>Want to offer returns? Need refridgeration? Box recycling? We do it all.</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -682,9 +634,7 @@
 
 											<div class="panel-heading">
 												<h4 class="panel-title">
-
-													I’m already offered free shipping from a retailer or shipping
-													company. Why should I pay for this?
+													How can you offer a service that is both better and cheaper?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -693,9 +643,7 @@
 
 										<div id="collapse8" class="panel-collapse collapse" aria-labelledby="heading8" data-parent="#accordion">
 											<div class="panel-body">
-												Unfortunately, free shipping doesn’t mean it’s safely in your hands at the end of the day. Most failed delivery attempts occur in the middle of the day while you're at work, and package theft
-												is on the rise as online shopping grows. If you’re tired of dealing with missed deliveries or stolen packages, Sealed is a convenient option to get your items securely delivered to you on your
-												schedule.
+												Our service is unique in that we allow the consumer to schedule deliveries from the brands they love, at times that are convenient for them. This reduces the number of redeliveries and package thefts, making the service more affordable than traditional options.
 											</div>
 										</div>
 									</div>
@@ -705,7 +653,7 @@
 										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse9" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													Do I have to use a specific shipping company?
+													Do you offer fullfillment?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -714,11 +662,7 @@
 
 										<div id="collapse9" class="panel-collapse collapse" aria-labelledby="heading9" data-parent="#accordion">
 											<div class="panel-body">
-												No. What makes us different from the lockers or access points provided
-												by shipping companies is that you don't need to navigate separate
-												websites, look up availability, and update shipping information each
-												time. We accept your packages from anybody and anywhere. Just ship
-												directly to us, and we’ll get it to you.
+												Yes, we can do fullfillment as well as delivery.
 											</div>
 										</div>
 									</div>
@@ -727,9 +671,7 @@
 										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse13" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													<p>
-														My package is time-sensitive. Will using Sealed slow down the delivery?
-													</p>
+													How much does it cost?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -738,8 +680,7 @@
 
 										<div id="collapse13" class="panel-collapse collapse" aria-labelledby="heading13" data-parent="#accordion">
 											<div class="panel-body">
-												No. Your package is available for an evening delivery the same day that we receive it. Sealed protects your package against thefts, and delays from missed deliveries, so you’ll always receive your
-												items securely and reliably.
+												We have several different pricing models, though we usually bill on a “per-item” basis.  For specific pricing questions, please reach out to us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a>.
 											</div>
 										</div>
 									</div>
@@ -749,9 +690,9 @@
 										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse12" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													<p>
-														Can I use Sealed to receive packages from a meal-kit service (i.e. Blue Apron, HelloFresh, etc.)?
-													</p>
+
+													What is your current coverage in the Bay Area?
+
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -760,7 +701,7 @@
 
 										<div id="collapse12" class="panel-collapse collapse" aria-labelledby="heading12" data-parent="#accordion">
 											<div class="panel-body">
-												Yes, we receive many perishable food boxes and offer same-day evening delivery. We also offer commercial refrigeration options if you're not available for same-day or next-day delivery.
+												Currrently, Sealed operates in San Francisco with plans to expand in the near future.
 											</div>
 										</div>
 									</div>
@@ -770,7 +711,7 @@
 
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													Where is Sealed currently operating?
+													Who actually does the delivery, and how do they do it?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
 												<i class="fas fa-chevron-down"></i>
@@ -779,8 +720,7 @@
 
 										<div id="collapse15" class="panel-collapse collapse" aria-labelledby="heading15" data-parent="#accordion">
 											<div class="panel-body">
-												We’re rapidly expanding our service in the city of San Francisco.
-												To check if your neighborhood is covered, <a href="#signup">sign up</a> below.
+												Our highly-trained couriers complete all deliveries using the vehicle best suited to the job. The majority of our dense, urban deliveries are completed via bicycle (often cheaper and faster!), but we use cars and trucks when required.
 											</div>
 										</div>
 									</div>
@@ -790,6 +730,7 @@
 
 											<div class="panel-heading">
 												<h4 class="panel-title">
+
 													When can I schedule my deliveries?
 												</h4>
 												<i class="fas fa-chevron-right"></i>
@@ -799,67 +740,18 @@
 
 										<div id="collapse11" class="panel-collapse collapse" aria-labelledby="heading11" data-parent="#accordion">
 											<div class="panel-body">
-												We currently offer evening deliveries 7 days a week, from 5pm to 11pm. You can select the delivery window that fits best with your schedule.
+												We currently offer evening deliveries 7 days a week, from 5pm to 11pm. You may select the delivery window that fits best with your schedule.
+
+
 											</div>
 										</div>
 									</div>
 
-									<div id="heading16" class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse16" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
 
-											<div class="panel-heading">
-												<h4 class="panel-title">
-													I have ordered multiple packages. Can I have them brought to me all at once? </h4>
-												<i class="fas fa-chevron-right"></i>
-												<i class="fas fa-chevron-down"></i>
-											</div>
-										</a>
 
-										<div id="collapse16" class="panel-collapse collapse" aria-labelledby="heading16" data-parent="#accordion">
-											<div class="panel-body">
-												Yes, and you can save money by grouping multiple packages into one <b>scheduled delivery trip</b>. Please check out the <a href='/pricing'>Pricing Page</a> for more information.
-											</div>
-										</div>
-									</div>
 
-									<div id="heading18" class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse18" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-
-											<div class="panel-heading">
-												<h4 class="panel-title">
-													What is a scheduled delivery trip? </h4>
-												<i class="fas fa-chevron-right"></i>
-												<i class="fas fa-chevron-down"></i>
-											</div>
-										</a>
-
-										<div id="collapse18" class="panel-collapse collapse" aria-labelledby="heading18" data-parent="#accordion">
-											<div class="panel-body">
-												A <b>delivery trip</b> is a scheduled time for Sealed to come to your door and hand off your packages. The cost of each <b>delivery trip</b> is independent of the number of packages. If we bring three of your packages at once, the delivery trip costs $3.50 if you're a Sealed Member or $5 if you're on Anyone Pricing.
-											</div>
-										</div>
-									</div>
-
-									<div id="heading17" class="panel panel-default">
-										<a data-toggle="collapse" class="collapsed faq-toggle" data-parent="#accordion" href="#collapse17" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-
-											<div class="panel-heading">
-												<h4 class="panel-title">
-													How do I get started?
-												</h4>
-												<i class="fas fa-chevron-right"></i>
-												<i class="fas fa-chevron-down"></i>
-											</div>
-										</a>
-
-										<div id="collapse17" class="panel-collapse collapse" aria-labelledby="heading17" data-parent="#accordion">
-											<div class="panel-body">
-												Start by <a href="#signup">signing up below</a>. Once you have made an account and picked a plan, you’re ready to start having orders shipped to the address shown in the app. We’ll take care of the
-												rest by notifying you when we receive a package and providing convenient delivery scheduling options.
-											</div>
-										</div>
-									</div>
 								</div>
+
 
 								<p class='faq-footer'>
 									Not seeing an answer to your question here?
@@ -871,144 +763,24 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End FAQ -->
-		<!-- Start Pricing -->
-		<section id="pricing-section" class="off-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="mu-feature-area">
-							<h2 class="sec-title small">Find the right plan for you</h2>
-							</br>
-							<div class='signup-btn-container'>
-								<a href="/pricing" class='mu-all-btn alt-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'ViewPricing'});">View Pricing</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End PRicing -->
-
-
-
-		<!-- OLD PRICING SECTION -->
-		<!-- Start Pricing -->
-		<!-- <section id="pricing-section" class="off-section">
-			<div class='pricing-section-gradient'></div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h2 class="sec-title">Simple pricing</h2>
-						<h3 class="sec-subtitle">Offering pay-as-you-go and subscription services</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="pricing-card-area">
-
-							<div class="pricing-content">
-								<div class='option-content' style="margin-left:10%;">
-									<div class='option-background'>
-										<h2 class="option-title">Anyone Pricing</h2>
-
-										<div class='option-price'>
-											<p>NO COMMITMENT</p>
-
-										</div>
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">$2.50 per package received</p>
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">$5 per scheduled delivery trip</p>
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">2-hour delivery window</p>
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">14-day package storage</p>
-										</div>
-
-										<div class='signup-btn-container'>
-											<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Order'});">Order</a>
-										</div>
-									</div>
-								</div>
-								<div class='option-content' style="margin-right:10%;">
-									<div class='option-background option-main'>
-										<h2 class="option-title">Sealed Member</h2>
-
-										<div class='option-price'>
-											<p>$15 / MONTH</p>
-											<p id="cross-off"></p>
-										</div>
-										<img id="month_free_seal" src='assets/images/month_free_text.svg'>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<div style="display: block;">
-
-												<p class="option-text">$0 for first 10 packages </p>
-												<p class='option-sub-text'> +$2 each additional package</p>
-											</div>
-
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">$3.50 per scheduled delivery trip</p>
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">1-hour delivery window</p>
-										</div>
-
-										<div class='option-feature'>
-											<img src='assets/images/feature-check.png'>
-											<p class="option-text">30-day package storage</p>
-										</div>
-										<div class='signup-btn-container'>
-											<a href="#signup" class='mu-all-btn' onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'Join'});">Join</a>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="fees-message">*Oversized item fees will also apply to packages greater than 40 lbs or
-									60 inches in size. <a href="/pricing">See more pricing details.</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</section> -->
-		<!-- End PRicing -->
+		<!-- End FAQ -->
+
 
 
 
 		<!-- Start Contact -->
-		<section id="signup" class="white-section">
+		<section id="signup" class="purple-section">
 			<div class="container">
 				<div class="row">
 					<!--<div class="col-lg-8">-->
 					<div class="col-lg-12">
 						<div class="mu-feature-area">
 
-							<h2 class="sec-title">Join <b class="sealed-inline">sealed</b> today!</h2>
+							<h2 class="sec-title">Want <b class="sealed-inline">sealed</b> for your business?</h2>
 							<!--<h3 class="sec-subtitle">Interested in joining? Sign up now and we'll notify you as soon as
 							we're online in your area</h3> -->
-							<h3 class="sec-subtitle">Sealed is completely changing the way you receive packages. Start getting your orders exactly when you want them by signing up <b>today!</b></h3>
+							<h3 class="sec-subtitle">Learn more about what we can do for you and your customers.</h3>
 						</div>
 
 					</div>
@@ -1021,55 +793,34 @@
 							<div id="contact" class="mu-contact-content">
 								<div class="row">
 
-									<div class="col-lg-12">
+									<div class="col-md-12">
 										<div class="mu-contact-left">
 											<div id="form-messages"></div>
 
-											<!--<form onsubmit="check_zip(); return false;"> -->
-											<form onsubmit="check_zip(); return false;">
-
-												<!--<div class="form-group">
-													<input type="email" class="form-control" placeholder="Email Address"
-														id="email" name="email" required autocomplete="email">
-												</div>
-
+											<form onsubmit="submit_form(); return false;">
 												<div class="form-group">
-													<input class="form-control" type='number' placeholder="Zip Code" autocomplete="postal-code"
-														id="zipcode" name="zipcode" required autocomplete="postal-code">
+													<div class="form-row">
+														<div class="col">
+															<input type="text" id='inputName' name="name" class="form-control" placeholder="Full Name" required>
+														</div>
+													</div>
 												</div>
-
-												<button class='mu-all-btn pronounced' type="submit" onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'starting_signup_home'});">Sign Up Now</button> -->
-												
-												<button class='mu-all-btn pronounced' type="submit" onclick="return false;">Sign Up Not Available</button>
-
-												<button class='mu-all-btn' type="submit" id='submit_signup_form' style="display:none;"></button>
-
+												<div class="form-group">
+													<div class="form-row">
+														<div class="col">
+															<input type="email" id='inputEmail' name="email" class="form-control" placeholder="Email Address" required>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<textarea placeholder="Your Message"  id='inputMsg' class="form-control" name="message" rows="4" required></textarea>
+												</div>
+												<button type="submit" class="mu-all-btn" onclick="gtag('event', 'click', {'event_category' : 'ButtonClick', 'event_label' : 'contact-us-form'});">Contact Us</button>
 											</form>
 
 										</div>
 									</div>
 								</div>
-
-
-
-								<!-- <div class="row">
-									<div class="col-lg-12 contact-footer-area">
-										<div class="col-lg-6 z-index-1">
-											<div class="mu-contact-right-single">
-												<div class="mu-icon"><i class="fa fa-envelope icon-centering"></i></div>
-												<p>Reach us at <a href="mailto:hello@sealedpackages.com">hello@sealedpackages.com</a> </p>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fsealedpackages%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId"
-												width="450" height="80" style="margin: 0px 15px; border:none;overflow:hidden; width: calc(100% - 30px);" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-											</iframe>
-										</div>
-									</div>
-								</div> -->
-
-
-
 							</div>
 							<!-- End Contact Content -->
 
@@ -1080,6 +831,28 @@
 		</section>
 		<!-- End Contact -->
 
+
+		<!-- Switch Page Section -->
+		<!-- <section id="switch-section" class="white-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="mu-feature-area">
+							<h2 class="sec-title small">Not a business? Jump to...</h2>
+							<div class="dual-btn-container">
+								<a href="/" class='mu-all-btn alt-btn'>Consumer Plans</a>
+								<a href="/properties" class='mu-all-btn alt-btn'>Properties Plans</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- End Switch Page Section -->
+
+
+
+
 	</main>
 
 	<!-- End main content -->
@@ -1089,22 +862,23 @@
 		<footer class="details">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-sm-6 col-xs-6">
-						<h6 class="footer-gray">Solutions</h6>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<h6 class="footer-gray">About</h6>
 						<div class="menu-header-left-container">
 							<ul id="menu-header-left-2" class="footer-links">
-								<li class="menu-item"><a href="https://sealedpackages.com/">Personal Plans</a></li>
-								<li class="menu-item"><a href="https://sealedpackages.com/pricing">Pricing</a></li>
-								<li class="menu-item"><a href="https://sealedpackages.com/business">Local Business</a></li>
-								<li class="menu-item"><a href="https://sealedpackages.com/properties">Properties</a></li><br>
+								<li class="menu-item">Sealed is the SF Bay Area's premium perishable delivery service</li>
+								<!-- <li class="menu-item"><a href="https://sealedpackages.com/">Personal Plans</a></li> -->
+								<!-- <li class="menu-item"><a href="https://sealedpackages.com/pricing">Pricing</a></li> -->
+								<!-- <li class="menu-item"><a href="https://sealedpackages.com/business">Local Business</a></li> -->
+								<!-- <li class="menu-item"><a href="https://sealedpackages.com/properties">Properties</a></li><br> -->
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6">
-						<h6 class="footer-gray">Company</h6>
+						<!-- <h6 class="footer-gray">Company</h6> -->
 						<div class="menu-footer-help-container">
 							<ul id="menu-footer-help-1" class="footer-links">
-								<li class="menu-item"><a href="https://sealedpackages.com/about">About</a></li><br>
+								<!-- <li class="menu-item"><a href="https://sealedpackages.com/about">About</a></li><br> -->
 							</ul>
 						</div>
 					</div>
@@ -1179,109 +953,7 @@
 			console.log(event);
 		}
 
-		var refcode;
-		var routecode;
-
-		function getUrlVars() {
-			var vars = {};
-			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-				vars[key] = value;
-			});
-			return vars;
-		}
-
-		function removeUrlVars(){			
-			if (window.history && window.origin != "null"){
-				setTimeout(function(){
-				// 	window.history.pushState({}, document.title, "/");
-					window.history.replaceState({}, document.title, "/");
-		  		 }, 500);
-			}
-		}
-
-		urlvars = getUrlVars();
-		console.log(urlvars);
-		removeUrlVars();
-
-		if (urlvars['ref']){
-			console.log('Got referral code!');
-			refcode = urlvars['ref']
-			if (typeof(Storage) !== "undefined") {
-				localStorage.setItem("refcode", refcode);
-			}
-			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
-		}
-		else if(localStorage.getItem('refcode')){
-			refcode = localStorage.getItem('refcode');
-		}
-		if (urlvars['route']){
-			console.log('Got routing code!');
-			routecode = urlvars['route']
-			if (typeof(Storage) !== "undefined") {
-				localStorage.setItem("routecode", routecode);
-			}
-			document.getElementById('app_link').href = 'https://app.sealedpackages.com?route='+routecode;
-		}
-		else if(localStorage.getItem('routecode')){
-			routecode = localStorage.getItem('routecode');
-		}
-		if (urlvars['route'] && urlvars['ref']){
-			document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode+'&route='+routecode;
-		}
-
-		function check_zip(){
-
-			const new_zip = $('#zipcode').val();
-			const new_email = $('#email').val();
-
-			if (new_email && new_zip){
-
-				var formData = new FormData();
-				var request = new XMLHttpRequest();
-
-				formData.append("zipcode",  new_zip);
-				formData.append("email", new_email);
-				if (refcode){
-					formData.append("refcode", refcode);
-				}
-				if (routecode){
-					formData.append("routecode", routecode);
-				}
-
-				localStorage.removeItem('refcode');
-				localStorage.removeItem('routecode');
-
-				request.onload = function() {
-					resp_obj = JSON.parse(request.response);
-					console.log(resp_obj);
-					if (resp_obj.next){
-						var new_url = resp_obj.next;
-						if (refcode){
-							if (new_url.includes('?')){
-								new_url += '&ref='+refcode;
-							}
-							else{
-								new_url += '?ref='+refcode;
-							}
-						}
-						if (routecode){
-							if (new_url.includes('?')){
-								new_url += '&route='+routecode;
-							}
-							else{
-								new_url += '?route='+routecode;
-							}
-						}
-						window.location.href = new_url;
-					}
-				};
-
-				url = "https://app.sealedpackages.com/landing_page_signup";
-				request.open("POST", url);
-				request.send(formData);
-			}
-		}
-		</script>
+	</script>
 
 	<!-- close mobile navbar after user clicks on item-->
 	<!-- <script type="text/javascript">
@@ -1291,78 +963,52 @@
 				navMain.collapse('hide');
 			});
 		});
-	</script> -->
 
-	<!-- for the testimonial section/owlcarousel -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#testimonial-slider").owlCarousel({
-			items:1,
-			itemsDesktop:[1199,1],
-			itemsDesktopSmall:[979,1],
-			itemsTablet:[768,1],
-			pagination: true,
-			autoPlay:6000,
-			paginationSpeed: 800,
-			rewindSpeed: 1000,
-		});
-	});
-	</script>
+		var refcode;
 
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
 
-	<!-- for the brands slider -->
-	<!-- <script type="text/javascript">
-	$(document).ready(function(){
-		$("#brands-slider").owlCarousel({
-			items:5,
-			itemsDesktop:[1199,4],
-			itemsDesktopSmall:[979,3],
-			itemsTablet:[768,2],
-			itemsTabletSmall: false,
-			pagination: false,
-			autoPlay:2500,
-			paginationSpeed:1000,
-			navigation: false,
-			// navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
-		});
+		urlvars = getUrlVars();
+		console.log(urlvars);
+		if (urlvars['ref']){
+			console.log('Got referral code!');
+			refcode = urlvars['ref']
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("refcode", refcode);
+				document.getElementById('app_link').href = 'https://app.sealedpackages.com?ref='+refcode;
+			}
+		}
 
-	});
 	</script> -->
 	<script type="text/javascript">
-		$(document).ready(function() {
 
-		  //Sort random function
-		  function random(owlSelector){
-		    owlSelector.children().sort(function(){
-		        return Math.round(Math.random()) - 0.5;
-		    }).each(function(){
-		      $(this).appendTo(owlSelector);
-		    });
-		  }
+		function submit_form(){
 
-		  $("#brands-slider").owlCarousel({
-			items:5,
-  			itemsDesktop:[1199,4],
-  			itemsDesktopSmall:[979,3],
-  			itemsTablet:[768,3],
-			itemsMobile:[479,3],
-  			itemsTabletSmall: false,
-  			pagination: false,
-  			autoPlay:6000,
-  			paginationSpeed:800,
-  			navigation: false,
-			scrollPerPage: true,
+			var formData = new FormData();
+			var request = new XMLHttpRequest();
 
-		    beforeInit : function(elem){
-		      //Parameter elem pointing to $("#owl-demo")
-		      random(elem);
-		    }
+			formData.append("name",  $('#inputName').val());
+			formData.append("email", $('#inputEmail').val());
+			formData.append("msg", $('#inputMsg').val());
 
-		  });
+			request.onload = function() {
+				resp_obj = JSON.parse(request.response);
+				console.log(resp_obj);
+				location.reload();
+			};
 
-		});
+			url = "https://app.sealedpackages.com/properties_form";
+			request.open("POST", url);
+			request.send(formData);
+		}
 	</script>
+
 
 	<!--Mobile Nav Coverup-->
 	<script>
