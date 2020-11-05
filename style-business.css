@@ -91,9 +91,9 @@ h3.stat-text{
 }
 
 #legacy-section h4{
-	font-size:17px;
-	line-height: 30px;
-	font-weight:400;
+	font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
 }
 #legacy-section .sec1-value{
 	margin-bottom: 5px;
@@ -108,7 +108,10 @@ h3.stat-text{
 }
 
 #stat-section p{
-	font-weight:500;
+	/* font-weight:500; */
+	font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
 }
 #stat-section b,
 #legacy-section b{
@@ -228,9 +231,21 @@ h3.stat-text{
 	padding-top:0px;
 }
 
+@media (max-width: 991px){
+	.sec1-value.stat-box {
+		margin: 0px auto;
+		display: block;
+		padding: 30px 40px;
+		max-width: 400px;
+	}
+
+}
+
 
 @media screen and (max-width: 768px){
 
+
+	
 	.business-feature-section .business-feature{
 	    border-right: 1px solid rgba(255,255,255,0.2) !important;
 	    width: 50%;
@@ -258,4 +273,16 @@ h3.stat-text{
 	    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
 	}
 
+}
+@media (max-width: 480px) {
+
+	#bubblealert-icon {
+		height: 70px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+
+	.business-feature {
+		padding: 15px 30px;
+	}
 }

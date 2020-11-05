@@ -390,6 +390,14 @@ b {
 	color: var(--main-color-1);
 } */
 
+.sec1-value i.material-icons{
+	font-size: 30px;
+    width: 23px;
+    height: 30px;
+    line-height: 30px;
+	padding: 0px;
+	margin: 1px 0px;
+}
 
 .sec-title {
 	margin-bottom: 15px;
@@ -398,6 +406,10 @@ b {
 	padding: 18px;
 	color: #000;
 	text-align:center;
+}
+
+.sec-title-sm{
+	font-size: 30px;
 }
 
 .sec-subtitle {
@@ -1371,8 +1383,9 @@ i#mobile-open-nav-btn {
 .mu-feature-area {
 	display: inline;
 	float: left;
-	padding: 60px 0 50px;
+	/* padding: 60px 0 50px; */
 	width: 100%;
+	padding: 40px 0;
 }
 
 .mu-feature-area.second {
@@ -3145,6 +3158,10 @@ table.tg.oversize-pricing-table{
 }
 
 @media (max-width: 991px) {
+
+	.header-feature-area h2 {
+		text-align: center;
+	}
 	.quote
 	{
 		padding: 60px 30px 40px;
@@ -3443,6 +3460,10 @@ table.tg.oversize-pricing-table{
 
 
 @media (max-width: 767px) {
+
+	.sec-title-sm {
+		font-size: 24px;
+	}
 
 	footer.details {
 		padding: 20px 15px 10px;
@@ -3762,10 +3783,6 @@ table.tg.oversize-pricing-table{
 } */
 
 @media (max-width: 480px) {
-
-	.mu-logo img {
-		width: 150px;
-	}
 
 	.mu-video-close-btn {
 		top: 2%;
